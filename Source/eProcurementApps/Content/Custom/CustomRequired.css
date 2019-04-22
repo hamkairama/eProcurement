@@ -1,0 +1,5 @@
+﻿.required:after {
+    color: #e32;
+    content: ' *';
+    display: inline;
+}

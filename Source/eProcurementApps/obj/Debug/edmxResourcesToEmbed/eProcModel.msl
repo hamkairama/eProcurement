@@ -1,0 +1,1448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="eProcurementModelStoreContainer" CdmEntityContainer="eProcurementEntities">
+    <EntitySetMapping Name="MenuSidebars">
+      <EntityTypeMapping TypeName="eProcurementModel.MenuSidebar">
+        <MappingFragment StoreEntitySet="MenuSidebar">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MenuCode" ColumnName="MenuCode" />
+          <ScalarProperty Name="MenuDescription" ColumnName="MenuDescription" />
+          <ScalarProperty Name="IsInduk" ColumnName="IsInduk" />
+          <ScalarProperty Name="Method" ColumnName="Method" />
+          <ScalarProperty Name="Controller" ColumnName="Controller" />
+          <ScalarProperty Name="MenuInduk" ColumnName="MenuInduk" />
+          <ScalarProperty Name="Icon" ColumnName="Icon" />
+          <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="LastModifiedTime" ColumnName="LastModifiedTime" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="TimeStatus" ColumnName="TimeStatus" />
+          <ScalarProperty Name="RowStatus" ColumnName="RowStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_ACKNOW_APPR">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_ACKNOW_APPR">
+        <MappingFragment StoreEntitySet="TPROC_ACKNOW_APPR">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PC_ID" ColumnName="PC_ID" />
+          <ScalarProperty Name="WA_ID" ColumnName="WA_ID" />
+          <ScalarProperty Name="WA_NUMBER" ColumnName="WA_NUMBER" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_APPR_PC">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_APPR_PC">
+        <MappingFragment StoreEntitySet="TPROC_APPR_PC">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PC_ID" ColumnName="PC_ID" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="AS_IS" ColumnName="AS_IS" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_APPR_PO">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_APPR_PO">
+        <MappingFragment StoreEntitySet="TPROC_APPR_PO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PO_ID" ColumnName="PO_ID" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="AS_IS" ColumnName="AS_IS" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_APPR_RELDEPT_DT">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_APPR_RELDEPT_DT">
+        <MappingFragment StoreEntitySet="TPROC_APPR_RELDEPT_DT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="APPROVAL_RELDEPT_GR_ID" ColumnName="APPROVAL_RELDEPT_GR_ID" />
+          <ScalarProperty Name="APPROVAL_NAME" ColumnName="APPROVAL_NAME" />
+          <ScalarProperty Name="LEVEL_ID" ColumnName="LEVEL_ID" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_APPR_RELDEPT_GR">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_APPR_RELDEPT_GR">
+        <MappingFragment StoreEntitySet="TPROC_APPR_RELDEPT_GR">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="REV_RD_ID" ColumnName="REV_RD_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_APPROVAL_DT">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_APPROVAL_DT">
+        <MappingFragment StoreEntitySet="TPROC_APPROVAL_DT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="APPROVAL_GROUP_ID" ColumnName="APPROVAL_GROUP_ID" />
+          <ScalarProperty Name="APPROVAL_NAME" ColumnName="APPROVAL_NAME" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="FLOW_NUMBER" ColumnName="FLOW_NUMBER" />
+          <ScalarProperty Name="LEVEL_ID" ColumnName="LEVEL_ID" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_APPROVAL_GR">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_APPROVAL_GR">
+        <MappingFragment StoreEntitySet="TPROC_APPROVAL_GR">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="DEPARTMENT_NAME" ColumnName="DEPARTMENT_NAME" />
+          <ScalarProperty Name="DIVISION_ID" ColumnName="DIVISION_ID" />
+          <ScalarProperty Name="REV_WA_ID" ColumnName="REV_WA_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_APPROVAL_ROLE">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_APPROVAL_ROLE">
+        <MappingFragment StoreEntitySet="TPROC_APPROVAL_ROLE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="LEVEL_ID" ColumnName="LEVEL_ID" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="SIGNATURE_IMAGE" ColumnName="SIGNATURE_IMAGE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_BUDGET_CODE">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_BUDGET_CODE">
+        <MappingFragment StoreEntitySet="TPROC_BUDGET_CODE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TABLE_BUDGET" ColumnName="TABLE_BUDGET" />
+          <ScalarProperty Name="TABLE_BUDGET_USAGE" ColumnName="TABLE_BUDGET_USAGE" />
+          <ScalarProperty Name="CD_PRINTING_USAGE" ColumnName="CD_PRINTING_USAGE" />
+          <ScalarProperty Name="CD_PRINTING_START" ColumnName="CD_PRINTING_START" />
+          <ScalarProperty Name="CD_PRINTING_END" ColumnName="CD_PRINTING_END" />
+          <ScalarProperty Name="CD_OFFICE_SUPPLIE_USAGE" ColumnName="CD_OFFICE_SUPPLIE_USAGE" />
+          <ScalarProperty Name="CD_OFFICE_SUPPLIE_START" ColumnName="CD_OFFICE_SUPPLIE_START" />
+          <ScalarProperty Name="CD_OFFICE_SUPPLIE_END" ColumnName="CD_OFFICE_SUPPLIE_END" />
+          <ScalarProperty Name="CD_ASSET_NONASSET_USAGE" ColumnName="CD_ASSET_NONASSET_USAGE" />
+          <ScalarProperty Name="CD_ASSET_NONASSET_START" ColumnName="CD_ASSET_NONASSET_START" />
+          <ScalarProperty Name="CD_ASSET_NONASSET_END" ColumnName="CD_ASSET_NONASSET_END" />
+          <ScalarProperty Name="CD_PROMOTIONAL_ITEM_USAGE" ColumnName="CD_PROMOTIONAL_ITEM_USAGE" />
+          <ScalarProperty Name="CD_PROMOTIONAL_ITEM_START" ColumnName="CD_PROMOTIONAL_ITEM_START" />
+          <ScalarProperty Name="CD_PROMOTIONAL_ITEM_END" ColumnName="CD_PROMOTIONAL_ITEM_END" />
+          <ScalarProperty Name="IS_ACTIVE" ColumnName="IS_ACTIVE" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="CD_ISSUED_USAGE" ColumnName="CD_ISSUED_USAGE" />
+          <ScalarProperty Name="TABLE_T1" ColumnName="TABLE_T1" />
+          <ScalarProperty Name="TABLE_T2" ColumnName="TABLE_T2" />
+          <ScalarProperty Name="TABLE_T3" ColumnName="TABLE_T3" />
+          <ScalarProperty Name="TABLE_T5" ColumnName="TABLE_T5" />
+          <ScalarProperty Name="CD_OFFICE_SUPPLIE_MT" ColumnName="CD_OFFICE_SUPPLIE_MT" />
+          <ScalarProperty Name="CD_PRINTING_MT" ColumnName="CD_PRINTING_MT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_CHART_OF_ACCOUNT_GR">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_CHART_OF_ACCOUNT_GR">
+        <MappingFragment StoreEntitySet="TPROC_CHART_OF_ACCOUNT_GR">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CRCY_CD" ColumnName="CRCY_CD" />
+          <ScalarProperty Name="ACCT_NUM" ColumnName="ACCT_NUM" />
+          <ScalarProperty Name="ACCT_DESC" ColumnName="ACCT_DESC" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="REV_COA_ID" ColumnName="REV_COA_ID" />
+          <ScalarProperty Name="CONVERTED_ACCT_NUM" ColumnName="CONVERTED_ACCT_NUM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_CHART_OF_ACCOUNTS">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_CHART_OF_ACCOUNTS">
+        <MappingFragment StoreEntitySet="TPROC_CHART_OF_ACCOUNTS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="SUB_COA_GR_ID" ColumnName="SUB_COA_GR_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_CONTROL_PARAMETERS">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_CONTROL_PARAMETERS">
+        <MappingFragment StoreEntitySet="TPROC_CONTROL_PARAMETERS">
+          <ScalarProperty Name="TERR_CD" ColumnName="TERR_CD" />
+          <ScalarProperty Name="PARM_TYP" ColumnName="PARM_TYP" />
+          <ScalarProperty Name="STATE_CD" ColumnName="STATE_CD" />
+          <ScalarProperty Name="PARM_VALU" ColumnName="PARM_VALU" />
+          <ScalarProperty Name="PARM_DESC" ColumnName="PARM_DESC" />
+          <ScalarProperty Name="DATA_TYP" ColumnName="DATA_TYP" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_CURRENCY">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_CURRENCY">
+        <MappingFragment StoreEntitySet="TPROC_CURRENCY">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CURRENCY_NAME" ColumnName="CURRENCY_NAME" />
+          <ScalarProperty Name="RATE" ColumnName="RATE" />
+          <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="CONVERSION_RP" ColumnName="CONVERSION_RP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_DELIVERY_ADDRESS">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_DELIVERY_ADDRESS">
+        <MappingFragment StoreEntitySet="TPROC_DELIVERY_ADDRESS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DELIVERY_NAME" ColumnName="DELIVERY_NAME" />
+          <ScalarProperty Name="DELIVERY_ADDRESS" ColumnName="DELIVERY_ADDRESS" />
+          <ScalarProperty Name="DEFAULT_IND" ColumnName="DEFAULT_IND" />
+          <ScalarProperty Name="DELIVERY_PHONE" ColumnName="DELIVERY_PHONE" />
+          <ScalarProperty Name="DELIVERY_FAX" ColumnName="DELIVERY_FAX" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_DIVISION">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_DIVISION">
+        <MappingFragment StoreEntitySet="TPROC_DIVISION">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DIVISION_NAME" ColumnName="DIVISION_NAME" />
+          <ScalarProperty Name="DIVISION_DESCRIPTION" ColumnName="DIVISION_DESCRIPTION" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_DOCUMENTS">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_DOCUMENTS">
+        <MappingFragment StoreEntitySet="TPROC_DOCUMENTS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FILE_NAME" ColumnName="FILE_NAME" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_FIELD_DESCRIPTIONS">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_FIELD_DESCRIPTIONS">
+        <MappingFragment StoreEntitySet="TPROC_FIELD_DESCRIPTIONS">
+          <ScalarProperty Name="APP_CD" ColumnName="APP_CD" />
+          <ScalarProperty Name="FLD_NM" ColumnName="FLD_NM" />
+          <ScalarProperty Name="FLD_NM_DESC" ColumnName="FLD_NM_DESC" />
+          <ScalarProperty Name="DATA_TYP" ColumnName="DATA_TYP" />
+          <ScalarProperty Name="DFLT_VALU" ColumnName="DFLT_VALU" />
+          <ScalarProperty Name="USER_MODIFY_IND" ColumnName="USER_MODIFY_IND" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_FIELD_VALUES">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_FIELD_VALUES">
+        <MappingFragment StoreEntitySet="TPROC_FIELD_VALUES">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="APP_CD" ColumnName="APP_CD" />
+          <ScalarProperty Name="FLD_NM" ColumnName="FLD_NM" />
+          <ScalarProperty Name="FLD_VALU" ColumnName="FLD_VALU" />
+          <ScalarProperty Name="FLD_VALU_DESC" ColumnName="FLD_VALU_DESC" />
+          <ScalarProperty Name="FLD_VALU_DESC_ENG" ColumnName="FLD_VALU_DESC_ENG" />
+          <ScalarProperty Name="SEQ_NUM" ColumnName="SEQ_NUM" />
+          <ScalarProperty Name="FLD_VALU_MNE_CD" ColumnName="FLD_VALU_MNE_CD" />
+          <ScalarProperty Name="STAT_CD" ColumnName="STAT_CD" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_FORM_SUB_TYPE">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_FORM_SUB_TYPE">
+        <MappingFragment StoreEntitySet="TPROC_FORM_SUB_TYPE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="SUB_FORMTYPE_GR_ID" ColumnName="SUB_FORMTYPE_GR_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_FORM_SUBTYPE_DT">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_FORM_SUBTYPE_DT">
+        <MappingFragment StoreEntitySet="TPROC_FORM_SUBTYPE_DT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="REL_DEPT_ID" ColumnName="REL_DEPT_ID" />
+          <ScalarProperty Name="FORM_SUBTYPE_GR_ID" ColumnName="FORM_SUBTYPE_GR_ID" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="FLOW_NUMBER" ColumnName="FLOW_NUMBER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_FORM_SUBTYPE_GR">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_FORM_SUBTYPE_GR">
+        <MappingFragment StoreEntitySet="TPROC_FORM_SUBTYPE_GR">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="FORM_TYPE_ID" ColumnName="FORM_TYPE_ID" />
+          <ScalarProperty Name="SUB_FORM_TYPE_NAME" ColumnName="SUB_FORM_TYPE_NAME" />
+          <ScalarProperty Name="SUB_FORM_TYPE_DESCRIPTION" ColumnName="SUB_FORM_TYPE_DESCRIPTION" />
+          <ScalarProperty Name="SLA" ColumnName="SLA" />
+          <ScalarProperty Name="POPUP_ACCOUNT" ColumnName="POPUP_ACCOUNT" />
+          <ScalarProperty Name="BUDGET_CODE" ColumnName="BUDGET_CODE" />
+          <ScalarProperty Name="ACCOUNT_CODE_START" ColumnName="ACCOUNT_CODE_START" />
+          <ScalarProperty Name="ACCOUNT_CODE_END" ColumnName="ACCOUNT_CODE_END" />
+          <ScalarProperty Name="REV_FST_ID" ColumnName="REV_FST_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_FORM_TYPE">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_FORM_TYPE">
+        <MappingFragment StoreEntitySet="TPROC_FORM_TYPE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FORM_TYPE_NAME" ColumnName="FORM_TYPE_NAME" />
+          <ScalarProperty Name="FORM_TYPE_DESCRIPTION" ColumnName="FORM_TYPE_DESCRIPTION" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="IS_GOOD_TYPE" ColumnName="IS_GOOD_TYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_FST_BUDGET_CD_ADD">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_FST_BUDGET_CD_ADD">
+        <MappingFragment StoreEntitySet="TPROC_FST_BUDGET_CD_ADD">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FORM_SUBTYPE_GR_ID" ColumnName="FORM_SUBTYPE_GR_ID" />
+          <ScalarProperty Name="BUDGET_CODE" ColumnName="BUDGET_CODE" />
+          <ScalarProperty Name="ACCOUNT_CODE_START" ColumnName="ACCOUNT_CODE_START" />
+          <ScalarProperty Name="ACCOUNT_CODE_END" ColumnName="ACCOUNT_CODE_END" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_GENERATOR">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_GENERATOR">
+        <MappingFragment StoreEntitySet="TPROC_GENERATOR">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TABLE_CODE" ColumnName="TABLE_CODE" />
+          <ScalarProperty Name="TABLE_NAME" ColumnName="TABLE_NAME" />
+          <ScalarProperty Name="LAST_SEQ_NO" ColumnName="LAST_SEQ_NO" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_GM_HEADERS">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_GM_HEADERS">
+        <MappingFragment StoreEntitySet="TPROC_GM_HEADERS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GM_INTEGER" ColumnName="GM_INTEGER" />
+          <ScalarProperty Name="CREATE_DATETIME" ColumnName="CREATE_DATETIME" />
+          <ScalarProperty Name="PO_ID" ColumnName="PO_ID" />
+          <ScalarProperty Name="PREPARED_BY" ColumnName="PREPARED_BY" />
+          <ScalarProperty Name="APPOROVED_BY" ColumnName="APPOROVED_BY" />
+          <ScalarProperty Name="NOTES" ColumnName="NOTES" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="COMPLETED_BY" ColumnName="COMPLETED_BY" />
+          <ScalarProperty Name="COMPLETED_DATETIME" ColumnName="COMPLETED_DATETIME" />
+          <ScalarProperty Name="REJECTED_BY" ColumnName="REJECTED_BY" />
+          <ScalarProperty Name="REJECTED_TIME" ColumnName="REJECTED_TIME" />
+          <ScalarProperty Name="REJECTNOTE" ColumnName="REJECTNOTE" />
+          <ScalarProperty Name="HANDLED_BY" ColumnName="HANDLED_BY" />
+          <ScalarProperty Name="HANDLED_DATETIME" ColumnName="HANDLED_DATETIME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_GOOD_TYPE">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_GOOD_TYPE">
+        <MappingFragment StoreEntitySet="TPROC_GOOD_TYPE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GOOD_TYPE_NAME" ColumnName="GOOD_TYPE_NAME" />
+          <ScalarProperty Name="GOOD_TYPE_DESCRIPTION" ColumnName="GOOD_TYPE_DESCRIPTION" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_HOLIDAY">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_HOLIDAY">
+        <MappingFragment StoreEntitySet="TPROC_HOLIDAY">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="HOLIDAY_DATE" ColumnName="HOLIDAY_DATE" />
+          <ScalarProperty Name="HOLIDAY_DESCRIPTION" ColumnName="HOLIDAY_DESCRIPTION" />
+          <ScalarProperty Name="CURR_YEAR" ColumnName="CURR_YEAR" />
+          <ScalarProperty Name="CURR_MONTH" ColumnName="CURR_MONTH" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_LEVEL">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_LEVEL">
+        <MappingFragment StoreEntitySet="TPROC_LEVEL">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="INDONESIAN_LEVEL" ColumnName="INDONESIAN_LEVEL" />
+          <ScalarProperty Name="RUPIAH_LIMIT" ColumnName="RUPIAH_LIMIT" />
+          <ScalarProperty Name="CANADIAN_DOLLARS" ColumnName="CANADIAN_DOLLARS" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_LOG_TRANSACTIONS">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_LOG_TRANSACTIONS">
+        <MappingFragment StoreEntitySet="TPROC_LOG_TRANSACTIONS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FORM" ColumnName="FORM" />
+          <ScalarProperty Name="TRANSACTION_DESCRIPTION" ColumnName="TRANSACTION_DESCRIPTION" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_MENU">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_MENU">
+        <MappingFragment StoreEntitySet="TPROC_MENU">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MENU_NAME" ColumnName="MENU_NAME" />
+          <ScalarProperty Name="MENU_PARENT_ID" ColumnName="MENU_PARENT_ID" />
+          <ScalarProperty Name="MENU_DESCRIPTION" ColumnName="MENU_DESCRIPTION" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_PARAMETERS">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_PARAMETERS">
+        <MappingFragment StoreEntitySet="TPROC_PARAMETERS">
+          <ScalarProperty Name="PARAMETER_CODE" ColumnName="PARAMETER_CODE" />
+          <ScalarProperty Name="PARAMETER_NAME" ColumnName="PARAMETER_NAME" />
+          <ScalarProperty Name="PARAMETER_DESCRIPTION" ColumnName="PARAMETER_DESCRIPTION" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="PARAMETER_VALUE" ColumnName="PARAMETER_VALUE" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_PC">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_PC">
+        <MappingFragment StoreEntitySet="TPROC_PC">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PC_NUM" ColumnName="PC_NUM" />
+          <ScalarProperty Name="PO_TYPE_NM" ColumnName="PO_TYPE_NM" />
+          <ScalarProperty Name="RECOM_SUPPLIER_NM" ColumnName="RECOM_SUPPLIER_NM" />
+          <ScalarProperty Name="RECOM_SUPPLIER_ID" ColumnName="RECOM_SUPPLIER_ID" />
+          <ScalarProperty Name="RECOM_SUPPLIER_CP" ColumnName="RECOM_SUPPLIER_CP" />
+          <ScalarProperty Name="RECOM_SUPPLIER_PHONE" ColumnName="RECOM_SUPPLIER_PHONE" />
+          <ScalarProperty Name="RECOM_SUPPLIER_FAX" ColumnName="RECOM_SUPPLIER_FAX" />
+          <ScalarProperty Name="RECOM_SUPPLIER_ADDRESS" ColumnName="RECOM_SUPPLIER_ADDRESS" />
+          <ScalarProperty Name="DELIVERY_NM" ColumnName="DELIVERY_NM" />
+          <ScalarProperty Name="DELIVERY_ID" ColumnName="DELIVERY_ID" />
+          <ScalarProperty Name="DELIVERY_DATE" ColumnName="DELIVERY_DATE" />
+          <ScalarProperty Name="DELIVERY_PHONE" ColumnName="DELIVERY_PHONE" />
+          <ScalarProperty Name="DELIVERY_FAX" ColumnName="DELIVERY_FAX" />
+          <ScalarProperty Name="DELIVERY_ADDRESS" ColumnName="DELIVERY_ADDRESS" />
+          <ScalarProperty Name="GRAND_TOTAL" ColumnName="GRAND_TOTAL" />
+          <ScalarProperty Name="NOTE_BY_USER" ColumnName="NOTE_BY_USER" />
+          <ScalarProperty Name="NOTE_BY_EPROC" ColumnName="NOTE_BY_EPROC" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="IS_DISC_PERC" ColumnName="IS_DISC_PERC" />
+          <ScalarProperty Name="IS_VAT_PERC" ColumnName="IS_VAT_PERC" />
+          <ScalarProperty Name="IS_PPH_PERC" ColumnName="IS_PPH_PERC" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="NOTES" ColumnName="NOTES" />
+          <ScalarProperty Name="CURRENCY" ColumnName="CURRENCY" />
+          <ScalarProperty Name="IS_ACKNOWLEDGE_USER" ColumnName="IS_ACKNOWLEDGE_USER" />
+          <ScalarProperty Name="FOR_STORAGE" ColumnName="FOR_STORAGE" />
+          <ScalarProperty Name="FILE_NAME" ColumnName="FILE_NAME" />
+          <ScalarProperty Name="ADD_COST" ColumnName="ADD_COST" />
+          <ScalarProperty Name="FINAL_TOTAL" ColumnName="FINAL_TOTAL" />
+          <ScalarProperty Name="ADD_COST_DESC" ColumnName="ADD_COST_DESC" />
+          <ScalarProperty Name="REJECT_REASON" ColumnName="REJECT_REASON" />
+          <ScalarProperty Name="REJECT_BY" ColumnName="REJECT_BY" />
+          <ScalarProperty Name="REJECT_DATE" ColumnName="REJECT_DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_PC_DT">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_PC_DT">
+        <MappingFragment StoreEntitySet="TPROC_PC_DT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ITEM_NAME" ColumnName="ITEM_NAME" />
+          <ScalarProperty Name="UNIT_MEASUREMENT" ColumnName="UNIT_MEASUREMENT" />
+          <ScalarProperty Name="QUANTITY" ColumnName="QUANTITY" />
+          <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="TOTAL" ColumnName="TOTAL" />
+          <ScalarProperty Name="ROW_NUM" ColumnName="ROW_NUM" />
+          <ScalarProperty Name="PC_ID" ColumnName="PC_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_PC_HISTORICAL">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_PC_HISTORICAL">
+        <MappingFragment StoreEntitySet="TPROC_PC_HISTORICAL">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PC_ID" ColumnName="PC_ID" />
+          <ScalarProperty Name="HISTORICAL_DT" ColumnName="HISTORICAL_DT" />
+          <ScalarProperty Name="HISTORICAL_STATUS" ColumnName="HISTORICAL_STATUS" />
+          <ScalarProperty Name="HISTORICAL_BY" ColumnName="HISTORICAL_BY" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="QUEUE" ColumnName="QUEUE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_PC_SP_DT">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_PC_SP_DT">
+        <MappingFragment StoreEntitySet="TPROC_PC_SP_DT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PC_SP_GR_ID" ColumnName="PC_SP_GR_ID" />
+          <ScalarProperty Name="PRICE_PER_PIECE" ColumnName="PRICE_PER_PIECE" />
+          <ScalarProperty Name="PRICE_TOTAL" ColumnName="PRICE_TOTAL" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="PC_DT_ID" ColumnName="PC_DT_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_PC_SP_GR">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_PC_SP_GR">
+        <MappingFragment StoreEntitySet="TPROC_PC_SP_GR">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PC_ID" ColumnName="PC_ID" />
+          <ScalarProperty Name="SUPP_ID" ColumnName="SUPP_ID" />
+          <ScalarProperty Name="SUPP_NM" ColumnName="SUPP_NM" />
+          <ScalarProperty Name="URL_ATTACHMENT" ColumnName="URL_ATTACHMENT" />
+          <ScalarProperty Name="IS_USED" ColumnName="IS_USED" />
+          <ScalarProperty Name="COL_NUM" ColumnName="COL_NUM" />
+          <ScalarProperty Name="GRAND_TOTAL" ColumnName="GRAND_TOTAL" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="DISCOUNT" ColumnName="DISCOUNT" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="PPH" ColumnName="PPH" />
+          <ScalarProperty Name="DISCOUNT_TEMP" ColumnName="DISCOUNT_TEMP" />
+          <ScalarProperty Name="VAT_TEMP" ColumnName="VAT_TEMP" />
+          <ScalarProperty Name="PPH_TEMP" ColumnName="PPH_TEMP" />
+          <ScalarProperty Name="SUB_TOTAL" ColumnName="SUB_TOTAL" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_PO_DETAILS">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_PO_DETAILS">
+        <MappingFragment StoreEntitySet="TPROC_PO_DETAILS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PO_DTLS_ITEM_ID" ColumnName="PO_DTLS_ITEM_ID" />
+          <ScalarProperty Name="ITEM_NAME" ColumnName="ITEM_NAME" />
+          <ScalarProperty Name="USERMEASUREMENT" ColumnName="USERMEASUREMENT" />
+          <ScalarProperty Name="QUANTITY" ColumnName="QUANTITY" />
+          <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+          <ScalarProperty Name="TOTAL" ColumnName="TOTAL" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="FUND_T1" ColumnName="FUND_T1" />
+          <ScalarProperty Name="LOB1_T2" ColumnName="LOB1_T2" />
+          <ScalarProperty Name="PLAN_T3" ColumnName="PLAN_T3" />
+          <ScalarProperty Name="WA_T4" ColumnName="WA_T4" />
+          <ScalarProperty Name="LOB2_T5" ColumnName="LOB2_T5" />
+          <ScalarProperty Name="PR_HEADER_NO" ColumnName="PR_HEADER_NO" />
+          <ScalarProperty Name="ITEM_ID" ColumnName="ITEM_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_PO_DETAILS_ITEM">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_PO_DETAILS_ITEM">
+        <MappingFragment StoreEntitySet="TPROC_PO_DETAILS_ITEM">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PO_HEADER_ID" ColumnName="PO_HEADER_ID" />
+          <ScalarProperty Name="ITEM_NAME" ColumnName="ITEM_NAME" />
+          <ScalarProperty Name="PR_NO" ColumnName="PR_NO" />
+          <ScalarProperty Name="UNITMEASUREMENT" ColumnName="UNITMEASUREMENT" />
+          <ScalarProperty Name="QUANTITY" ColumnName="QUANTITY" />
+          <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="ITEM_ID" ColumnName="ITEM_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_PO_HEADERS">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_PO_HEADERS">
+        <MappingFragment StoreEntitySet="TPROC_PO_HEADERS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PO_NUMBER" ColumnName="PO_NUMBER" />
+          <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+          <ScalarProperty Name="PO_TYPE_ID" ColumnName="PO_TYPE_ID" />
+          <ScalarProperty Name="CURRENCY" ColumnName="CURRENCY" />
+          <ScalarProperty Name="PO_STATUS" ColumnName="PO_STATUS" />
+          <ScalarProperty Name="PREPARED_BY" ColumnName="PREPARED_BY" />
+          <ScalarProperty Name="APPOROVED_BY" ColumnName="APPOROVED_BY" />
+          <ScalarProperty Name="APPOROVED_DATE" ColumnName="APPOROVED_DATE" />
+          <ScalarProperty Name="NOTES" ColumnName="NOTES" />
+          <ScalarProperty Name="SUPPLIER_NAME" ColumnName="SUPPLIER_NAME" />
+          <ScalarProperty Name="SUPPLIER_ID" ColumnName="SUPPLIER_ID" />
+          <ScalarProperty Name="CONTACT_PERSON" ColumnName="CONTACT_PERSON" />
+          <ScalarProperty Name="SUPPLIER_PHONE" ColumnName="SUPPLIER_PHONE" />
+          <ScalarProperty Name="SUPPLIER_FAX" ColumnName="SUPPLIER_FAX" />
+          <ScalarProperty Name="SUPPLIER_ADDTRSS" ColumnName="SUPPLIER_ADDTRSS" />
+          <ScalarProperty Name="DELIVERY_NAME" ColumnName="DELIVERY_NAME" />
+          <ScalarProperty Name="DELIVERY_ID" ColumnName="DELIVERY_ID" />
+          <ScalarProperty Name="DELIVERY_DATE" ColumnName="DELIVERY_DATE" />
+          <ScalarProperty Name="DELIVERY_PHONE" ColumnName="DELIVERY_PHONE" />
+          <ScalarProperty Name="DELIVERY_FAX" ColumnName="DELIVERY_FAX" />
+          <ScalarProperty Name="DELIVERY_ADDRESS" ColumnName="DELIVERY_ADDRESS" />
+          <ScalarProperty Name="SUB_TOTAL" ColumnName="SUB_TOTAL" />
+          <ScalarProperty Name="DSCNT_AMT" ColumnName="DSCNT_AMT" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="WTH_TAX" ColumnName="WTH_TAX" />
+          <ScalarProperty Name="GRAND_TOTAL" ColumnName="GRAND_TOTAL" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="REVIEWED_BY" ColumnName="REVIEWED_BY" />
+          <ScalarProperty Name="REVIEWED_DATE" ColumnName="REVIEWED_DATE" />
+          <ScalarProperty Name="COMPLETED_BY" ColumnName="COMPLETED_BY" />
+          <ScalarProperty Name="COMPLETED_DATE" ColumnName="COMPLETED_DATE" />
+          <ScalarProperty Name="PC_ID" ColumnName="PC_ID" />
+          <ScalarProperty Name="FOR_STORAGE" ColumnName="FOR_STORAGE" />
+          <ScalarProperty Name="IS_DISC_PERC" ColumnName="IS_DISC_PERC" />
+          <ScalarProperty Name="IS_VAT_PERC" ColumnName="IS_VAT_PERC" />
+          <ScalarProperty Name="IS_PPH_PERC" ColumnName="IS_PPH_PERC" />
+          <ScalarProperty Name="DISCOUNT_TEMP" ColumnName="DISCOUNT_TEMP" />
+          <ScalarProperty Name="VAT_TEMP" ColumnName="VAT_TEMP" />
+          <ScalarProperty Name="PPH_TEMP" ColumnName="PPH_TEMP" />
+          <ScalarProperty Name="FILE_NAME" ColumnName="FILE_NAME" />
+          <ScalarProperty Name="VERIFIED_BY" ColumnName="VERIFIED_BY" />
+          <ScalarProperty Name="VERIFIED_DATE" ColumnName="VERIFIED_DATE" />
+          <ScalarProperty Name="ADD_COST" ColumnName="ADD_COST" />
+          <ScalarProperty Name="FINAL_TOTAL" ColumnName="FINAL_TOTAL" />
+          <ScalarProperty Name="ADD_COST_DESC" ColumnName="ADD_COST_DESC" />
+          <ScalarProperty Name="REJECT_REASON" ColumnName="REJECT_REASON" />
+          <ScalarProperty Name="REJECT_BY" ColumnName="REJECT_BY" />
+          <ScalarProperty Name="REJECT_DATE" ColumnName="REJECT_DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_PO_TYPE">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_PO_TYPE">
+        <MappingFragment StoreEntitySet="TPROC_PO_TYPE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PO_TYPE_NAME" ColumnName="PO_TYPE_NAME" />
+          <ScalarProperty Name="PO_TYPE_DESCRIPTION" ColumnName="PO_TYPE_DESCRIPTION" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="FORM_TYPE_ID" ColumnName="FORM_TYPE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_PPH">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_PPH">
+        <MappingFragment StoreEntitySet="TPROC_PPH">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PPH_NAME" ColumnName="PPH_NAME" />
+          <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_PR_APPR_RELDEPT_DT">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_PR_APPR_RELDEPT_DT">
+        <MappingFragment StoreEntitySet="TPROC_PR_APPR_RELDEPT_DT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PR_APPR_RELDEPT_GR_ID" ColumnName="PR_APPR_RELDEPT_GR_ID" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="APPR_RELDEPT_STATUS" ColumnName="APPR_RELDEPT_STATUS" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_PR_APPR_RELDEPT_GR">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_PR_APPR_RELDEPT_GR">
+        <MappingFragment StoreEntitySet="TPROC_PR_APPR_RELDEPT_GR">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PR_HEADER_ID" ColumnName="PR_HEADER_ID" />
+          <ScalarProperty Name="RELDEPT_NAME" ColumnName="RELDEPT_NAME" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="RELDEPT_GR_STATUS" ColumnName="RELDEPT_GR_STATUS" />
+          <ScalarProperty Name="REJECT_REASON" ColumnName="REJECT_REASON" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_PR_APPR_WA">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_PR_APPR_WA">
+        <MappingFragment StoreEntitySet="TPROC_PR_APPR_WA">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PR_DETAIL_ID" ColumnName="PR_DETAIL_ID" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="APPR_WA_STATUS" ColumnName="APPR_WA_STATUS" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_PR_ATTACHMENT">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_PR_ATTACHMENT">
+        <MappingFragment StoreEntitySet="TPROC_PR_ATTACHMENT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PR_HEADER_ID" ColumnName="PR_HEADER_ID" />
+          <ScalarProperty Name="FILE_NAME" ColumnName="FILE_NAME" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_PR_DETAIL">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_PR_DETAIL">
+        <MappingFragment StoreEntitySet="TPROC_PR_DETAIL">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PR_HEADER_ID" ColumnName="PR_HEADER_ID" />
+          <ScalarProperty Name="ITEM_NAME" ColumnName="ITEM_NAME" />
+          <ScalarProperty Name="SPECIFICATION" ColumnName="SPECIFICATION" />
+          <ScalarProperty Name="CURRENCY" ColumnName="CURRENCY" />
+          <ScalarProperty Name="QTY" ColumnName="QTY" />
+          <ScalarProperty Name="USER_MEASUREMENT" ColumnName="USER_MEASUREMENT" />
+          <ScalarProperty Name="WA_ID" ColumnName="WA_ID" />
+          <ScalarProperty Name="REVISED_QTY" ColumnName="REVISED_QTY" />
+          <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+          <ScalarProperty Name="TOTAL_PRICE" ColumnName="TOTAL_PRICE" />
+          <ScalarProperty Name="REMARK" ColumnName="REMARK" />
+          <ScalarProperty Name="SUPPLIER_NAME" ColumnName="SUPPLIER_NAME" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="PR_DETAIL_STATUS" ColumnName="PR_DETAIL_STATUS" />
+          <ScalarProperty Name="REJECT_REASON" ColumnName="REJECT_REASON" />
+          <ScalarProperty Name="ITEM_CD" ColumnName="ITEM_CD" />
+          <ScalarProperty Name="CONVERSION_RP" ColumnName="CONVERSION_RP" />
+          <ScalarProperty Name="PO_NUMBER" ColumnName="PO_NUMBER" />
+          <ScalarProperty Name="SUPPLIER_ID" ColumnName="SUPPLIER_ID" />
+          <ScalarProperty Name="EVALUATED_SUPPLIER" ColumnName="EVALUATED_SUPPLIER" />
+          <ScalarProperty Name="ITEM_ID" ColumnName="ITEM_ID" />
+          <ScalarProperty Name="WA_NUMBER" ColumnName="WA_NUMBER" />
+          <ScalarProperty Name="WA_NUMBER_ACC" ColumnName="WA_NUMBER_ACC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_PR_HEADER">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_PR_HEADER">
+        <MappingFragment StoreEntitySet="TPROC_PR_HEADER">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PR_NO" ColumnName="PR_NO" />
+          <ScalarProperty Name="USER_ID_ID" ColumnName="USER_ID_ID" />
+          <ScalarProperty Name="PR_DATE" ColumnName="PR_DATE" />
+          <ScalarProperty Name="FORM_TYPE_ID" ColumnName="FORM_TYPE_ID" />
+          <ScalarProperty Name="SUB_TYPE_ID" ColumnName="SUB_TYPE_ID" />
+          <ScalarProperty Name="GOOD_TYPE_ID" ColumnName="GOOD_TYPE_ID" />
+          <ScalarProperty Name="DELIVERY_DAYS" ColumnName="DELIVERY_DAYS" />
+          <ScalarProperty Name="EXP_DEV_DT" ColumnName="EXP_DEV_DT" />
+          <ScalarProperty Name="PR_INDICATOR" ColumnName="PR_INDICATOR" />
+          <ScalarProperty Name="ACCOUNT_CODE" ColumnName="ACCOUNT_CODE" />
+          <ScalarProperty Name="PR_STATUS" ColumnName="PR_STATUS" />
+          <ScalarProperty Name="SUB_TOTAL" ColumnName="SUB_TOTAL" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="COMP_CD" ColumnName="COMP_CD" />
+          <ScalarProperty Name="FOR_STORAGE" ColumnName="FOR_STORAGE" />
+          <ScalarProperty Name="REJECT_REASON" ColumnName="REJECT_REASON" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_REL_DEPT">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_REL_DEPT">
+        <MappingFragment StoreEntitySet="TPROC_REL_DEPT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RELATED_DEPARTMENT_NAME" ColumnName="RELATED_DEPARTMENT_NAME" />
+          <ScalarProperty Name="APPROVAL_RELDEPT_GR_ID" ColumnName="APPROVAL_RELDEPT_GR_ID" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_REQUEST">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_REQUEST">
+        <MappingFragment StoreEntitySet="TPROC_REQUEST">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="REQUEST_NO" ColumnName="REQUEST_NO" />
+          <ScalarProperty Name="RELATION_FLAG" ColumnName="RELATION_FLAG" />
+          <ScalarProperty Name="REQUEST_BY" ColumnName="REQUEST_BY" />
+          <ScalarProperty Name="REQUEST_DT" ColumnName="REQUEST_DT" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="CONTROL" ColumnName="CONTROL" />
+          <ScalarProperty Name="ACTION" ColumnName="ACTION" />
+          <ScalarProperty Name="REQUESTOR_EMAIL" ColumnName="REQUESTOR_EMAIL" />
+          <ScalarProperty Name="APPROVAL_BY" ColumnName="APPROVAL_BY" />
+          <ScalarProperty Name="APPROVAL_EMAIL" ColumnName="APPROVAL_EMAIL" />
+          <ScalarProperty Name="APPROVED_TIME" ColumnName="APPROVED_TIME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_ROLE">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_ROLE">
+        <MappingFragment StoreEntitySet="TPROC_ROLE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ROLE_NAME" ColumnName="ROLE_NAME" />
+          <ScalarProperty Name="ROLE_DESCRIPTION" ColumnName="ROLE_DESCRIPTION" />
+          <ScalarProperty Name="IS_ACTIVE" ColumnName="IS_ACTIVE" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="DEFAULT_SELECTED" ColumnName="DEFAULT_SELECTED" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_ROLE_MENU">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_ROLE_MENU">
+        <MappingFragment StoreEntitySet="TPROC_ROLE_MENU">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ROLE_ID" ColumnName="ROLE_ID" />
+          <ScalarProperty Name="MENU_ID" ColumnName="MENU_ID" />
+          <ScalarProperty Name="IS_ACCESS" ColumnName="IS_ACCESS" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_STOCK">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_STOCK">
+        <MappingFragment StoreEntitySet="TPROC_STOCK">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ITEM_CODE" ColumnName="ITEM_CODE" />
+          <ScalarProperty Name="ITEM_DESCRIPTION" ColumnName="ITEM_DESCRIPTION" />
+          <ScalarProperty Name="LOOKUP_CODE" ColumnName="LOOKUP_CODE" />
+          <ScalarProperty Name="UNIT_OF_STOCK" ColumnName="UNIT_OF_STOCK" />
+          <ScalarProperty Name="LATEST_COST" ColumnName="LATEST_COST" />
+          <ScalarProperty Name="AVERAGE_COST" ColumnName="AVERAGE_COST" />
+          <ScalarProperty Name="PURCHASE_ACCOUNT" ColumnName="PURCHASE_ACCOUNT" />
+          <ScalarProperty Name="STOCK_EXPENSES" ColumnName="STOCK_EXPENSES" />
+          <ScalarProperty Name="GOOD_TYPE_ID" ColumnName="GOOD_TYPE_ID" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="SUPPLIER_ID" ColumnName="SUPPLIER_ID" />
+          <ScalarProperty Name="QUANTITY" ColumnName="QUANTITY" />
+          <ScalarProperty Name="FORM_TYPE_ID" ColumnName="FORM_TYPE_ID" />
+          <ScalarProperty Name="QUANTITY_MIN" ColumnName="QUANTITY_MIN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_SUPP_DOC">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_SUPP_DOC">
+        <MappingFragment StoreEntitySet="TPROC_SUPP_DOC">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SUPPLIER_ID" ColumnName="SUPPLIER_ID" />
+          <ScalarProperty Name="WEIGHT_FACTOR" ColumnName="WEIGHT_FACTOR" />
+          <ScalarProperty Name="BRIDGER_SCAN" ColumnName="BRIDGER_SCAN" />
+          <ScalarProperty Name="NDA" ColumnName="NDA" />
+          <ScalarProperty Name="CIDCI" ColumnName="CIDCI" />
+          <ScalarProperty Name="LEGAL_DOC" ColumnName="LEGAL_DOC" />
+          <ScalarProperty Name="AGGREEMENT" ColumnName="AGGREEMENT" />
+          <ScalarProperty Name="VALIDITY_CHECKING" ColumnName="VALIDITY_CHECKING" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_SUPP_EVAL">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_SUPP_EVAL">
+        <MappingFragment StoreEntitySet="TPROC_SUPP_EVAL">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SUPPLIER_ID" ColumnName="SUPPLIER_ID" />
+          <ScalarProperty Name="F_STM" ColumnName="F_STM" />
+          <ScalarProperty Name="F_KM" ColumnName="F_KM" />
+          <ScalarProperty Name="F_M" ColumnName="F_M" />
+          <ScalarProperty Name="F_SM" ColumnName="F_SM" />
+          <ScalarProperty Name="F_KET" ColumnName="F_KET" />
+          <ScalarProperty Name="A_TA" ColumnName="A_TA" />
+          <ScalarProperty Name="A_TRK" ColumnName="A_TRK" />
+          <ScalarProperty Name="A_RK" ColumnName="A_RK" />
+          <ScalarProperty Name="A_KET" ColumnName="A_KET" />
+          <ScalarProperty Name="H_TK" ColumnName="H_TK" />
+          <ScalarProperty Name="H_K" ColumnName="H_K" />
+          <ScalarProperty Name="H_SK" ColumnName="H_SK" />
+          <ScalarProperty Name="H_KET" ColumnName="H_KET" />
+          <ScalarProperty Name="PO_LP" ColumnName="PO_LP" />
+          <ScalarProperty Name="PO_LTA" ColumnName="PO_LTA" />
+          <ScalarProperty Name="PO_CA" ColumnName="PO_CA" />
+          <ScalarProperty Name="PO_KET" ColumnName="PO_KET" />
+          <ScalarProperty Name="P_STTW" ColumnName="P_STTW" />
+          <ScalarProperty Name="P_KTTW" ColumnName="P_KTTW" />
+          <ScalarProperty Name="P_TW" ColumnName="P_TW" />
+          <ScalarProperty Name="P_KET" ColumnName="P_KET" />
+          <ScalarProperty Name="HP_STSP" ColumnName="HP_STSP" />
+          <ScalarProperty Name="HP_KTSP" ColumnName="HP_KTSP" />
+          <ScalarProperty Name="HP_SP" ColumnName="HP_SP" />
+          <ScalarProperty Name="HP_KET" ColumnName="HP_KET" />
+          <ScalarProperty Name="IS_RECOMMENDED" ColumnName="IS_RECOMMENDED" />
+          <ScalarProperty Name="TOTAL_SCORE" ColumnName="TOTAL_SCORE" />
+          <ScalarProperty Name="DISIAPKAN_OLEH" ColumnName="DISIAPKAN_OLEH" />
+          <ScalarProperty Name="DISETUJUI_OLEH" ColumnName="DISETUJUI_OLEH" />
+          <ScalarProperty Name="KOMENTAR_SARAN" ColumnName="KOMENTAR_SARAN" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="PR_HEADER_ID" ColumnName="PR_HEADER_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_SUPP_QUAL">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_SUPP_QUAL">
+        <MappingFragment StoreEntitySet="TPROC_SUPP_QUAL">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SUPPLIER_ID" ColumnName="SUPPLIER_ID" />
+          <ScalarProperty Name="H_STK" ColumnName="H_STK" />
+          <ScalarProperty Name="H_TK" ColumnName="H_TK" />
+          <ScalarProperty Name="H_K" ColumnName="H_K" />
+          <ScalarProperty Name="H_SK" ColumnName="H_SK" />
+          <ScalarProperty Name="H_KET" ColumnName="H_KET" />
+          <ScalarProperty Name="A_TA" ColumnName="A_TA" />
+          <ScalarProperty Name="A_TRK" ColumnName="A_TRK" />
+          <ScalarProperty Name="A_RK" ColumnName="A_RK" />
+          <ScalarProperty Name="A_KET" ColumnName="A_KET" />
+          <ScalarProperty Name="F_STM" ColumnName="F_STM" />
+          <ScalarProperty Name="F_KM" ColumnName="F_KM" />
+          <ScalarProperty Name="F_M" ColumnName="F_M" />
+          <ScalarProperty Name="F_SM" ColumnName="F_SM" />
+          <ScalarProperty Name="F_KET" ColumnName="F_KET" />
+          <ScalarProperty Name="P_LP" ColumnName="P_LP" />
+          <ScalarProperty Name="P_LTA" ColumnName="P_LTA" />
+          <ScalarProperty Name="P_CA" ColumnName="P_CA" />
+          <ScalarProperty Name="P_KET" ColumnName="P_KET" />
+          <ScalarProperty Name="Q_TA" ColumnName="Q_TA" />
+          <ScalarProperty Name="Q_CS" ColumnName="Q_CS" />
+          <ScalarProperty Name="Q_HHA" ColumnName="Q_HHA" />
+          <ScalarProperty Name="Q_SLP" ColumnName="Q_SLP" />
+          <ScalarProperty Name="Q_KET" ColumnName="Q_KET" />
+          <ScalarProperty Name="TOTAL_SCORE" ColumnName="TOTAL_SCORE" />
+          <ScalarProperty Name="DIBUAT_OLEH" ColumnName="DIBUAT_OLEH" />
+          <ScalarProperty Name="DIPERIKSA_OLEH" ColumnName="DIPERIKSA_OLEH" />
+          <ScalarProperty Name="DISETUJUI_OLEH" ColumnName="DISETUJUI_OLEH" />
+          <ScalarProperty Name="KOMENTAR_SARAN" ColumnName="KOMENTAR_SARAN" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_SUPPLIER">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_SUPPLIER">
+        <MappingFragment StoreEntitySet="TPROC_SUPPLIER">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SUPPLIER_NAME" ColumnName="SUPPLIER_NAME" />
+          <ScalarProperty Name="SUPPLIER_ALIAS_NAME" ColumnName="SUPPLIER_ALIAS_NAME" />
+          <ScalarProperty Name="SUPPLIER_ADDRESS" ColumnName="SUPPLIER_ADDRESS" />
+          <ScalarProperty Name="VENDOR_CODE" ColumnName="VENDOR_CODE" />
+          <ScalarProperty Name="BANK_NAME" ColumnName="BANK_NAME" />
+          <ScalarProperty Name="BANK_BRANCH" ColumnName="BANK_BRANCH" />
+          <ScalarProperty Name="BANK_ACCOUNT_NUMBER" ColumnName="BANK_ACCOUNT_NUMBER" />
+          <ScalarProperty Name="CONTACT_PERSON" ColumnName="CONTACT_PERSON" />
+          <ScalarProperty Name="EMAIL_ADDRESS" ColumnName="EMAIL_ADDRESS" />
+          <ScalarProperty Name="MOBILE_NUMBER" ColumnName="MOBILE_NUMBER" />
+          <ScalarProperty Name="OFFICE_NUMBER" ColumnName="OFFICE_NUMBER" />
+          <ScalarProperty Name="FAX_NUMBER" ColumnName="FAX_NUMBER" />
+          <ScalarProperty Name="TAX_NUMBER" ColumnName="TAX_NUMBER" />
+          <ScalarProperty Name="WEBSITE" ColumnName="WEBSITE" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="NPWP" ColumnName="NPWP" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="CORE_BUSINESS" ColumnName="CORE_BUSINESS" />
+          <ScalarProperty Name="NAMA_BARANG" ColumnName="NAMA_BARANG" />
+          <ScalarProperty Name="B_UNIT_OWNER" ColumnName="B_UNIT_OWNER" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="EFFECTIVE_DATE" ColumnName="EFFECTIVE_DATE" />
+          <ScalarProperty Name="SCHEDULE_EVALUATION" ColumnName="SCHEDULE_EVALUATION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_USER">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_USER">
+        <MappingFragment StoreEntitySet="TPROC_USER">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="USER_MAIL" ColumnName="USER_MAIL" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="USER_DT_ID" ColumnName="USER_DT_ID" />
+          <ScalarProperty Name="LAST_LOGIN" ColumnName="LAST_LOGIN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_USER_DT">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_USER_DT">
+        <MappingFragment StoreEntitySet="TPROC_USER_DT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="WA_ALLOWED_GR_ID" ColumnName="WA_ALLOWED_GR_ID" />
+          <ScalarProperty Name="ROLE_ID" ColumnName="ROLE_ID" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="DIVISION_ID" ColumnName="DIVISION_ID" />
+          <ScalarProperty Name="COMP_CD" ColumnName="COMP_CD" />
+          <ScalarProperty Name="REV_USER_ID" ColumnName="REV_USER_ID" />
+          <ScalarProperty Name="IS_EPROC_ADMIN" ColumnName="IS_EPROC_ADMIN" />
+          <ScalarProperty Name="IS_SUPER_ADMIN" ColumnName="IS_SUPER_ADMIN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_USER_PROFILE">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_USER_PROFILE">
+        <MappingFragment StoreEntitySet="TPROC_USER_PROFILE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="USER_ID_ID" ColumnName="USER_ID_ID" />
+          <ScalarProperty Name="PHOTO" ColumnName="PHOTO" />
+          <ScalarProperty Name="GENDER" ColumnName="GENDER" />
+          <ScalarProperty Name="BORN" ColumnName="BORN" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="JOB" ColumnName="JOB" />
+          <ScalarProperty Name="COMPANY" ColumnName="COMPANY" />
+          <ScalarProperty Name="HOBBY" ColumnName="HOBBY" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="FACEBOOK" ColumnName="FACEBOOK" />
+          <ScalarProperty Name="TWITTER" ColumnName="TWITTER" />
+          <ScalarProperty Name="IG" ColumnName="IG" />
+          <ScalarProperty Name="PATH" ColumnName="PATH" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_VAT">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_VAT">
+        <MappingFragment StoreEntitySet="TPROC_VAT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="VAT_NAME" ColumnName="VAT_NAME" />
+          <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_VRF_PC">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_VRF_PC">
+        <MappingFragment StoreEntitySet="TPROC_VRF_PC">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PC_ID" ColumnName="PC_ID" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="AS_IS" ColumnName="AS_IS" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="REMARK" ColumnName="REMARK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_VRF_PO">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_VRF_PO">
+        <MappingFragment StoreEntitySet="TPROC_VRF_PO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PO_ID" ColumnName="PO_ID" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="AS_IS" ColumnName="AS_IS" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="REMARK" ColumnName="REMARK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_WA">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_WA">
+        <MappingFragment StoreEntitySet="TPROC_WA">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="WA_NUMBER" ColumnName="WA_NUMBER" />
+          <ScalarProperty Name="APPROVAL_GROUP_ID" ColumnName="APPROVAL_GROUP_ID" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_WA_ALLOWED_DT">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_WA_ALLOWED_DT">
+        <MappingFragment StoreEntitySet="TPROC_WA_ALLOWED_DT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="WA_ALLOWED_GROUP_ID" ColumnName="WA_ALLOWED_GROUP_ID" />
+          <ScalarProperty Name="WORK_AREA_ID" ColumnName="WORK_AREA_ID" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_WA_ALLOWED_GR">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_WA_ALLOWED_GR">
+        <MappingFragment StoreEntitySet="TPROC_WA_ALLOWED_GR">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_ACKNOW_APPR_DT">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_ACKNOW_APPR_DT">
+        <MappingFragment StoreEntitySet="TPROC_ACKNOW_APPR_DT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ACKNOW_APPR_ID" ColumnName="ACKNOW_APPR_ID" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="USER_EMAIL" ColumnName="USER_EMAIL" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_APPROVAL_ROLE_DETAIL">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_APPROVAL_ROLE_DETAIL">
+        <MappingFragment StoreEntitySet="TPROC_APPROVAL_ROLE_DETAIL">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ID_APPROVAL_ROLE" ColumnName="ID_APPROVAL_ROLE" />
+          <ScalarProperty Name="ROLE_NAME" ColumnName="ROLE_NAME" />
+          <ScalarProperty Name="AS_IS" ColumnName="AS_IS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_CRV">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_CRV">
+        <MappingFragment StoreEntitySet="TPROC_CRV">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PO_ID" ColumnName="PO_ID" />
+          <ScalarProperty Name="CRV_NUM" ColumnName="CRV_NUM" />
+          <ScalarProperty Name="BANK_ACCOUNT_INTEGER" ColumnName="BANK_ACCOUNT_INTEGER" />
+          <ScalarProperty Name="BANK_NAME" ColumnName="BANK_NAME" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="SUB_TOTAL" ColumnName="SUB_TOTAL" />
+          <ScalarProperty Name="DSCNT_AMT" ColumnName="DSCNT_AMT" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="WTH_TAX" ColumnName="WTH_TAX" />
+          <ScalarProperty Name="GRAND_TOTAL" ColumnName="GRAND_TOTAL" />
+          <ScalarProperty Name="RECEIVED_BY" ColumnName="RECEIVED_BY" />
+          <ScalarProperty Name="RECEIVED_DATETIME" ColumnName="RECEIVED_DATETIME" />
+          <ScalarProperty Name="COMPLETED_BY" ColumnName="COMPLETED_BY" />
+          <ScalarProperty Name="COMPLETED_DATETIME" ColumnName="COMPLETED_DATETIME" />
+          <ScalarProperty Name="SUPPLIER_ID" ColumnName="SUPPLIER_ID" />
+          <ScalarProperty Name="BANK_BRANCH" ColumnName="BANK_BRANCH" />
+          <ScalarProperty Name="REFTAXNO" ColumnName="REFTAXNO" />
+          <ScalarProperty Name="PAYMENTMETHOD" ColumnName="PAYMENTMETHOD" />
+          <ScalarProperty Name="KLIRINGNO" ColumnName="KLIRINGNO" />
+          <ScalarProperty Name="VERIFY_BY" ColumnName="VERIFY_BY" />
+          <ScalarProperty Name="VERIFY_TIME" ColumnName="VERIFY_TIME" />
+          <ScalarProperty Name="REJECTNOTE" ColumnName="REJECTNOTE" />
+          <ScalarProperty Name="REJECTED_BY" ColumnName="REJECTED_BY" />
+          <ScalarProperty Name="REJECTED_TIME" ColumnName="REJECTED_TIME" />
+          <ScalarProperty Name="APPROVE_BY" ColumnName="APPROVE_BY" />
+          <ScalarProperty Name="APPROVE_DATETIME" ColumnName="APPROVE_DATETIME" />
+          <ScalarProperty Name="FILEPATH" ColumnName="FILEPATH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_CRV_DETAILS">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_CRV_DETAILS">
+        <MappingFragment StoreEntitySet="TPROC_CRV_DETAILS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CRV_HEADER_ID" ColumnName="CRV_HEADER_ID" />
+          <ScalarProperty Name="ITEM_ID" ColumnName="ITEM_ID" />
+          <ScalarProperty Name="ITEM_NAME" ColumnName="ITEM_NAME" />
+          <ScalarProperty Name="UNITMEASUREMENT" ColumnName="UNITMEASUREMENT" />
+          <ScalarProperty Name="QUANTITY" ColumnName="QUANTITY" />
+          <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+          <ScalarProperty Name="SUBTOTAL" ColumnName="SUBTOTAL" />
+          <ScalarProperty Name="FUND_T1" ColumnName="FUND_T1" />
+          <ScalarProperty Name="LOB1_T2" ColumnName="LOB1_T2" />
+          <ScalarProperty Name="PLAN_T3" ColumnName="PLAN_T3" />
+          <ScalarProperty Name="WA_T4" ColumnName="WA_T4" />
+          <ScalarProperty Name="LOB2_T5" ColumnName="LOB2_T5" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="CURRENCY" ColumnName="CURRENCY" />
+          <ScalarProperty Name="ACCOUNT_CODE" ColumnName="ACCOUNT_CODE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_GM_DETAILS">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_GM_DETAILS">
+        <MappingFragment StoreEntitySet="TPROC_GM_DETAILS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ITEM_ID" ColumnName="ITEM_ID" />
+          <ScalarProperty Name="ITEM_NAME" ColumnName="ITEM_NAME" />
+          <ScalarProperty Name="UNITMEASUREMENT" ColumnName="UNITMEASUREMENT" />
+          <ScalarProperty Name="QUANTITY" ColumnName="QUANTITY" />
+          <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="GM_ID" ColumnName="GM_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_PR_HISTORICAL">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_PR_HISTORICAL">
+        <MappingFragment StoreEntitySet="TPROC_PR_HISTORICAL">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PR_HEADER_ID" ColumnName="PR_HEADER_ID" />
+          <ScalarProperty Name="HISTORICAL_DT" ColumnName="HISTORICAL_DT" />
+          <ScalarProperty Name="HISTORICAL_STATUS" ColumnName="HISTORICAL_STATUS" />
+          <ScalarProperty Name="HISTORICAL_BY" ColumnName="HISTORICAL_BY" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="LAST_MODIFIED_TIME" ColumnName="LAST_MODIFIED_TIME" />
+          <ScalarProperty Name="LAST_MODIFIED_BY" ColumnName="LAST_MODIFIED_BY" />
+          <ScalarProperty Name="ROW_STATUS" ColumnName="ROW_STATUS" />
+          <ScalarProperty Name="QUEUE" ColumnName="QUEUE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROC_STOCKMOVEMENT">
+      <EntityTypeMapping TypeName="eProcurementModel.TPROC_STOCKMOVEMENT">
+        <MappingFragment StoreEntitySet="TPROC_STOCKMOVEMENT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ITEM_ID" ColumnName="ITEM_ID" />
+          <ScalarProperty Name="REFNO" ColumnName="REFNO" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+          <ScalarProperty Name="STOCK_CURRENT" ColumnName="STOCK_CURRENT" />
+          <ScalarProperty Name="STOCK_IN" ColumnName="STOCK_IN" />
+          <ScalarProperty Name="STOCK_OUT" ColumnName="STOCK_OUT" />
+          <ScalarProperty Name="STOCK_LAST" ColumnName="STOCK_LAST" />
+          <ScalarProperty Name="LATEST_COST" ColumnName="LATEST_COST" />
+          <ScalarProperty Name="AVERAGE_COST" ColumnName="AVERAGE_COST" />
+          <ScalarProperty Name="ID_TEMP" ColumnName="ID_TEMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

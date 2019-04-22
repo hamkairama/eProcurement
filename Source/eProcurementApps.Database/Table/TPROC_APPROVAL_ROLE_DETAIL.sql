@@ -1,0 +1,34 @@
+USE [eProcurement]
+GO
+
+/****** Object:  Table [dbo].[TPROC_APPROVAL_ROLE_DETAIL]    Script Date: 01/03/2018 12:32:01 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[TPROC_APPROVAL_ROLE_DETAIL]') AND type in (N'U'))
+DROP TABLE [dbo].[TPROC_APPROVAL_ROLE_DETAIL]
+GO
+
+USE [eProcurement]
+GO
+
+/****** Object:  Table [dbo].[TPROC_APPROVAL_ROLE_DETAIL]    Script Date: 01/03/2018 12:32:01 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[TPROC_APPROVAL_ROLE_DETAIL](
+	[ID] [int] NOT NULL,
+	[ID_APPROVAL_ROLE] [int] NOT NULL,
+	[ROLE_NAME] [varchar](100) NOT NULL,
+	[AS_IS] [varchar](20) NULL
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+

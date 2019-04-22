@@ -1,0 +1,572 @@
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\roslyn\csc.exe
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\roslyn\System.Collections.Immutable.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\roslyn\System.Reflection.Metadata.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\roslyn\vbc.exe
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\roslyn\VBCSCompiler.exe
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\roslyn\VBCSCompiler.exe.config
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\eProcurementApps.dll.config
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\eProcurementApps.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\eProcurementApps.pdb
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\eProcurementApps.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\Antlr3.Runtime.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\EntityFramework.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\EntityFramework.SqlServer.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\eProcurementApps.Facade.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\eProcurementApps.Helpers.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\eProcurementApps.Models.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Google.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\Microsoft.Web.Infrastructure.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\Newtonsoft.Json.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\Oracle.ManagedDataAccess.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\Owin.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\System.Web.Helpers.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\System.Web.Mvc.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\System.Web.Optimization.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\System.Web.Razor.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.Deployment.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.Razor.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\WebGrease.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\eProcurementApps.Facade.pdb
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\eProcurementApps.Facade.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\eProcurementApps.Helpers.pdb
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\eProcurementApps.Helpers.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\eProcurementApps.Models.pdb
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\eProcurementApps.Models.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\System.Web.Helpers.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\System.Web.Mvc.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\System.Web.Optimization.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\System.Web.Razor.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.Deployment.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.Razor.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\Antlr3.Runtime.pdb
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\Newtonsoft.Json.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\EntityFramework.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\EntityFramework.SqlServer.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Google.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.vbprojResolveAssemblyReference.cache
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.Resources.resources
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.vbproj.GenerateResource.Cache
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.pdb
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\eProcurementApps.DataAccess.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\eProcurementApps.DataAccess.pdb
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\eProcurementApps.DataAccess.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps\bin\eProcurementApps.Helpers.XmlSerializers.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\csc.exe
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\System.Collections.Immutable.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\System.Reflection.Metadata.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\vbc.exe
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\VBCSCompiler.exe
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\VBCSCompiler.exe.config
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.dll.config
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.pdb
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\Antlr3.Runtime.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\EntityFramework.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\EntityFramework.SqlServer.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\EPPlus.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.DataAccess.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Facade.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Helpers.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Models.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Google.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Web.Infrastructure.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\Newtonsoft.Json.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\Oracle.ManagedDataAccess.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\Owin.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.Helpers.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.Mvc.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.Optimization.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.Razor.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.Deployment.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.Razor.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\WebGrease.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.DataAccess.pdb
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.DataAccess.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Facade.pdb
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Facade.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Helpers.pdb
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Helpers.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Models.pdb
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Models.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\EPPlus.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.Helpers.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.Mvc.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.Optimization.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.Razor.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.Deployment.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.Razor.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\Antlr3.Runtime.pdb
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\Newtonsoft.Json.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\EntityFramework.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\EntityFramework.SqlServer.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Google.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Helpers.XmlSerializers.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.vbprojResolveAssemblyReference.cache
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.Resources.resources
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.vbproj.GenerateResource.Cache
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.pdb
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\csc.exe
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\System.Collections.Immutable.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\System.Reflection.Metadata.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\vbc.exe
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\VBCSCompiler.exe
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\VBCSCompiler.exe.config
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.dll.config
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.pdb
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\Antlr3.Runtime.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\EntityFramework.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\EntityFramework.SqlServer.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\EPPlus.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.DataAccess.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Facade.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Helpers.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Models.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Google.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Web.Infrastructure.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\Newtonsoft.Json.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\Oracle.ManagedDataAccess.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\Owin.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.Helpers.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.Mvc.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.Optimization.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.Razor.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.Deployment.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.Razor.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\WebGrease.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.DataAccess.pdb
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.DataAccess.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Facade.pdb
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Facade.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Helpers.pdb
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Helpers.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Models.pdb
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Models.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\EPPlus.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.Helpers.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.Mvc.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.Optimization.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.Razor.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.Deployment.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.Razor.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\Antlr3.Runtime.pdb
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\Newtonsoft.Json.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\EntityFramework.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\EntityFramework.SqlServer.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Google.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Helpers.XmlSerializers.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.vbprojResolveAssemblyReference.cache
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.Resources.resources
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.vbproj.GenerateResource.Cache
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.pdb
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\csc.exe
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\System.Collections.Immutable.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\System.Reflection.Metadata.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\vbc.exe
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\VBCSCompiler.exe
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\roslyn\VBCSCompiler.exe.config
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.dll.config
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.pdb
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\Antlr3.Runtime.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\EntityFramework.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\EntityFramework.SqlServer.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\EPPlus.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.DataAccess.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Facade.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Helpers.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Models.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Google.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Web.Infrastructure.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\Newtonsoft.Json.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\Oracle.ManagedDataAccess.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\Owin.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.Helpers.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.Mvc.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.Optimization.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.Razor.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.Deployment.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.Razor.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\WebGrease.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.DataAccess.pdb
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.DataAccess.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Facade.pdb
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Facade.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Helpers.pdb
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Helpers.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Models.pdb
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Models.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\EPPlus.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.Helpers.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.Mvc.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.Optimization.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.Razor.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.Deployment.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.Razor.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\Antlr3.Runtime.pdb
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\Newtonsoft.Json.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\EntityFramework.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\EntityFramework.SqlServer.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Google.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Helpers.XmlSerializers.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.vbprojResolveAssemblyReference.cache
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.Resources.resources
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.vbproj.GenerateResource.Cache
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.pdb
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\roslyn\csc.exe
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\roslyn\System.Collections.Immutable.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\roslyn\System.Reflection.Metadata.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\roslyn\vbc.exe
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\roslyn\VBCSCompiler.exe
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\roslyn\VBCSCompiler.exe.config
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.dll.config
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.pdb
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Antlr3.Runtime.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\EntityFramework.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\EntityFramework.SqlServer.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\EPPlus.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.DataAccess.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Facade.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Helpers.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Models.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Google.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Microsoft.ReportViewer.WebForms.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Microsoft.Web.Infrastructure.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Newtonsoft.Json.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Oracle.ManagedDataAccess.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Owin.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\System.Web.Helpers.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\System.Web.Mvc.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\System.Web.Optimization.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\System.Web.Razor.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.Deployment.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.Razor.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\WebGrease.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Microsoft.SqlServer.Types.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.DataAccess.pdb
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.DataAccess.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Facade.pdb
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Facade.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Helpers.pdb
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Helpers.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Models.pdb
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Models.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\EPPlus.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\System.Web.Helpers.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\System.Web.Mvc.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\System.Web.Optimization.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\System.Web.Razor.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.Deployment.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.Razor.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Antlr3.Runtime.pdb
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Newtonsoft.Json.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\EntityFramework.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\EntityFramework.SqlServer.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Google.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\de\Microsoft.SqlServer.Types.resources.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\es\Microsoft.SqlServer.Types.resources.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\fr\Microsoft.SqlServer.Types.resources.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\it\Microsoft.SqlServer.Types.resources.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\ja\Microsoft.SqlServer.Types.resources.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\ko\Microsoft.SqlServer.Types.resources.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\pt\Microsoft.SqlServer.Types.resources.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\ru\Microsoft.SqlServer.Types.resources.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\eProcurementApps.Helpers.XmlSerializers.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.vbprojResolveAssemblyReference.cache
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.Resources.resources
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.vbproj.GenerateResource.Cache
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\obj\Release\RdlCompile.cache
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\obj\Release\RdlCompile.compiled
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.pdb
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Microsoft.ReportViewer.Common.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Microsoft.ReportViewer.DataVisualization.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\roslyn\csc.exe
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\roslyn\System.Collections.Immutable.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\roslyn\System.Reflection.Metadata.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\roslyn\vbc.exe
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\roslyn\VBCSCompiler.exe
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\roslyn\VBCSCompiler.exe.config
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\eProcurementApps.dll.config
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\eProcurementApps.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\eProcurementApps.pdb
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\eProcurementApps.xml
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Antlr3.Runtime.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\EntityFramework.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\EntityFramework.SqlServer.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\EPPlus.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\eProcurementApps.DataAccess.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\eProcurementApps.Facade.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\eProcurementApps.Helpers.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\eProcurementApps.Models.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Google.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Microsoft.ReportViewer.Common.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Microsoft.ReportViewer.DataVisualization.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Microsoft.ReportViewer.WebForms.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Microsoft.Web.Infrastructure.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Newtonsoft.Json.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Oracle.ManagedDataAccess.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Owin.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\System.Web.Helpers.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\System.Web.Mvc.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\System.Web.Optimization.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\System.Web.Razor.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.Deployment.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.Razor.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\WebGrease.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Microsoft.SqlServer.Types.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\eProcurementApps.DataAccess.pdb
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\eProcurementApps.DataAccess.xml
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\eProcurementApps.Facade.pdb
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\eProcurementApps.Facade.xml
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\eProcurementApps.Helpers.pdb
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\eProcurementApps.Helpers.xml
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\eProcurementApps.Models.pdb
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\eProcurementApps.Models.xml
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\EPPlus.xml
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\System.Web.Helpers.xml
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\System.Web.Mvc.xml
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\System.Web.Optimization.xml
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\System.Web.Razor.xml
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.xml
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.Deployment.xml
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\System.Web.WebPages.Razor.xml
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Antlr3.Runtime.pdb
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Newtonsoft.Json.xml
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\EntityFramework.xml
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\EntityFramework.SqlServer.xml
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.xml
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.xml
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Google.xml
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\de\Microsoft.SqlServer.Types.resources.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\es\Microsoft.SqlServer.Types.resources.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\fr\Microsoft.SqlServer.Types.resources.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\it\Microsoft.SqlServer.Types.resources.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\ja\Microsoft.SqlServer.Types.resources.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\ko\Microsoft.SqlServer.Types.resources.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\pt\Microsoft.SqlServer.Types.resources.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\ru\Microsoft.SqlServer.Types.resources.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\bin\eProcurementApps.Helpers.XmlSerializers.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.vbprojResolveAssemblyReference.cache
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.Resources.resources
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.vbproj.GenerateResource.Cache
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\obj\Release\RdlCompile.cache
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\obj\Release\RdlCompile.compiled
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.dll
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.xml
+D:\Hamka\GitHub\eProcurementApps\eProcurementApps\eProcurementApps\obj\Release\eProcurementApps.pdb

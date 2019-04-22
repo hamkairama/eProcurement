@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="35de4efcb2b9429eba8d12a606766501" Name="Diagram1" ZoomLevel="64">
+        <EntityTypeShape EntityType="eProcurementModel.MenuSidebar" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_ACKNOW_APPR" Width="1.5" PointX="10.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_APPR_PC" Width="1.5" PointX="17" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_APPR_PO" Width="1.5" PointX="10.5" PointY="30.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_APPR_RELDEPT_DT" Width="1.5" PointX="22" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_APPR_RELDEPT_GR" Width="1.5" PointX="5.75" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_APPROVAL_DT" Width="1.5" PointX="22" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_APPROVAL_GR" Width="1.5" PointX="8.25" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_APPROVAL_ROLE" Width="1.5" PointX="22" PointY="29.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_BUDGET_CODE" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_CHART_OF_ACCOUNT_GR" Width="1.5" PointX="19.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_CHART_OF_ACCOUNTS" Width="1.5" PointX="22" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_CONTROL_PARAMETERS" Width="1.5" PointX="4.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_CURRENCY" Width="1.5" PointX="6" PointY="35.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_DELIVERY_ADDRESS" Width="1.5" PointX="6" PointY="39.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_DIVISION" Width="1.5" PointX="0.75" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_DOCUMENTS" Width="1.5" PointX="11.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_FIELD_DESCRIPTIONS" Width="1.5" PointX="19.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_FIELD_VALUES" Width="1.5" PointX="21.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_FORM_SUB_TYPE" Width="1.5" PointX="5.25" PointY="24.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_FORM_SUBTYPE_DT" Width="1.5" PointX="10.25" PointY="26" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_FORM_SUBTYPE_GR" Width="1.5" PointX="3" PointY="25.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_FORM_TYPE" Width="1.5" PointX="0.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_FST_BUDGET_CD_ADD" Width="1.5" PointX="5.25" PointY="31.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_GENERATOR" Width="1.5" PointX="2.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_GM_HEADERS" Width="1.5" PointX="10.5" PointY="34.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_GOOD_TYPE" Width="1.5" PointX="7.75" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_HOLIDAY" Width="1.5" PointX="21.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_LEVEL" Width="1.5" PointX="19.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_LOG_TRANSACTIONS" Width="1.5" PointX="4.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_MENU" Width="1.5" PointX="0.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_PARAMETERS" Width="1.5" PointX="12.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_PC" Width="1.5" PointX="14.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_PC_DT" Width="1.5" PointX="17" PointY="21" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_PC_HISTORICAL" Width="1.5" PointX="17" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_PC_SP_DT" Width="1.5" PointX="19.25" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_PC_SP_GR" Width="1.5" PointX="17" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_PO_DETAILS" Width="1.5" PointX="12.75" PointY="50.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_PO_DETAILS_ITEM" Width="1.5" PointX="10.5" PointY="51" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_PO_HEADERS" Width="1.5" PointX="8.25" PointY="31.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_PO_TYPE" Width="1.5" PointX="3" PointY="31.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_PPH" Width="1.5" PointX="23.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_PR_APPR_RELDEPT_DT" Width="1.5" PointX="12" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_PR_APPR_RELDEPT_GR" Width="1.5" PointX="9.75" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_PR_APPR_WA" Width="1.5" PointX="15" PointY="26.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_PR_ATTACHMENT" Width="1.5" PointX="9.75" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_PR_DETAIL" Width="1.5" PointX="12.75" PointY="24.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_PR_HEADER" Width="1.5" PointX="7.5" PointY="24.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_REL_DEPT" Width="1.5" PointX="8" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_REQUEST" Width="1.5" PointX="23.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_ROLE" Width="1.5" PointX="0.75" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_ROLE_MENU" Width="1.5" PointX="3" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_STOCK" Width="1.5" PointX="10" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_SUPP_DOC" Width="1.5" PointX="8.25" PointY="50.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_SUPP_EVAL" Width="1.5" PointX="8.25" PointY="54.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_SUPP_QUAL" Width="1.5" PointX="8.25" PointY="64.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_SUPPLIER" Width="1.5" PointX="6" PointY="43.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_USER" Width="1.5" PointX="5.25" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_USER_DT" Width="1.5" PointX="3" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_USER_PROFILE" Width="1.5" PointX="7.5" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_VAT" Width="1.5" PointX="24.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_VRF_PC" Width="1.5" PointX="17" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_VRF_PO" Width="1.5" PointX="10.5" PointY="41.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_WA" Width="1.5" PointX="10.5" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_WA_ALLOWED_DT" Width="1.5" PointX="14.75" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_WA_ALLOWED_GR" Width="1.5" PointX="0.75" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_ACKNOW_APPR_DT" Width="1.5" PointX="13" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_APPROVAL_ROLE_DETAIL" Width="1.5" PointX="23.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_CRV" Width="1.5" PointX="24.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_CRV_DETAILS" Width="1.5" PointX="25.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_GM_DETAILS" Width="1.5" PointX="17.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_PR_HISTORICAL" Width="1.5" PointX="9.75" PointY="45.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProcurementModel.TPROC_STOCKMOVEMENT" Width="1.5" PointX="25.75" PointY="19.75" IsExpanded="true" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_ACKNOW_APPR" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_PC_APPR" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_PO_APPR" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_APPR_RELDEPT_GR_2" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_LEVEL_RELDEPT" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_APPROVAL_RELDEPT_GR" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_APPROVAL_GROUP" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_LEVEL_APPROVAL_DT" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_APPROVAL_GROUP_WA" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_DIVISION" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_LEVEL_APPROVAL_ROLE" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_COA_GR_FST" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_CURRENCY" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_DELIVERY_ADDRESS" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_DIVISION_USER_DT" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_FORM_SUB_TYPE" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_SUBTYPE_GR_FST" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_SUBTYPE_DT_FT" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_SUBTYPE_DT_RD" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_FST_BUDGET_CD_ADD" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_SUBTYPE_GR_FT" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_FORM_TYPE" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_FORM_TYPE_PO" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_FORM_TYPE_STOCK" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_GM_TPROC_PO_HEADERS" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_GOOD_TYPE" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_GOOD_TYPE_PR_HEADER" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_MENU_ROLE_EPROC" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_PC_SP_GR" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_PC_HISTORY" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_PC_VRF" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_PC_DT" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_PC_SP_GR" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_PO_HEADER_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_PO_DETAILS" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_PO_TYPE" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_PO_VRF" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_SUPPLIER" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_PR_APPR_RD_GR" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_PR_HEADER_RD_GR" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_PR_DETAIL" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_PR_HEADER_ATTACHMENT" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_PR_HEADER" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_WA" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_PR_HEADER_HISTORY" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_USER" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_ROLE" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_ROLE_USER_DETAIL" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_SUPP_DOC" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_SUPPLIER_EVAL" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_TPROC_SUPPLIER_QUAL" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_USER_DT" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_USER_EPROC_PROFILE" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_WA_GROUP_USER_DETAIL" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_WORK_AREA" ManuallyRouted="false" />
+        <AssociationConnector Association="eProcurementModel.FK_WA_ALLOWED_GROUP" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

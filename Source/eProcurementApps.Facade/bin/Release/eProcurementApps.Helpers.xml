@@ -1,0 +1,370 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+eProcurementApps.Helpers
+</name>
+</assembly>
+<members>
+<member name="T:eProcurementApps.Helpers.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:eProcurementApps.Helpers.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:eProcurementApps.Helpers.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:eProcurementApps.Helpers.ListFieldNameAndValue.AddObject(System.Object,System.Object)">
+ <summary>
+ 
+ </summary>
+ <param name="_ObjectName"></param>
+ <param name="_Value"></param>
+</member>
+<member name="M:eProcurementApps.Helpers.ListFieldNameAndValue.getKeybyId(System.Int32)">
+ <summary>
+ adding get object by object filter
+ </summary>
+ <param name="_id"></param>
+ <returns></returns>
+</member>
+<member name="T:eProcurementApps.Helpers.EmailServiceReference.MessageService">
+<remarks/>
+</member>
+<member name="M:eProcurementApps.Helpers.EmailServiceReference.MessageService.#ctor">
+<remarks/>
+</member>
+<member name="E:eProcurementApps.Helpers.EmailServiceReference.MessageService.TestingWSCompleted">
+<remarks/>
+</member>
+<member name="E:eProcurementApps.Helpers.EmailServiceReference.MessageService.SendSMSCompleted">
+<remarks/>
+</member>
+<member name="E:eProcurementApps.Helpers.EmailServiceReference.MessageService.SendEmailCompleted">
+<remarks/>
+</member>
+<member name="E:eProcurementApps.Helpers.EmailServiceReference.MessageService.SendEmailMamiCompleted">
+<remarks/>
+</member>
+<member name="E:eProcurementApps.Helpers.EmailServiceReference.MessageService.SendEmailImageCompleted">
+<remarks/>
+</member>
+<member name="E:eProcurementApps.Helpers.EmailServiceReference.MessageService.SendNotificationCompleted">
+<remarks/>
+</member>
+<member name="M:eProcurementApps.Helpers.EmailServiceReference.MessageService.TestingWS(eProcurementApps.Helpers.EmailServiceReference.TestingContract,eProcurementApps.Helpers.EmailServiceReference.TestingResultContract@)">
+<remarks/>
+</member>
+<member name="M:eProcurementApps.Helpers.EmailServiceReference.MessageService.TestingWSAsync(eProcurementApps.Helpers.EmailServiceReference.TestingContract,eProcurementApps.Helpers.EmailServiceReference.TestingResultContract)">
+<remarks/>
+</member>
+<member name="M:eProcurementApps.Helpers.EmailServiceReference.MessageService.TestingWSAsync(eProcurementApps.Helpers.EmailServiceReference.TestingContract,eProcurementApps.Helpers.EmailServiceReference.TestingResultContract,System.Object)">
+<remarks/>
+</member>
+<member name="M:eProcurementApps.Helpers.EmailServiceReference.MessageService.SendSMS(eProcurementApps.Helpers.EmailServiceReference.SmsKeyContract,eProcurementApps.Helpers.EmailServiceReference.SmsResultContract@)">
+<remarks/>
+</member>
+<member name="M:eProcurementApps.Helpers.EmailServiceReference.MessageService.SendSMSAsync(eProcurementApps.Helpers.EmailServiceReference.SmsKeyContract,eProcurementApps.Helpers.EmailServiceReference.SmsResultContract)">
+<remarks/>
+</member>
+<member name="M:eProcurementApps.Helpers.EmailServiceReference.MessageService.SendSMSAsync(eProcurementApps.Helpers.EmailServiceReference.SmsKeyContract,eProcurementApps.Helpers.EmailServiceReference.SmsResultContract,System.Object)">
+<remarks/>
+</member>
+<member name="M:eProcurementApps.Helpers.EmailServiceReference.MessageService.SendEmail(eProcurementApps.Helpers.EmailServiceReference.EmailContract,eProcurementApps.Helpers.EmailServiceReference.EmailResultContract@)">
+<remarks/>
+</member>
+<member name="M:eProcurementApps.Helpers.EmailServiceReference.MessageService.SendEmailAsync(eProcurementApps.Helpers.EmailServiceReference.EmailContract,eProcurementApps.Helpers.EmailServiceReference.EmailResultContract)">
+<remarks/>
+</member>
+<member name="M:eProcurementApps.Helpers.EmailServiceReference.MessageService.SendEmailAsync(eProcurementApps.Helpers.EmailServiceReference.EmailContract,eProcurementApps.Helpers.EmailServiceReference.EmailResultContract,System.Object)">
+<remarks/>
+</member>
+<member name="M:eProcurementApps.Helpers.EmailServiceReference.MessageService.SendEmailMami(eProcurementApps.Helpers.EmailServiceReference.EmailMamiContract,eProcurementApps.Helpers.EmailServiceReference.EmailResultContract@)">
+<remarks/>
+</member>
+<member name="M:eProcurementApps.Helpers.EmailServiceReference.MessageService.SendEmailMamiAsync(eProcurementApps.Helpers.EmailServiceReference.EmailMamiContract,eProcurementApps.Helpers.EmailServiceReference.EmailResultContract)">
+<remarks/>
+</member>
+<member name="M:eProcurementApps.Helpers.EmailServiceReference.MessageService.SendEmailMamiAsync(eProcurementApps.Helpers.EmailServiceReference.EmailMamiContract,eProcurementApps.Helpers.EmailServiceReference.EmailResultContract,System.Object)">
+<remarks/>
+</member>
+<member name="M:eProcurementApps.Helpers.EmailServiceReference.MessageService.SendEmailImage(eProcurementApps.Helpers.EmailServiceReference.EmailImageContract,eProcurementApps.Helpers.EmailServiceReference.EmailResultContract@)">
+<remarks/>
+</member>
+<member name="M:eProcurementApps.Helpers.EmailServiceReference.MessageService.SendEmailImageAsync(eProcurementApps.Helpers.EmailServiceReference.EmailImageContract,eProcurementApps.Helpers.EmailServiceReference.EmailResultContract)">
+<remarks/>
+</member>
+<member name="M:eProcurementApps.Helpers.EmailServiceReference.MessageService.SendEmailImageAsync(eProcurementApps.Helpers.EmailServiceReference.EmailImageContract,eProcurementApps.Helpers.EmailServiceReference.EmailResultContract,System.Object)">
+<remarks/>
+</member>
+<member name="M:eProcurementApps.Helpers.EmailServiceReference.MessageService.SendNotification(eProcurementApps.Helpers.EmailServiceReference.NotificationContract,eProcurementApps.Helpers.EmailServiceReference.NotificationResultContract@)">
+<remarks/>
+</member>
+<member name="M:eProcurementApps.Helpers.EmailServiceReference.MessageService.SendNotificationAsync(eProcurementApps.Helpers.EmailServiceReference.NotificationContract,eProcurementApps.Helpers.EmailServiceReference.NotificationResultContract)">
+<remarks/>
+</member>
+<member name="M:eProcurementApps.Helpers.EmailServiceReference.MessageService.SendNotificationAsync(eProcurementApps.Helpers.EmailServiceReference.NotificationContract,eProcurementApps.Helpers.EmailServiceReference.NotificationResultContract,System.Object)">
+<remarks/>
+</member>
+<member name="M:eProcurementApps.Helpers.EmailServiceReference.MessageService.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:eProcurementApps.Helpers.EmailServiceReference.TestingContract">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.TestingContract.Input">
+<remarks/>
+</member>
+<member name="T:eProcurementApps.Helpers.EmailServiceReference.NotificationResultContract">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.NotificationResultContract.DetailTrans">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.NotificationResultContract.RespondCode">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.NotificationResultContract.Status">
+<remarks/>
+</member>
+<member name="T:eProcurementApps.Helpers.EmailServiceReference.NotificationContract">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.NotificationContract.ActionID">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.NotificationContract.Param">
+<remarks/>
+</member>
+<member name="T:eProcurementApps.Helpers.EmailServiceReference.GetEmailImageContract">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.GetEmailImageContract.ImageLocation">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.GetEmailImageContract.ImageName">
+<remarks/>
+</member>
+<member name="T:eProcurementApps.Helpers.EmailServiceReference.EmailImageContract">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.EmailImageContract.AttachmentFile">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.EmailImageContract.CcRecipient">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.EmailImageContract.ImageList">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.EmailImageContract.Message">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.EmailImageContract.Recipient">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.EmailImageContract.Sender">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.EmailImageContract.Subject">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.EmailImageContract.WorkArea">
+<remarks/>
+</member>
+<member name="T:eProcurementApps.Helpers.EmailServiceReference.EmailMamiContract">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.EmailMamiContract.AttachmentFile">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.EmailMamiContract.CcRecipient">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.EmailMamiContract.MessageID">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.EmailMamiContract.Param">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.EmailMamiContract.Recipient">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.EmailMamiContract.Sender">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.EmailMamiContract.Subject">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.EmailMamiContract.WorkArea">
+<remarks/>
+</member>
+<member name="T:eProcurementApps.Helpers.EmailServiceReference.EmailResultContract">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.EmailResultContract.Status">
+<remarks/>
+</member>
+<member name="T:eProcurementApps.Helpers.EmailServiceReference.EmailContract">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.EmailContract.AttachmentFile">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.EmailContract.CcRecipient">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.EmailContract.Message">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.EmailContract.Recipient">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.EmailContract.Sender">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.EmailContract.Subject">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.EmailContract.WorkArea">
+<remarks/>
+</member>
+<member name="T:eProcurementApps.Helpers.EmailServiceReference.SmsResultContract">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.SmsResultContract.Status">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.SmsResultContract.TrxId">
+<remarks/>
+</member>
+<member name="T:eProcurementApps.Helpers.EmailServiceReference.SmsKeyContract">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.SmsKeyContract.Message">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.SmsKeyContract.Recipient">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.SmsKeyContract.Vendor">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.SmsKeyContract.WorkArea">
+<remarks/>
+</member>
+<member name="T:eProcurementApps.Helpers.EmailServiceReference.BusinessErrorVo">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.BusinessErrorVo.ErrorCode">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.BusinessErrorVo.ErrorField">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.BusinessErrorVo.ErrorMessages">
+<remarks/>
+</member>
+<member name="T:eProcurementApps.Helpers.EmailServiceReference.ArrayOfKeyValueOfstringstringKeyValueOfstringstring">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.ArrayOfKeyValueOfstringstringKeyValueOfstringstring.Key">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.ArrayOfKeyValueOfstringstringKeyValueOfstringstring.Value">
+<remarks/>
+</member>
+<member name="T:eProcurementApps.Helpers.EmailServiceReference.BusinessWarningVo">
+<remarks/>
+</member>
+<member name="T:eProcurementApps.Helpers.EmailServiceReference.BusinessErrors">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.BusinessErrors.ErrorList">
+<remarks/>
+</member>
+<member name="T:eProcurementApps.Helpers.EmailServiceReference.TestingResultContract">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.TestingResultContract.Hasil">
+<remarks/>
+</member>
+<member name="T:eProcurementApps.Helpers.EmailServiceReference.TestingWSCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:eProcurementApps.Helpers.EmailServiceReference.TestingWSCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.TestingWSCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:eProcurementApps.Helpers.EmailServiceReference.SendSMSCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:eProcurementApps.Helpers.EmailServiceReference.SendSMSCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.SendSMSCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.SendSMSCompletedEventArgs.output">
+<remarks/>
+</member>
+<member name="T:eProcurementApps.Helpers.EmailServiceReference.SendEmailCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:eProcurementApps.Helpers.EmailServiceReference.SendEmailCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.SendEmailCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.SendEmailCompletedEventArgs.output">
+<remarks/>
+</member>
+<member name="T:eProcurementApps.Helpers.EmailServiceReference.SendEmailMamiCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:eProcurementApps.Helpers.EmailServiceReference.SendEmailMamiCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.SendEmailMamiCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.SendEmailMamiCompletedEventArgs.output">
+<remarks/>
+</member>
+<member name="T:eProcurementApps.Helpers.EmailServiceReference.SendEmailImageCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:eProcurementApps.Helpers.EmailServiceReference.SendEmailImageCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.SendEmailImageCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.SendEmailImageCompletedEventArgs.output">
+<remarks/>
+</member>
+<member name="T:eProcurementApps.Helpers.EmailServiceReference.SendNotificationCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:eProcurementApps.Helpers.EmailServiceReference.SendNotificationCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.SendNotificationCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:eProcurementApps.Helpers.EmailServiceReference.SendNotificationCompletedEventArgs.output">
+<remarks/>
+</member>
+</members>
+</doc>

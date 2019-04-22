@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "eProcurementApps.Facade", "eProcurementApps.Facade\eProcurementApps.Facade.vbproj", "{979994A5-B1B1-4D13-9E99-ED88773F88BD}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "eProcurementApps.DataAccess", "eProcurementApps.DataAccess\eProcurementApps.DataAccess.vbproj", "{F31484EF-0A5E-431F-90ED-1C805EDF899C}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "eProcurementApps", "eProcurementApps\eProcurementApps.vbproj", "{A90B379C-3A9E-4EB4-AFCF-07560FC57BBD}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "eProcurementApps.Helpers", "eProcurementApps.Helpers\eProcurementApps.Helpers.vbproj", "{2222BB04-34E0-496C-8FF9-58A2D36B5F0E}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "eProcurementApps.Models", "eProcurementApps.Models\eProcurementApps.Models.vbproj", "{F507C7F6-0779-4492-A52B-961E5D41F722}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "encryptdecrypt", "encryptdecrypt\encryptdecrypt.vbproj", "{BA74C655-9226-4EBE-AB1C-A0DE638248B6}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "eProcurementApps.Database", "eProcurementApps.Database\eProcurementApps.Database.vbproj", "{CA8E2728-DCC4-43E0-9C89-EECA695C3584}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{979994A5-B1B1-4D13-9E99-ED88773F88BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{979994A5-B1B1-4D13-9E99-ED88773F88BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{979994A5-B1B1-4D13-9E99-ED88773F88BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{979994A5-B1B1-4D13-9E99-ED88773F88BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F31484EF-0A5E-431F-90ED-1C805EDF899C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F31484EF-0A5E-431F-90ED-1C805EDF899C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F31484EF-0A5E-431F-90ED-1C805EDF899C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F31484EF-0A5E-431F-90ED-1C805EDF899C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A90B379C-3A9E-4EB4-AFCF-07560FC57BBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A90B379C-3A9E-4EB4-AFCF-07560FC57BBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A90B379C-3A9E-4EB4-AFCF-07560FC57BBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A90B379C-3A9E-4EB4-AFCF-07560FC57BBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2222BB04-34E0-496C-8FF9-58A2D36B5F0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2222BB04-34E0-496C-8FF9-58A2D36B5F0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2222BB04-34E0-496C-8FF9-58A2D36B5F0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2222BB04-34E0-496C-8FF9-58A2D36B5F0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F507C7F6-0779-4492-A52B-961E5D41F722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F507C7F6-0779-4492-A52B-961E5D41F722}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F507C7F6-0779-4492-A52B-961E5D41F722}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F507C7F6-0779-4492-A52B-961E5D41F722}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA74C655-9226-4EBE-AB1C-A0DE638248B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA74C655-9226-4EBE-AB1C-A0DE638248B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA74C655-9226-4EBE-AB1C-A0DE638248B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA74C655-9226-4EBE-AB1C-A0DE638248B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA8E2728-DCC4-43E0-9C89-EECA695C3584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA8E2728-DCC4-43E0-9C89-EECA695C3584}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA8E2728-DCC4-43E0-9C89-EECA695C3584}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA8E2728-DCC4-43E0-9C89-EECA695C3584}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

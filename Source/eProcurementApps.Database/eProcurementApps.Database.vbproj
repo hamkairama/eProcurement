@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CA8E2728-DCC4-43E0-9C89-EECA695C3584}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>eProcurementApps.Database</RootNamespace>
+    <AssemblyName>eProcurementApps.Database</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>eProcurementApps.Database.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>eProcurementApps.Database.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Script\TPROC_BUDGET_CODE.sql" />
+    <Content Include="Script\TPROC_CURRENCY.sql" />
+    <Content Include="Script\TPROC_DIVISION.sql" />
+    <Content Include="Script\TPROC_FORM_TYPE.sql" />
+    <Content Include="Script\TPROC_GENERATOR.sql" />
+    <Content Include="Script\TPROC_GOOD_TYPE.sql" />
+    <Content Include="Script\TPROC_HOLIDAY.sql" />
+    <Content Include="Script\TPROC_LEVEL.sql" />
+    <Content Include="Script\TPROC_MENU.sql" />
+    <Content Include="Script\TPROC_PO_TYPE.sql" />
+    <Content Include="Script\TPROC_ROLE.sql" />
+    <Content Include="Table\TPROC_ACKNOW_APPR.sql" />
+    <Content Include="Table\TPROC_ACKNOW_APPR_DT.sql" />
+    <Content Include="Table\TPROC_APPROVAL_DT.sql" />
+    <Content Include="Table\TPROC_APPROVAL_GR.sql" />
+    <Content Include="Table\TPROC_APPROVAL_ROLE.sql" />
+    <Content Include="Table\TPROC_APPROVAL_ROLE_DETAIL.sql" />
+    <Content Include="Table\TPROC_APPR_PC.sql" />
+    <Content Include="Table\TPROC_APPR_PO.sql" />
+    <Content Include="Table\TPROC_APPR_RELDEPT_DT.sql" />
+    <Content Include="Table\TPROC_APPR_RELDEPT_GR.sql" />
+    <Content Include="Table\TPROC_BUDGET_CODE.sql" />
+    <Content Include="Table\TPROC_CHART_OF_ACCOUNTS.sql" />
+    <Content Include="Table\TPROC_CHART_OF_ACCOUNT_GR.sql" />
+    <Content Include="Table\TPROC_CONTROL_PARAMETERS.sql" />
+    <Content Include="Table\TPROC_CRV.sql" />
+    <Content Include="Table\TPROC_CRV_DETAILS.sql" />
+    <Content Include="Table\TPROC_CURRENCY.sql" />
+    <Content Include="Table\TPROC_DELIVERY_ADDRESS.sql" />
+    <Content Include="Table\TPROC_DIVISION.sql" />
+    <Content Include="Table\TPROC_DOCUMENTS.sql" />
+    <Content Include="Table\TPROC_FIELD_DESCRIPTION.sql" />
+    <Content Include="Table\TPROC_FIELD_VALUES.sql" />
+    <Content Include="Table\TPROC_FORM_SUBTYPE_DT.sql" />
+    <Content Include="Table\TPROC_FORM_SUBTYPE_GR.sql" />
+    <Content Include="Table\TPROC_FORM_SUB_TYPE.sql" />
+    <Content Include="Table\TPROC_FORM_TYPE.sql" />
+    <Content Include="Table\TPROC_FST_BUDGET_CD_ADD.sql" />
+    <Content Include="Table\TPROC_GENERATOR.sql" />
+    <Content Include="Table\TPROC_GM_DETAILS.sql" />
+    <Content Include="Table\TPROC_GM_HEADERS.sql" />
+    <Content Include="Table\TPROC_GOOD_TYPE.sql" />
+    <Content Include="Table\TPROC_HOLIDAY.sql" />
+    <Content Include="Table\TPROC_LEVEL.sql" />
+    <Content Include="Table\TPROC_LOG_TRANSACTIONS.sql" />
+    <Content Include="Table\TPROC_MENU.sql" />
+    <Content Include="Table\TPROC_PARAMETERS.sql" />
+    <Content Include="Table\TPROC_PC.sql" />
+    <Content Include="Table\TPROC_PC_DT.sql" />
+    <Content Include="Table\TPROC_PC_HISTORICAL.sql" />
+    <Content Include="Table\TPROC_PC_SP_DT.sql" />
+    <Content Include="Table\TPROC_PC_SP_GR.sql" />
+    <Content Include="Table\TPROC_PO_DETAILS.sql" />
+    <Content Include="Table\TPROC_PO_DETAILS_ITEM.sql" />
+    <Content Include="Table\TPROC_PO_HEADERS.sql" />
+    <Content Include="Table\TPROC_PO_TYPE.sql" />
+    <Content Include="Table\TPROC_PPH.sql" />
+    <Content Include="Table\TPROC_PR_APPR_RELDEPT_DT.sql" />
+    <Content Include="Table\TPROC_PR_APPR_RELDEPT_GR.sql" />
+    <Content Include="Table\TPROC_PR_APPR_WA.sql" />
+    <Content Include="Table\TPROC_PR_ATTACHMENT.sql" />
+    <Content Include="Table\TPROC_PR_DETAIL.sql" />
+    <Content Include="Table\TPROC_PR_HEADER.sql" />
+    <Content Include="Table\TPROC_PR_HISTORICAL.sql" />
+    <Content Include="Table\TPROC_REL_DEPT.sql" />
+    <Content Include="Table\TPROC_REQUEST.sql" />
+    <Content Include="Table\TPROC_ROLE.sql" />
+    <Content Include="Table\TPROC_ROLE_MENU.sql" />
+    <Content Include="Table\TPROC_STOCK.sql" />
+    <Content Include="Table\TPROC_STOCKMOVEMENT.sql" />
+    <Content Include="Table\TPROC_SUPPLIER.sql" />
+    <Content Include="Table\TPROC_SUPP_DOC.sql" />
+    <Content Include="Table\TPROC_SUPP_EVAL.sql" />
+    <Content Include="Table\TPROC_SUPP_QUAL.sql" />
+    <Content Include="Table\TPROC_USER.sql" />
+    <Content Include="Table\TPROC_USER_DT.sql" />
+    <Content Include="Table\TPROC_USER_PROFILE.sql" />
+    <Content Include="Table\TPROC_VAT.sql" />
+    <Content Include="Table\TPROC_VRF_FC.sql" />
+    <Content Include="Table\TPROC_VRF_PO.sql" />
+    <Content Include="Table\TPROC_WA.sql" />
+    <Content Include="Table\TPROC_WA_ALLOWED_DT.sql" />
+    <Content Include="Table\TPROC_WA_ALLOWED_GR.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataType\" />
+    <Folder Include="Function\" />
+    <Folder Include="StoreProcedure\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

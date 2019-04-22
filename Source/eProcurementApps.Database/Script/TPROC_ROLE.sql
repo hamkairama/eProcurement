@@ -1,0 +1,13 @@
+insert into tproc_role (ROLE_NAME, ROLE_DESCRIPTION, IS_ACTIVE, CREATED_TIME, CREATED_BY, LAST_MODIFIED_TIME, LAST_MODIFIED_BY, ROW_STATUS, DEFAULT_SELECTED)
+values ('Administrator', 'Administrator', 1, SYSDATETIME(), 'system', null, null, 0, 0);
+
+insert into tproc_role (ROLE_NAME, ROLE_DESCRIPTION, IS_ACTIVE, CREATED_TIME, CREATED_BY, LAST_MODIFIED_TIME, LAST_MODIFIED_BY, ROW_STATUS, DEFAULT_SELECTED)
+values ('Handler', 'for handler', 1, SYSDATETIME(), 'system', null, null, 0, 0);
+
+insert into tproc_role (ROLE_NAME, ROLE_DESCRIPTION, IS_ACTIVE, CREATED_TIME, CREATED_BY, LAST_MODIFIED_TIME, LAST_MODIFIED_BY, ROW_STATUS, DEFAULT_SELECTED)
+values ('User', 'User', 1, SYSDATETIME(), 'system', null, null, 0, 1);
+
+insert into tproc_role (ROLE_NAME, ROLE_DESCRIPTION, IS_ACTIVE, CREATED_TIME, CREATED_BY, LAST_MODIFIED_TIME, LAST_MODIFIED_BY, ROW_STATUS, DEFAULT_SELECTED)
+values ('checker', 'checker', 1, SYSDATETIME(), 'system', null, null, 0, 0);
+
+

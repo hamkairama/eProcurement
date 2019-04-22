@@ -1,0 +1,55 @@
+USE [eProcurement]
+GO
+
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF__TPROC_STO__CREAT__2FEF161B]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[TPROC_STOCKMOVEMENT] DROP CONSTRAINT [DF__TPROC_STO__CREAT__2FEF161B]
+END
+
+GO
+
+USE [eProcurement]
+GO
+
+/****** Object:  Table [dbo].[TPROC_STOCKMOVEMENT]    Script Date: 01/03/2018 12:46:15 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[TPROC_STOCKMOVEMENT]') AND type in (N'U'))
+DROP TABLE [dbo].[TPROC_STOCKMOVEMENT]
+GO
+
+USE [eProcurement]
+GO
+
+/****** Object:  Table [dbo].[TPROC_STOCKMOVEMENT]    Script Date: 01/03/2018 12:46:15 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[TPROC_STOCKMOVEMENT](
+	[ID] [int] NOT NULL,
+	[ITEM_ID] [int] NULL,
+	[REFNO] [varchar](20) NOT NULL,
+	[CREATED_TIME] [datetime] NOT NULL,
+	[CREATED_BY] [varchar](50) NOT NULL,
+	[STOCK_CURRENT] [int] NULL,
+	[STOCK_IN] [int] NULL,
+	[STOCK_OUT] [int] NULL,
+	[STOCK_LAST] [int] NULL,
+	[LATEST_COST] [int] NOT NULL,
+	[AVERAGE_COST] [int] NOT NULL,
+	[ID_TEMP] [int] NULL
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+ALTER TABLE [dbo].[TPROC_STOCKMOVEMENT] ADD  DEFAULT (sysdatetime()) FOR [CREATED_TIME]
+GO
+
+

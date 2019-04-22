@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F507C7F6-0779-4492-A52B-961E5D41F722}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>eProcurementApps.Models</RootNamespace>
+    <AssemblyName>eProcurementApps.Models</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>eProcurementApps.Models.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>eProcurementApps.Models.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.12.1.2400\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess.EntityFramework, Version=6.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.EntityFramework.12.1.2400\lib\net45\Oracle.ManagedDataAccess.EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.vb" />
+    <Compile Include="Custom.Models\Master\APPROVAL_DETAIL_HELPER.vb" />
+    <Compile Include="Custom.Models\Master\APPROVAL_ROLE.vb" />
+    <Compile Include="Custom.Models\Master\INBOX_JOB_LIST.vb" />
+    <Compile Include="Custom.Models\Master\WA_HELPER.vb" />
+    <Compile Include="Custom.Models\Master\USER_HELPER.vb" />
+    <Compile Include="Custom.Models\Master\ROLE_HELPER.vb" />
+    <Compile Include="Custom.Models\Master\ROLE_MENU_HELPER.vb" />
+    <Compile Include="Custom.Models\Uncategory\HIGHEST_LEVEL.vb" />
+    <Compile Include="Custom.Models\Uncategory\MAPPING_BUDGET_WA.vb" />
+    <Compile Include="Custom.Models\Uncategory\CONSTRING.vb" />
+    <Compile Include="Custom.Models\Uncategory\FT_PARAM.vb" />
+    <Compile Include="Custom.Models\Uncategory\OBJECTSWA.vb" />
+    <Compile Include="Custom.Models\Uncategory\PO_HEADER_PARAM.vb" />
+    <Compile Include="Custom.Models\Uncategory\PR_DETAIL_PARAM.vb" />
+    <Compile Include="Custom.Models\Uncategory\PR_HEADER_PARAM.vb" />
+    <Compile Include="Custom.Models\Uncategory\MAIL_DATA.vb" />
+    <Compile Include="Custom.Models\Uncategory\LOGIN_MODEL.vb" />
+    <Compile Include="Custom.Models\Uncategory\OBJECTSPC.vb" />
+    <Compile Include="Custom.Models\Uncategory\OBJECTSHEADER.vb" />
+    <Compile Include="Custom.Models\Uncategory\OBJECTSBODY.vb" />
+    <Compile Include="Custom.Models\Uncategory\OBJECTSFOOTER.vb" />
+    <Compile Include="Custom.Models\Uncategory\MAPPINGSUPPITEM.vb" />
+    <Compile Include="Custom.Models\Uncategory\MAPPING_PCDT.vb" />
+    <Compile Include="Custom.Models\Uncategory\MAPPING_SPGR.vb" />
+    <Compile Include="Custom.Models\Uncategory\SELECTLISTDATA.vb" />
+    <Compile Include="Custom.Models\Uncategory\MONTHS.vb" />
+    <Compile Include="Custom.Models\Uncategory\DAILY_STOCK_SUMMARY.vb" />
+    <Compile Include="eProcModel.Context.vb">
+      <DependentUpon>eProcModel.Context.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="eProcModel.Designer.vb">
+      <DependentUpon>eProcModel.edmx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="eProcModel.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="MenuSidebar.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TPROC_ACKNOW_APPR.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_ACKNOW_APPR_DT.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_APPROVAL_DT.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_APPROVAL_GR.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_APPROVAL_ROLE.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_APPROVAL_ROLE_DETAIL.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_APPR_PC.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_APPR_PO.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_APPR_RELDEPT_DT.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_APPR_RELDEPT_GR.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_BUDGET_CODE.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_CHART_OF_ACCOUNTS.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_CHART_OF_ACCOUNT_GR.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_CONTROL_PARAMETERS.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_CRV.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_CRV_DETAILS.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_CURRENCY.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_DELIVERY_ADDRESS.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_DIVISION.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_DOCUMENTS.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_FIELD_DESCRIPTIONS.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_FIELD_VALUES.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_FORM_SUBTYPE_DT.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_FORM_SUBTYPE_GR.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_FORM_SUB_TYPE.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_FORM_TYPE.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_FST_BUDGET_CD_ADD.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_GENERATOR.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_GM_DETAILS.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_GM_HEADERS.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_GOOD_TYPE.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_HOLIDAY.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_LEVEL.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_LOG_TRANSACTIONS.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_MENU.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_PARAMETERS.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_PC.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_PC_DT.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_PC_HISTORICAL.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_PC_SP_DT.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_PC_SP_GR.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_PO_DETAILS.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_PO_DETAILS_ITEM.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_PO_HEADERS.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_PO_TYPE.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_PPH.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_PR_APPR_RELDEPT_DT.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_PR_APPR_RELDEPT_GR.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_PR_APPR_WA.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_PR_ATTACHMENT.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_PR_DETAIL.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_PR_HEADER.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_PR_HISTORICAL.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_REL_DEPT.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_REQUEST.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_ROLE.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_ROLE_MENU.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_STOCK.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_STOCKMOVEMENT.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_SUPPLIER.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_SUPP_DOC.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_SUPP_EVAL.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_SUPP_QUAL.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_USER.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_USER_DT.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_USER_PROFILE.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_VAT.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_VRF_PC.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_VRF_PO.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_WA.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_WA_ALLOWED_DT.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPROC_WA_ALLOWED_GR.vb">
+      <DependentUpon>eProcModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="eProcModel.tt">
+      <DependentUpon>eProcModel.edmx</DependentUpon>
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>eProcModel.vb</LastGenOutput>
+    </Content>
+    <None Include="App.Config" />
+    <Content Include="eProcModel.edmx.diagram">
+      <DependentUpon>eProcModel.edmx</DependentUpon>
+    </Content>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="eProcModel.Context.tt">
+      <DependentUpon>eProcModel.edmx</DependentUpon>
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>eProcModel.Context.vb</LastGenOutput>
+    </Content>
+    <Content Include="eProcModel.edmx.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\eProcurementApps.DataAccess\eProcurementApps.DataAccess.vbproj">
+      <Project>{f31484ef-0a5e-431f-90ed-1c805edf899c}</Project>
+      <Name>eProcurementApps.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="eProcModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>eProcModel.Designer.vb</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

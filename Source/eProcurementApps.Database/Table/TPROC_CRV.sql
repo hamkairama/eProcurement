@@ -1,0 +1,79 @@
+USE [eProcurement]
+GO
+
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF__TPROC_CRV__ROW_S__2116E6DF]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[TPROC_CRV] DROP CONSTRAINT [DF__TPROC_CRV__ROW_S__2116E6DF]
+END
+
+GO
+
+USE [eProcurement]
+GO
+
+/****** Object:  Table [dbo].[TPROC_CRV]    Script Date: 01/03/2018 12:33:50 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[TPROC_CRV]') AND type in (N'U'))
+DROP TABLE [dbo].[TPROC_CRV]
+GO
+
+USE [eProcurement]
+GO
+
+/****** Object:  Table [dbo].[TPROC_CRV]    Script Date: 01/03/2018 12:33:51 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[TPROC_CRV](
+	[ID] [int] NOT NULL,
+	[PO_ID] [int] NULL,
+	[CRV_NUM] [varchar](20) NOT NULL,
+	[BANK_ACCOUNT_INTEGER] [varchar](50) NOT NULL,
+	[BANK_NAME] [varchar](50) NULL,
+	[CREATED_TIME] [datetime] NULL,
+	[CREATED_BY] [varchar](50) NULL,
+	[LAST_MODIFIED_TIME] [datetime] NULL,
+	[LAST_MODIFIED_BY] [varchar](50) NULL,
+	[ROW_STATUS] [int] NULL,
+	[SUB_TOTAL] [int] NULL,
+	[DSCNT_AMT] [int] NULL,
+	[VAT] [int] NULL,
+	[WTH_TAX] [int] NULL,
+	[GRAND_TOTAL] [int] NULL,
+	[RECEIVED_BY] [varchar](8) NULL,
+	[RECEIVED_DATETIME] [datetime] NULL,
+	[COMPLETED_BY] [varchar](8) NULL,
+	[COMPLETED_DATETIME] [datetime] NULL,
+	[SUPPLIER_ID] [int] NULL,
+	[BANK_BRANCH] [varchar](50) NULL,
+	[REFTAXNO] [varchar](50) NULL,
+	[PAYMENTMETHOD] [varchar](50) NULL,
+	[KLIRINGNO] [varchar](50) NULL,
+	[VERIFY_BY] [varchar](8) NULL,
+	[VERIFY_TIME] [datetime] NULL,
+	[REJECTNOTE] [varchar](200) NULL,
+	[REJECTED_BY] [varchar](8) NULL,
+	[REJECTED_TIME] [datetime] NULL,
+	[APPROVE_BY] [varchar](8) NULL,
+	[APPROVE_DATETIME] [datetime] NULL,
+	[FILEPATH] [varchar](200) NULL,
+ CONSTRAINT [UNIQUE_TPROC_CRV] UNIQUE NONCLUSTERED 
+(
+	[CRV_NUM] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+ALTER TABLE [dbo].[TPROC_CRV] ADD  DEFAULT ((0)) FOR [ROW_STATUS]
+GO
+
+

@@ -1,0 +1,188 @@
+D:\svn local new version\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.Models.dll
+D:\svn local new version\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.Models.pdb
+D:\svn local new version\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.Models.xml
+D:\svn local new version\eProcurementApps\eProcurementApps.Models\bin\Debug\EntityFramework.dll
+D:\svn local new version\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.Mvc.dll
+D:\svn local new version\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.Razor.dll
+D:\svn local new version\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.WebPages.Razor.dll
+D:\svn local new version\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.WebPages.dll
+D:\svn local new version\eProcurementApps\eProcurementApps.Models\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\svn local new version\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\svn local new version\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.Mvc.xml
+D:\svn local new version\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.Razor.xml
+D:\svn local new version\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.WebPages.Razor.xml
+D:\svn local new version\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.WebPages.xml
+D:\svn local new version\eProcurementApps\eProcurementApps.Models\bin\Debug\Microsoft.Web.Infrastructure.xml
+D:\svn local new version\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\svn local new version\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.vbprojResolveAssemblyReference.cache
+D:\svn local new version\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.Resources.resources
+D:\svn local new version\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.vbproj.GenerateResource.Cache
+D:\svn local new version\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.dll
+D:\svn local new version\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.xml
+D:\svn local new version\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.pdb
+D:\svn local new version\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.Models.dll.config
+D:\svn local new version\eProcurementApps\eProcurementApps.Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\svn local new version\eProcurementApps\eProcurementApps.Models\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\svn local new version\eProcurementApps\eProcurementApps.Models\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+D:\svn local new version\eProcurementApps\eProcurementApps.Models\bin\Debug\EntityFramework.xml
+D:\svn local new version\eProcurementApps\eProcurementApps.Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.Models.dll.config
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.Models.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.Models.pdb
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.Models.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps.Models\bin\Debug\EntityFramework.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps.Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps.Models\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps.Models\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.Mvc.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.Razor.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.WebPages.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps.Models\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps.Models\bin\Debug\EntityFramework.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps.Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.Mvc.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.Razor.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.WebPages.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps.Models\bin\Debug\Microsoft.Web.Infrastructure.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.vbprojResolveAssemblyReference.cache
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.Resources.resources
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.vbproj.GenerateResource.Cache
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.xml
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.pdb
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.DataAccess.dll
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.DataAccess.pdb
+D:\Hamka\svn local\eProcurement\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.DataAccess.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.Models.dll.config
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.Models.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.Models.pdb
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.Models.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\EntityFramework.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.DataAccess.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.Mvc.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.Razor.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.WebPages.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.DataAccess.pdb
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.DataAccess.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\EntityFramework.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.Mvc.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.Razor.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.WebPages.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\Microsoft.Web.Infrastructure.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.vbprojResolveAssemblyReference.cache
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.Resources.resources
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.vbproj.GenerateResource.Cache
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.dll
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.xml
+D:\Hamka\ManulifeProject\eProcurement\01dev\project\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.pdb
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.Models.dll.config
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.Models.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.Models.pdb
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.Models.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\EntityFramework.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.DataAccess.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.DataAccess.pdb
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.DataAccess.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\EntityFramework.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.vbprojResolveAssemblyReference.cache
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.Resources.resources
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.vbproj.GenerateResource.Cache
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.dll
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.xml
+D:\Hamka\eproc\01dev\project\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.pdb
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.Models.dll.config
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.Models.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.Models.pdb
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.Models.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\EntityFramework.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.DataAccess.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.DataAccess.pdb
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.DataAccess.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\EntityFramework.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.vbprojResolveAssemblyReference.cache
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.Resources.resources
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.vbproj.GenerateResource.Cache
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.pdb
+D:\JobList\EProcrument\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.Models.dll.config
+D:\JobList\EProcrument\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.Models.dll
+D:\JobList\EProcrument\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.Models.pdb
+D:\JobList\EProcrument\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.Models.xml
+D:\JobList\EProcrument\project\eProcurementApps\eProcurementApps.Models\bin\Debug\EntityFramework.dll
+D:\JobList\EProcrument\project\eProcurementApps\eProcurementApps.Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\JobList\EProcrument\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.DataAccess.dll
+D:\JobList\EProcrument\project\eProcurementApps\eProcurementApps.Models\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\JobList\EProcrument\project\eProcurementApps\eProcurementApps.Models\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+D:\JobList\EProcrument\project\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.Mvc.dll
+D:\JobList\EProcrument\project\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.Razor.dll
+D:\JobList\EProcrument\project\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.WebPages.Razor.dll
+D:\JobList\EProcrument\project\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.WebPages.dll
+D:\JobList\EProcrument\project\eProcurementApps\eProcurementApps.Models\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\JobList\EProcrument\project\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\JobList\EProcrument\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.DataAccess.pdb
+D:\JobList\EProcrument\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.DataAccess.xml
+D:\JobList\EProcrument\project\eProcurementApps\eProcurementApps.Models\bin\Debug\EntityFramework.xml
+D:\JobList\EProcrument\project\eProcurementApps\eProcurementApps.Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\JobList\EProcrument\project\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.Mvc.xml
+D:\JobList\EProcrument\project\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.Razor.xml
+D:\JobList\EProcrument\project\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.WebPages.Razor.xml
+D:\JobList\EProcrument\project\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.WebPages.xml
+D:\JobList\EProcrument\project\eProcurementApps\eProcurementApps.Models\bin\Debug\Microsoft.Web.Infrastructure.xml
+D:\JobList\EProcrument\project\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\JobList\EProcrument\project\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.vbprojResolveAssemblyReference.cache
+D:\JobList\EProcrument\project\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.Resources.resources
+D:\JobList\EProcrument\project\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.vbproj.GenerateResource.Cache
+D:\JobList\EProcrument\project\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.dll
+D:\JobList\EProcrument\project\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.xml
+D:\JobList\EProcrument\project\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.pdb
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.WebPages.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.Mvc.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.Razor.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.WebPages.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\Microsoft.Web.Infrastructure.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\eProcurementApps.Models\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.Models.dll.config
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.Models.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.Models.pdb
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.Models.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps.Models\bin\Debug\EntityFramework.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps.Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.DataAccess.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps.Models\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps.Models\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.DataAccess.pdb
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps.Models\bin\Debug\eProcurementApps.DataAccess.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps.Models\bin\Debug\EntityFramework.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps.Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.vbprojResolveAssemblyReference.cache
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.Resources.resources
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.vbproj.GenerateResource.Cache
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\eProcurementApps.Models\obj\Debug\eProcurementApps.Models.pdb

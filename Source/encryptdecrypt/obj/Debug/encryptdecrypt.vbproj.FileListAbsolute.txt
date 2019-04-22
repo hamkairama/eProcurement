@@ -1,0 +1,51 @@
+D:\Source\Eproc\SVN_Eproc\01dev\project\eProcurementApps\encryptdecrypt\bin\Debug\encryptdecrypt.exe.config
+D:\Source\Eproc\SVN_Eproc\01dev\project\eProcurementApps\encryptdecrypt\bin\Debug\encryptdecrypt.exe
+D:\Source\Eproc\SVN_Eproc\01dev\project\eProcurementApps\encryptdecrypt\bin\Debug\encryptdecrypt.pdb
+D:\Source\Eproc\SVN_Eproc\01dev\project\eProcurementApps\encryptdecrypt\bin\Debug\encryptdecrypt.xml
+D:\Source\Eproc\SVN_Eproc\01dev\project\eProcurementApps\encryptdecrypt\obj\Debug\encryptdecrypt.vbprojResolveAssemblyReference.cache
+D:\Source\Eproc\SVN_Eproc\01dev\project\eProcurementApps\encryptdecrypt\obj\Debug\encryptdecrypt.Form1.resources
+D:\Source\Eproc\SVN_Eproc\01dev\project\eProcurementApps\encryptdecrypt\obj\Debug\encryptdecrypt.Resources.resources
+D:\Source\Eproc\SVN_Eproc\01dev\project\eProcurementApps\encryptdecrypt\obj\Debug\encryptdecrypt.vbproj.GenerateResource.Cache
+D:\Source\Eproc\SVN_Eproc\01dev\project\eProcurementApps\encryptdecrypt\obj\Debug\encryptdecrypt.exe
+D:\Source\Eproc\SVN_Eproc\01dev\project\eProcurementApps\encryptdecrypt\obj\Debug\encryptdecrypt.xml
+D:\Source\Eproc\SVN_Eproc\01dev\project\eProcurementApps\encryptdecrypt\obj\Debug\encryptdecrypt.pdb
+D:\Source\Eproc\SVN_Eproc\01dev\project\eProcurementApps\encryptdecrypt\bin\Debug\eProcurementApps.DataAccess.dll
+D:\Source\Eproc\SVN_Eproc\01dev\project\eProcurementApps\encryptdecrypt\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Source\Eproc\SVN_Eproc\01dev\project\eProcurementApps\encryptdecrypt\bin\Debug\EntityFramework.dll
+D:\Source\Eproc\SVN_Eproc\01dev\project\eProcurementApps\encryptdecrypt\bin\Debug\eProcurementApps.DataAccess.pdb
+D:\Source\Eproc\SVN_Eproc\01dev\project\eProcurementApps\encryptdecrypt\bin\Debug\eProcurementApps.DataAccess.xml
+D:\Source\Eproc\SVN_Eproc\01dev\project\eProcurementApps\encryptdecrypt\bin\Debug\EntityFramework.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\encryptdecrypt\bin\Debug\encryptdecrypt.exe.config
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\encryptdecrypt\obj\Debug\encryptdecrypt.exe
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\encryptdecrypt\obj\Debug\encryptdecrypt.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\encryptdecrypt\obj\Debug\encryptdecrypt.pdb
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\encryptdecrypt\bin\Debug\encryptdecrypt.exe
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\encryptdecrypt\bin\Debug\encryptdecrypt.pdb
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\encryptdecrypt\bin\Debug\encryptdecrypt.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\encryptdecrypt\bin\Debug\eProcurementApps.DataAccess.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\encryptdecrypt\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\encryptdecrypt\bin\Debug\EntityFramework.dll
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\encryptdecrypt\bin\Debug\eProcurementApps.DataAccess.pdb
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\encryptdecrypt\bin\Debug\eProcurementApps.DataAccess.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\encryptdecrypt\bin\Debug\EntityFramework.xml
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\encryptdecrypt\obj\Debug\encryptdecrypt.vbprojResolveAssemblyReference.cache
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\encryptdecrypt\obj\Debug\encryptdecrypt.Form1.resources
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\encryptdecrypt\obj\Debug\encryptdecrypt.Resources.resources
+D:\Hamka\eproc\eProcurement-SVN\01dev\project\eProcurementApps\encryptdecrypt\obj\Debug\encryptdecrypt.vbproj.GenerateResource.Cache
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\encryptdecrypt\bin\Debug\encryptdecrypt.exe.config
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\encryptdecrypt\bin\Debug\encryptdecrypt.exe
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\encryptdecrypt\bin\Debug\encryptdecrypt.pdb
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\encryptdecrypt\bin\Debug\encryptdecrypt.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\encryptdecrypt\bin\Debug\eProcurementApps.DataAccess.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\encryptdecrypt\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\encryptdecrypt\bin\Debug\EntityFramework.dll
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\encryptdecrypt\bin\Debug\eProcurementApps.DataAccess.pdb
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\encryptdecrypt\bin\Debug\eProcurementApps.DataAccess.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\encryptdecrypt\bin\Debug\EntityFramework.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\encryptdecrypt\obj\Debug\encryptdecrypt.vbprojResolveAssemblyReference.cache
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\encryptdecrypt\obj\Debug\encryptdecrypt.Form1.resources
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\encryptdecrypt\obj\Debug\encryptdecrypt.Resources.resources
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\encryptdecrypt\obj\Debug\encryptdecrypt.vbproj.GenerateResource.Cache
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\encryptdecrypt\obj\Debug\encryptdecrypt.exe
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\encryptdecrypt\obj\Debug\encryptdecrypt.xml
+D:\Hamka\eproc\eProcurement - Checkout\project\eProcurementApps\encryptdecrypt\obj\Debug\encryptdecrypt.pdb

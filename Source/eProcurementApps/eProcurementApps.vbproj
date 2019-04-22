@@ -1,0 +1,1254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A90B379C-3A9E-4EB4-AFCF-07560FC57BBD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>eProcurementApps</RootNamespace>
+    <AssemblyName>eProcurementApps</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>eProcurementApps.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>eProcurementApps.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPPlus, Version=4.1.0.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.4.1.0\lib\net40\EPPlus.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Runtime.Common.12.0.2402.15\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Runtime.Common.12.0.2402.15\lib\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Runtime.Common.12.0.2402.15\lib\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio 14.0\ReportViewer\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.12.1.24160719\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess.EntityFramework, Version=6.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.EntityFramework.12.1.2400\lib\net45\Oracle.ManagedDataAccess.EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.0.1\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.0.1\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.Mvc" />
+    <Import Include="System.Web.Mvc.Ajax" />
+    <Import Include="System.Web.Mvc.Html" />
+    <Import Include="System.Web.Routing" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\OriginalBundleConfig.vb" />
+    <Compile Include="App_Start\BundleConfig.vb" />
+    <Compile Include="App_Start\FilterConfig.vb" />
+    <Compile Include="App_Start\IdentityConfig.vb" />
+    <Compile Include="App_Start\RouteConfig.vb" />
+    <Compile Include="App_Start\Startup.Auth.vb" />
+    <Compile Include="Controllers\GMController.vb" />
+    <Compile Include="Controllers\SEARCHController.vb" />
+    <Compile Include="Controllers\CRVController.vb" />
+    <Compile Include="Controllers\APPROVAL_ROLEController.vb" />
+    <Compile Include="Controllers\BUDGET_CODEController.vb" />
+    <Compile Include="Controllers\OTHERSController.vb" />
+    <Compile Include="Controllers\DAILY_OPERATIONController.vb" />
+    <Compile Include="Controllers\PRICE_COMPARISONController.vb" />
+    <Compile Include="Controllers\PURCHASE_ORDERController.vb" />
+    <Compile Include="Controllers\REPORTController.vb" />
+    <Compile Include="Controllers\STOCKController.vb" />
+    <Compile Include="Controllers\CHART_OF_ACCOUNTController.vb" />
+    <Compile Include="Controllers\PURCHASING_REQUESTController.vb" />
+    <Compile Include="Controllers\REQUESTController.vb" />
+    <Compile Include="Controllers\WAController.vb" />
+    <Compile Include="Controllers\LEVELController.vb" />
+    <Compile Include="Controllers\DELIVERY_ADDRESSController.vb" />
+    <Compile Include="Controllers\ACTIVE_DIRECTORYController.vb" />
+    <Compile Include="Controllers\USERController.vb" />
+    <Compile Include="Controllers\ValidationController.vb" />
+    <Compile Include="Controllers\ROLEController.vb" />
+    <Compile Include="Controllers\SUPPLIERController.vb" />
+    <Compile Include="Controllers\PO_TYPEController.vb" />
+    <Compile Include="Controllers\HOLIDAYController.vb" />
+    <Compile Include="Controllers\FORM_SUB_TYPEController.vb" />
+    <Compile Include="Controllers\FORM_TYPEController.vb" />
+    <Compile Include="Controllers\GOOD_TYPEController.vb" />
+    <Compile Include="Controllers\DIVISIONController.vb" />
+    <Compile Include="Controllers\RELATED_DEPARTMENTController.vb" />
+    <Compile Include="Controllers\PPHController.vb" />
+    <Compile Include="Controllers\VATController.vb" />
+    <Compile Include="Controllers\DASHBOARDController.vb" />
+    <Compile Include="Controllers\ERRORController.vb" />
+    <Compile Include="Controllers\LOGINController.vb" />
+    <Compile Include="Controllers\CURRENCYController.vb" />
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Controllers\HOMEController.vb" />
+    <Compile Include="RDLC\DS_RDLC_REPORT.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_RDLC_REPORT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Startup.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="RDLC\TRANS_PO_RPT.rdlc" />
+    <Content Include="RDLC\TRANS_CRV_RPT.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Ace\assets\avatars\avatar.png" />
+    <Content Include="Ace\assets\avatars\avatar1.png" />
+    <Content Include="Ace\assets\avatars\avatar2.png" />
+    <Content Include="Ace\assets\avatars\avatar3.png" />
+    <Content Include="Ace\assets\avatars\avatar4.png" />
+    <Content Include="Ace\assets\avatars\avatar5.png" />
+    <Content Include="Ace\assets\avatars\profile-pic.jpg" />
+    <Content Include="Ace\assets\avatars\user.jpg" />
+    <Content Include="Ace\assets\css\ace-custom.css" />
+    <Content Include="Ace\assets\css\ace-fonts.css" />
+    <Content Include="Ace\assets\css\ace-ie.css" />
+    <Content Include="Ace\assets\css\ace-part2.css" />
+    <Content Include="Ace\assets\css\ace-rtl.css" />
+    <Content Include="Ace\assets\css\ace-skins.css" />
+    <Content Include="Ace\assets\css\ace.css" />
+    <Content Include="Ace\assets\css\ace.min.css" />
+    <Content Include="Ace\assets\css\ace.onpage-help.css" />
+    <Content Include="Ace\assets\css\bootstrap-datetimepicker.css" />
+    <Content Include="Ace\assets\css\bootstrap-duallistbox.css" />
+    <Content Include="Ace\assets\css\bootstrap-editable.css" />
+    <Content Include="Ace\assets\css\bootstrap-multiselect.css" />
+    <Content Include="Ace\assets\css\bootstrap-timepicker.css" />
+    <Content Include="Ace\assets\css\bootstrap.css" />
+    <Content Include="Ace\assets\css\bootstrap.min.css" />
+    <Content Include="Ace\assets\css\chosen-sprite%402x.png" />
+    <Content Include="Ace\assets\css\chosen-sprite.png" />
+    <Content Include="Ace\assets\css\chosen.css" />
+    <Content Include="Ace\assets\css\colorbox.css" />
+    <Content Include="Ace\assets\css\colorpicker.css" />
+    <Content Include="Ace\assets\css\datepicker.css" />
+    <Content Include="Ace\assets\css\daterangepicker.css" />
+    <Content Include="Ace\assets\css\dropzone.css" />
+    <Content Include="Ace\assets\css\font-awesome.css" />
+    <Content Include="Ace\assets\css\font-awesome.min.css" />
+    <Content Include="Ace\assets\css\fullcalendar.css" />
+    <Content Include="Ace\assets\css\fullcalendar.print.css" />
+    <Content Include="Ace\assets\css\images\border.png" />
+    <Content Include="Ace\assets\css\images\border1.png" />
+    <Content Include="Ace\assets\css\images\border2.png" />
+    <Content Include="Ace\assets\css\images\controls.png" />
+    <Content Include="Ace\assets\css\images\ie6\borderBottomCenter.png" />
+    <Content Include="Ace\assets\css\images\ie6\borderBottomLeft.png" />
+    <Content Include="Ace\assets\css\images\ie6\borderBottomRight.png" />
+    <Content Include="Ace\assets\css\images\ie6\borderMiddleLeft.png" />
+    <Content Include="Ace\assets\css\images\ie6\borderMiddleRight.png" />
+    <Content Include="Ace\assets\css\images\ie6\borderTopCenter.png" />
+    <Content Include="Ace\assets\css\images\ie6\borderTopLeft.png" />
+    <Content Include="Ace\assets\css\images\ie6\borderTopRight.png" />
+    <Content Include="Ace\assets\css\images\loading.gif" />
+    <Content Include="Ace\assets\css\images\loading_background.png" />
+    <Content Include="Ace\assets\css\images\meteorshower.jpg" />
+    <Content Include="Ace\assets\css\images\meteorshower2.jpg" />
+    <Content Include="Ace\assets\css\images\overlay.png" />
+    <Content Include="Ace\assets\css\images\pattern.jpg" />
+    <Content Include="Ace\assets\css\images\pattern.png" />
+    <Content Include="Ace\assets\css\images\spritemap%402x.png" />
+    <Content Include="Ace\assets\css\images\spritemap.png" />
+    <Content Include="Ace\assets\css\img\alpha.png" />
+    <Content Include="Ace\assets\css\img\hue.png" />
+    <Content Include="Ace\assets\css\img\saturation.png" />
+    <Content Include="Ace\assets\css\jquery-ui.css" />
+    <Content Include="Ace\assets\css\jquery-ui.custom.css" />
+    <Content Include="Ace\assets\css\jquery.gritter.css" />
+    <Content Include="Ace\assets\css\pace.css" />
+    <Content Include="Ace\assets\css\prettify.css" />
+    <Content Include="Ace\assets\css\select2-spinner.gif" />
+    <Content Include="Ace\assets\css\select2.css" />
+    <Content Include="Ace\assets\css\select2.png" />
+    <Content Include="Ace\assets\css\select2x2.png" />
+    <Content Include="Ace\assets\css\ui.jqgrid.css" />
+    <Content Include="Ace\assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="Ace\assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Ace\assets\images\back_disabled.png" />
+    <Content Include="Ace\assets\images\back_enabled.png" />
+    <Content Include="Ace\assets\images\back_enabled_hover.png" />
+    <Content Include="Ace\assets\images\email1.png" />
+    <Content Include="Ace\assets\images\email2.png" />
+    <Content Include="Ace\assets\images\email3.png" />
+    <Content Include="Ace\assets\images\email4.png" />
+    <Content Include="Ace\assets\images\forward_disabled.png" />
+    <Content Include="Ace\assets\images\forward_enabled.png" />
+    <Content Include="Ace\assets\images\forward_enabled_hover.png" />
+    <Content Include="Ace\assets\images\gallery\image-1.jpg" />
+    <Content Include="Ace\assets\images\gallery\image-2.jpg" />
+    <Content Include="Ace\assets\images\gallery\image-3.jpg" />
+    <Content Include="Ace\assets\images\gallery\image-4.jpg" />
+    <Content Include="Ace\assets\images\gallery\image-5.jpg" />
+    <Content Include="Ace\assets\images\gallery\image-6.jpg" />
+    <Content Include="Ace\assets\images\gallery\thumb-1.jpg" />
+    <Content Include="Ace\assets\images\gallery\thumb-2.jpg" />
+    <Content Include="Ace\assets\images\gallery\thumb-3.jpg" />
+    <Content Include="Ace\assets\images\gallery\thumb-4.jpg" />
+    <Content Include="Ace\assets\images\gallery\thumb-5.jpg" />
+    <Content Include="Ace\assets\images\gallery\thumb-6.jpg" />
+    <Content Include="Ace\assets\images\sort_asc.png" />
+    <Content Include="Ace\assets\images\sort_asc_disabled.png" />
+    <Content Include="Ace\assets\images\sort_both.png" />
+    <Content Include="Ace\assets\images\sort_desc.png" />
+    <Content Include="Ace\assets\images\sort_desc_disabled.png" />
+    <Content Include="Ace\assets\images\spritemap%402x.png" />
+    <Content Include="Ace\assets\images\spritemap.png" />
+    <Content Include="Ace\assets\img\clear.png" />
+    <Content Include="Ace\assets\img\glyphicons-halflings-white.png" />
+    <Content Include="Ace\assets\img\glyphicons-halflings.png" />
+    <Content Include="Ace\assets\img\loading.gif" />
+    <Content Include="Ace\assets\js\ace-elements.js" />
+    <Content Include="Ace\assets\js\ace-extra.js" />
+    <Content Include="Ace\assets\js\ace.js" />
+    <Content Include="Ace\assets\js\ace\ace.ajax-content.js" />
+    <Content Include="Ace\assets\js\ace\ace.auto-container.js" />
+    <Content Include="Ace\assets\js\ace\ace.auto-padding.js" />
+    <Content Include="Ace\assets\js\ace\ace.js" />
+    <Content Include="Ace\assets\js\ace\ace.onpage-help.js" />
+    <Content Include="Ace\assets\js\ace\ace.searchbox-autocomplete.js" />
+    <Content Include="Ace\assets\js\ace\ace.settings-rtl.js" />
+    <Content Include="Ace\assets\js\ace\ace.settings-skin.js" />
+    <Content Include="Ace\assets\js\ace\ace.settings.js" />
+    <Content Include="Ace\assets\js\ace\ace.sidebar-scroll-1.js" />
+    <Content Include="Ace\assets\js\ace\ace.sidebar-scroll-2.js" />
+    <Content Include="Ace\assets\js\ace\ace.sidebar.js" />
+    <Content Include="Ace\assets\js\ace\ace.submenu-hover.js" />
+    <Content Include="Ace\assets\js\ace\ace.touch-drag.js" />
+    <Content Include="Ace\assets\js\ace\ace.widget-box.js" />
+    <Content Include="Ace\assets\js\ace\ace.widget-on-reload.js" />
+    <Content Include="Ace\assets\js\ace\elements.aside.js" />
+    <Content Include="Ace\assets\js\ace\elements.colorpicker.js" />
+    <Content Include="Ace\assets\js\ace\elements.fileinput.js" />
+    <Content Include="Ace\assets\js\ace\elements.onpage-help.js" />
+    <Content Include="Ace\assets\js\ace\elements.scroller.js" />
+    <Content Include="Ace\assets\js\ace\elements.spinner.js" />
+    <Content Include="Ace\assets\js\ace\elements.treeview.js" />
+    <Content Include="Ace\assets\js\ace\elements.typeahead.js" />
+    <Content Include="Ace\assets\js\ace\elements.wizard.js" />
+    <Content Include="Ace\assets\js\ace\elements.wysiwyg.js" />
+    <Content Include="Ace\assets\js\additional-methods.js" />
+    <Content Include="Ace\assets\js\bootbox.js" />
+    <Content Include="Ace\assets\js\bootstrap-colorpicker.js" />
+    <Content Include="Ace\assets\js\bootstrap-multiselect.js" />
+    <Content Include="Ace\assets\js\bootstrap-tag.js" />
+    <Content Include="Ace\assets\js\bootstrap-wysiwyg.js" />
+    <Content Include="Ace\assets\js\bootstrap.js" />
+    <Content Include="Ace\assets\js\chosen.jquery.js" />
+    <Content Include="Ace\assets\js\dataTables\extensions\ColVis\js\dataTables.colVis.js" />
+    <Content Include="Ace\assets\js\dataTables\extensions\TableTools\js\dataTables.tableTools.js" />
+    <Content Include="Ace\assets\js\dataTables\extensions\TableTools\swf\copy_csv_xls.swf" />
+    <Content Include="Ace\assets\js\dataTables\extensions\TableTools\swf\copy_csv_xls_pdf.swf" />
+    <Content Include="Ace\assets\js\dataTables\jquery.dataTables.bootstrap.js" />
+    <Content Include="Ace\assets\js\dataTables\jquery.dataTables.js" />
+    <Content Include="Ace\assets\js\date-time\bootstrap-datepicker.js" />
+    <Content Include="Ace\assets\js\date-time\bootstrap-datetimepicker.js" />
+    <Content Include="Ace\assets\js\date-time\bootstrap-timepicker.js" />
+    <Content Include="Ace\assets\js\date-time\daterangepicker.js" />
+    <Content Include="Ace\assets\js\date-time\moment.js" />
+    <Content Include="Ace\assets\js\dropzone.js" />
+    <Content Include="Ace\assets\js\excanvas.js" />
+    <Content Include="Ace\assets\js\flot\jquery.flot.js" />
+    <Content Include="Ace\assets\js\flot\jquery.flot.pie.js" />
+    <Content Include="Ace\assets\js\flot\jquery.flot.resize.js" />
+    <Content Include="Ace\assets\js\fuelux\fuelux.spinner.js" />
+    <Content Include="Ace\assets\js\fuelux\fuelux.tree.js" />
+    <Content Include="Ace\assets\js\fuelux\fuelux.wizard.js" />
+    <Content Include="Ace\assets\js\fullcalendar.js" />
+    <Content Include="Ace\assets\js\html5shiv.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-ar.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-bg.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-bg1251.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-cat.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-cn.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-cs.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-da.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-de.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-dk.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-el.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-en.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-es.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-fa.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-fi.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-fr.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-gl.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-he.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-hr.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-hr1250.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-hu.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-id.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-is.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-it.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-ja.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-kr.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-lt.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-mne.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-nl.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-no.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-pl.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-pt-br.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-pt.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-ro.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-ru.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-sk.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-sr-latin.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-sr.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-sv.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-th.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-tr.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-tw.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-ua.js" />
+    <Content Include="Ace\assets\js\jqGrid\i18n\grid.locale-vi.js" />
+    <Content Include="Ace\assets\js\jqGrid\jquery.jqGrid.src.js" />
+    <Content Include="Ace\assets\js\jquery-ui.custom.js" />
+    <Content Include="Ace\assets\js\jquery-ui.js" />
+    <Content Include="Ace\assets\js\jquery.autosize.js" />
+    <Content Include="Ace\assets\js\jquery.bootstrap-duallistbox.js" />
+    <Content Include="Ace\assets\js\jquery.colorbox.js" />
+    <Content Include="Ace\assets\js\jquery.easypiechart.js" />
+    <Content Include="Ace\assets\js\jquery.gritter.js" />
+    <Content Include="Ace\assets\js\jquery.hotkeys.js" />
+    <Content Include="Ace\assets\js\jquery.inputlimiter.1.3.1.js" />
+    <Content Include="Ace\assets\js\jquery.js" />
+    <Content Include="Ace\assets\js\jquery.knob.js" />
+    <Content Include="Ace\assets\js\jquery.maskedinput.js" />
+    <Content Include="Ace\assets\js\jquery.mobile.custom.js" />
+    <Content Include="Ace\assets\js\jquery.mousewheel.js" />
+    <Content Include="Ace\assets\js\jquery.nestable.js" />
+    <Content Include="Ace\assets\js\jquery.raty.js" />
+    <Content Include="Ace\assets\js\jquery.slimscroll.js" />
+    <Content Include="Ace\assets\js\jquery.sparkline.js" />
+    <Content Include="Ace\assets\js\jquery.ui.touch-punch.js" />
+    <Content Include="Ace\assets\js\jquery.validate.js" />
+    <Content Include="Ace\assets\js\jquery1x.js" />
+    <Content Include="Ace\assets\js\markdown\bootstrap-markdown.js" />
+    <Content Include="Ace\assets\js\markdown\markdown.js" />
+    <Content Include="Ace\assets\js\markdown\to-markdown.js" />
+    <Content Include="Ace\assets\js\pace.js" />
+    <Content Include="Ace\assets\js\prettify.js" />
+    <Content Include="Ace\assets\js\respond.js" />
+    <Content Include="Ace\assets\js\select2.js" />
+    <Content Include="Ace\assets\js\spin.js" />
+    <Content Include="Ace\assets\js\typeahead.jquery.js" />
+    <Content Include="Ace\assets\js\x-editable\ace-editable.js" />
+    <Content Include="Ace\assets\js\x-editable\bootstrap-editable.js" />
+    <Content Include="Ace\docs\assets\js\language\css.js" />
+    <Content Include="Ace\docs\assets\js\language\generic.js" />
+    <Content Include="Ace\docs\assets\js\language\html.js" />
+    <Content Include="Ace\docs\assets\js\language\javascript.js" />
+    <Content Include="Ace\docs\assets\js\language\php.js" />
+    <Content Include="Ace\docs\assets\js\rainbow.js" />
+    <Content Include="Ace\docs\assets\js\rainbow.min.js" />
+    <Content Include="Ace\docs\assets\js\themes\all-hallows-eve.css" />
+    <Content Include="Ace\docs\assets\js\themes\blackboard.css" />
+    <Content Include="Ace\docs\assets\js\themes\dreamweaver.css" />
+    <Content Include="Ace\docs\assets\js\themes\espresso-libre.css" />
+    <Content Include="Ace\docs\assets\js\themes\github.css" />
+    <Content Include="Ace\docs\assets\js\themes\kimbie-dark.css" />
+    <Content Include="Ace\docs\assets\js\themes\kimbie-light.css" />
+    <Content Include="Ace\docs\assets\js\themes\monokai.css" />
+    <Content Include="Ace\docs\assets\js\themes\obsidian.css" />
+    <Content Include="Ace\docs\assets\js\themes\paraiso-dark.css" />
+    <Content Include="Ace\docs\assets\js\themes\paraiso-light.css" />
+    <Content Include="Ace\docs\assets\js\themes\pastie.css" />
+    <Content Include="Ace\docs\assets\js\themes\solarized-dark.css" />
+    <Content Include="Ace\docs\assets\js\themes\solarized-light.css" />
+    <Content Include="Ace\docs\assets\js\themes\sunburst.css" />
+    <Content Include="Ace\docs\assets\js\themes\tomorrow-night.css" />
+    <Content Include="Ace\docs\assets\js\themes\tricolore.css" />
+    <Content Include="Ace\docs\assets\js\themes\twilight.css" />
+    <Content Include="Ace\docs\assets\js\themes\zenburnesque.css" />
+    <Content Include="Ace\docs\blank.html" />
+    <Content Include="Ace\docs\images\active.png" />
+    <Content Include="Ace\docs\images\default.png" />
+    <Content Include="Ace\docs\images\help-icon1.png" />
+    <Content Include="Ace\docs\images\help-icon2.png" />
+    <Content Include="Ace\docs\images\help-include-all.png" />
+    <Content Include="Ace\docs\images\help-panels.png" />
+    <Content Include="Ace\docs\images\navbar-mobile1.png" />
+    <Content Include="Ace\docs\images\navbar-mobile2.png" />
+    <Content Include="Ace\docs\images\navbar.png" />
+    <Content Include="Ace\docs\images\new-toggle.png" />
+    <Content Include="Ace\docs\images\old-toggle.png" />
+    <Content Include="Ace\docs\images\scroll-content.png" />
+    <Content Include="Ace\docs\images\sidebar-mobile1.png" />
+    <Content Include="Ace\docs\images\sidebar-mobile2.png" />
+    <Content Include="Ace\docs\images\sidebar.png" />
+    <Content Include="Ace\docs\images\tabbed-dropdown.png" />
+    <Content Include="Ace\docs\images\tabless-inbox.png" />
+    <Content Include="Ace\docs\images\toggle-sidebar-1.png" />
+    <Content Include="Ace\docs\images\toggle-sidebar-11.png" />
+    <Content Include="Ace\docs\images\toggle-sidebar-3.png" />
+    <Content Include="Ace\docs\images\user-menu.png" />
+    <Content Include="Ace\docs\index.html" />
+    <Content Include="Ace\docs\sections\basics\ajax.html" />
+    <Content Include="Ace\docs\sections\basics\content.html" />
+    <Content Include="Ace\docs\sections\basics\footer.html" />
+    <Content Include="Ace\docs\sections\basics\layout.html" />
+    <Content Include="Ace\docs\sections\basics\navbar.html" />
+    <Content Include="Ace\docs\sections\basics\sidebar.html" />
+    <Content Include="Ace\docs\sections\changes\index.html" />
+    <Content Include="Ace\docs\sections\credits\index.html" />
+    <Content Include="Ace\docs\sections\custom\checkbox.html" />
+    <Content Include="Ace\docs\sections\custom\colorpicker.html" />
+    <Content Include="Ace\docs\sections\custom\content-slider.html" />
+    <Content Include="Ace\docs\sections\custom\extra.html" />
+    <Content Include="Ace\docs\sections\custom\file-input.html" />
+    <Content Include="Ace\docs\sections\custom\index.html" />
+    <Content Include="Ace\docs\sections\custom\inline-editable.html" />
+    <Content Include="Ace\docs\sections\custom\onpage-help.html" />
+    <Content Include="Ace\docs\sections\custom\scrollbar.html" />
+    <Content Include="Ace\docs\sections\custom\widget-box.html" />
+    <Content Include="Ace\docs\sections\elements\index.html" />
+    <Content Include="Ace\docs\sections\files\css.html" />
+    <Content Include="Ace\docs\sections\files\examples.html" />
+    <Content Include="Ace\docs\sections\files\html.html" />
+    <Content Include="Ace\docs\sections\files\javascript.html" />
+    <Content Include="Ace\docs\sections\files\mustache.html" />
+    <Content Include="Ace\docs\sections\intro\index.html" />
+    <Content Include="Ace\docs\sections\issues\index.html" />
+    <Content Include="Ace\docs\sections\pages\dashboard.html" />
+    <Content Include="Ace\docs\sections\pages\email.html" />
+    <Content Include="Ace\docs\sections\pages\error.html" />
+    <Content Include="Ace\docs\sections\pages\faq.html" />
+    <Content Include="Ace\docs\sections\pages\gallery.html" />
+    <Content Include="Ace\docs\sections\pages\inbox.html" />
+    <Content Include="Ace\docs\sections\pages\invoice.html" />
+    <Content Include="Ace\docs\sections\pages\login.html" />
+    <Content Include="Ace\docs\sections\pages\pricing.html" />
+    <Content Include="Ace\docs\sections\pages\profile.html" />
+    <Content Include="Ace\docs\sections\pages\timeline.html" />
+    <Content Include="Ace\docs\sections\plugins\bootstrap.html" />
+    <Content Include="Ace\docs\sections\plugins\charts.html" />
+    <Content Include="Ace\docs\sections\plugins\date-time.html" />
+    <Content Include="Ace\docs\sections\plugins\editor.html" />
+    <Content Include="Ace\docs\sections\plugins\fuelux.html" />
+    <Content Include="Ace\docs\sections\plugins\input.html" />
+    <Content Include="Ace\docs\sections\plugins\jquery.html" />
+    <Content Include="Ace\docs\sections\plugins\misc.html" />
+    <Content Include="Ace\docs\sections\plugins\tables.html" />
+    <Content Include="Ace\docs\sections\plugins\tools.html" />
+    <Content Include="Ace\docs\sections\settings\index.html" />
+    <Content Include="Ace\fileInput\fileinput.css" />
+    <Content Include="Ace\fileInput\fileinput.js" />
+    <Content Include="Ace\fileInput\theme.css" />
+    <Content Include="Attachments\sample.gif" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Custom\CustomRequired.css" />
+    <Content Include="Content\Custom\CustomLoading.css" />
+    <Content Include="Content\jquery-ui.css" />
+    <Content Include="Content\loading.gif" />
+    <Content Include="Content\TreeView\CustomTreeView.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Ace\assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="Ace\assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Ace\assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="Ace\assets\fonts\FontAwesome.otf" />
+    <Content Include="Ace\assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Ace\assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Ace\assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Ace\assets\fonts\OpenSans-300.woff" />
+    <Content Include="Ace\assets\fonts\OpenSans-400.woff" />
+    <Content Include="Ace\assets\fonts\readme" />
+    <Content Include="Ace\assets\css\less\ace-features.less" />
+    <Content Include="Ace\assets\css\less\ace-nav.less" />
+    <Content Include="Ace\assets\css\less\ace-responsive.less" />
+    <Content Include="Ace\assets\css\less\ace-rtl.less" />
+    <Content Include="Ace\assets\css\less\ace.less" />
+    <Content Include="Ace\assets\css\less\basic.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\alerts.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\badges.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\bootstrap.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\breadcrumbs.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\button-groups.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\buttons.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\carousel.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\close.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\code.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\component-animations.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\dropdowns.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\forms.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\glyphicons.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\grid.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\input-groups.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\jumbotron.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\labels.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\list-group.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\media.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\mixins.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\mixins\alerts.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\mixins\background-variant.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\mixins\border-radius.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\mixins\buttons.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\mixins\center-block.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\mixins\clearfix.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\mixins\forms.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\mixins\gradients.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\mixins\grid-framework.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\mixins\grid.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\mixins\hide-text.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\mixins\image.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\mixins\labels.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\mixins\list-group.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\mixins\nav-divider.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\mixins\nav-vertical-align.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\mixins\opacity.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\mixins\pagination.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\mixins\panels.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\mixins\progress-bar.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\mixins\reset-filter.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\mixins\resize.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\mixins\responsive-visibility.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\mixins\size.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\mixins\tab-focus.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\mixins\table-row.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\mixins\text-emphasis.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\mixins\text-overflow.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\mixins\vendor-prefixes.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\modals.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\navbar.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\navs.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\normalize.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\pager.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\pagination.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\panels.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\popovers.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\print.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\progress-bars.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\responsive-embed.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\responsive-utilities.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\scaffolding.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\tables.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\theme.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\thumbnails.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\tooltip.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\type.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\utilities.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\variables.less" />
+    <Content Include="Ace\assets\css\less\bootstrap\wells.less" />
+    <Content Include="Ace\assets\css\less\breadcrumbs.less" />
+    <Content Include="Ace\assets\css\less\bs3-reset.less" />
+    <Content Include="Ace\assets\css\less\buttons.less" />
+    <Content Include="Ace\assets\css\less\dropdown.less" />
+    <Content Include="Ace\assets\css\less\dropdown\colorpicker.less" />
+    <Content Include="Ace\assets\css\less\dropdown\navbar-dropdown.less" />
+    <Content Include="Ace\assets\css\less\dropdown\navbar-tabbed-dropdown.less" />
+    <Content Include="Ace\assets\css\less\ext\bootstrap-tag.less" />
+    <Content Include="Ace\assets\css\less\fonts-rel.less" />
+    <Content Include="Ace\assets\css\less\fonts.less" />
+    <Content Include="Ace\assets\css\less\footer.less" />
+    <Content Include="Ace\assets\css\less\form.less" />
+    <Content Include="Ace\assets\css\less\form\checkbox.less" />
+    <Content Include="Ace\assets\css\less\form\file.less" />
+    <Content Include="Ace\assets\css\less\gallery.less" />
+    <Content Include="Ace\assets\css\less\general.less" />
+    <Content Include="Ace\assets\css\less\icon-animated.less" />
+    <Content Include="Ace\assets\css\less\infobox.less" />
+    <Content Include="Ace\assets\css\less\items.less" />
+    <Content Include="Ace\assets\css\less\label-badge.less" />
+    <Content Include="Ace\assets\css\less\mixins.less" />
+    <Content Include="Ace\assets\css\less\modal.less" />
+    <Content Include="Ace\assets\css\less\navbar\collapsible.less" />
+    <Content Include="Ace\assets\css\less\navbar\navbar-menu-form.less" />
+    <Content Include="Ace\assets\css\less\navbar\toggle-button.less" />
+    <Content Include="Ace\assets\css\less\navbar\user-buttons-move-down.less" />
+    <Content Include="Ace\assets\css\less\navbar\user-buttons.less" />
+    <Content Include="Ace\assets\css\less\navbar\user-dropdown-position.less" />
+    <Content Include="Ace\assets\css\less\navbar\user-menu.less" />
+    <Content Include="Ace\assets\css\less\onpage-help.less" />
+    <Content Include="Ace\assets\css\less\other.less" />
+    <Content Include="Ace\assets\css\less\page.error.less" />
+    <Content Include="Ace\assets\css\less\page.inbox.less" />
+    <Content Include="Ace\assets\css\less\page.invoice.less" />
+    <Content Include="Ace\assets\css\less\page.login.less" />
+    <Content Include="Ace\assets\css\less\page.pricing.less" />
+    <Content Include="Ace\assets\css\less\page.profile.less" />
+    <Content Include="Ace\assets\css\less\page.timeline.less" />
+    <Content Include="Ace\assets\css\less\print.less" />
+    <Content Include="Ace\assets\css\less\progressbar.less" />
+    <Content Include="Ace\assets\css\less\scroll.less" />
+    <Content Include="Ace\assets\css\less\searchbox.less" />
+    <Content Include="Ace\assets\css\less\sidebar.less" />
+    <Content Include="Ace\assets\css\less\sidebar\active.less" />
+    <Content Include="Ace\assets\css\less\sidebar\compact.less" />
+    <Content Include="Ace\assets\css\less\sidebar\ff_fix.less" />
+    <Content Include="Ace\assets\css\less\sidebar\highlight.less" />
+    <Content Include="Ace\assets\css\less\sidebar\horizontal.less" />
+    <Content Include="Ace\assets\css\less\sidebar\hover.less" />
+    <Content Include="Ace\assets\css\less\sidebar\min.less" />
+    <Content Include="Ace\assets\css\less\sidebar\multiple.less" />
+    <Content Include="Ace\assets\css\less\sidebar\old-toggle-button.less" />
+    <Content Include="Ace\assets\css\less\sidebar\responsive-1.less" />
+    <Content Include="Ace\assets\css\less\sidebar\responsive-2.less" />
+    <Content Include="Ace\assets\css\less\sidebar\responsive-3.less" />
+    <Content Include="Ace\assets\css\less\sidebar\shortcuts-toggle.less" />
+    <Content Include="Ace\assets\css\less\sidebar\sidebar-fixed.less" />
+    <Content Include="Ace\assets\css\less\sidebar\sub-arrow.less" />
+    <Content Include="Ace\assets\css\less\skins\empty.less" />
+    <Content Include="Ace\assets\css\less\skins\no-skin.less" />
+    <Content Include="Ace\assets\css\less\skins\skin-1.less" />
+    <Content Include="Ace\assets\css\less\skins\skin-2.less" />
+    <Content Include="Ace\assets\css\less\skins\skin-3.less" />
+    <Content Include="Ace\assets\css\less\skins\skins.less" />
+    <Content Include="Ace\assets\css\less\tab-accordion.less" />
+    <Content Include="Ace\assets\css\less\tables.less" />
+    <Content Include="Ace\assets\css\less\thirdparty-calendar.less" />
+    <Content Include="Ace\assets\css\less\thirdparty-chosen.less" />
+    <Content Include="Ace\assets\css\less\thirdparty-colorbox.less" />
+    <Content Include="Ace\assets\css\less\thirdparty-dataTables.less" />
+    <Content Include="Ace\assets\css\less\thirdparty-date.less" />
+    <Content Include="Ace\assets\css\less\thirdparty-dropzone.less" />
+    <Content Include="Ace\assets\css\less\thirdparty-duallist-multiselect.less" />
+    <Content Include="Ace\assets\css\less\thirdparty-editable.less" />
+    <Content Include="Ace\assets\css\less\thirdparty-fuelux.less" />
+    <Content Include="Ace\assets\css\less\thirdparty-gritter.less" />
+    <Content Include="Ace\assets\css\less\thirdparty-jqgrid.less" />
+    <Content Include="Ace\assets\css\less\thirdparty-jquery-ui.less" />
+    <Content Include="Ace\assets\css\less\thirdparty-nestable.less" />
+    <Content Include="Ace\assets\css\less\thirdparty-raty.less" />
+    <Content Include="Ace\assets\css\less\thirdparty-select2.less" />
+    <Content Include="Ace\assets\css\less\thirdparty-slider.less" />
+    <Content Include="Ace\assets\css\less\thirdparty-typeahead.less" />
+    <Content Include="Ace\assets\css\less\thirdparty-wysiwyg.less" />
+    <Content Include="Ace\assets\css\less\tooltip-popover.less" />
+    <Content Include="Ace\assets\css\less\utility.less" />
+    <Content Include="Ace\assets\css\less\variables.less" />
+    <Content Include="Ace\assets\css\less\widget.less" />
+    <Content Include="Ace\assets\js\ace\readme" />
+    <Content Include="Ace\assets\js\ace\scripts.json" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\eprocurementRelease.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="RDLC\DS_RDLC_REPORT.xsc">
+      <DependentUpon>DS_RDLC_REPORT.xsd</DependentUpon>
+    </Content>
+    <None Include="RDLC\DS_RDLC_REPORT.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_RDLC_REPORT.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="RDLC\DS_RDLC_REPORT.xss">
+      <DependentUpon>DS_RDLC_REPORT.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\CRV\FormPrint.vbhtml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Images\eproc1.ico" />
+    <Content Include="favicon.ico" />
+    <Content Include="Images\eproc2.ico" />
+    <Content Include="Images\eproc3.ico" />
+    <Content Include="Images\eproc4.ico" />
+    <Content Include="Images\eproc5.ico" />
+    <Content Include="Scripts\bootstrap-modal.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\Content.js" />
+    <Content Include="Scripts\Controllers\APPROVALROLEController.js" />
+    <Content Include="Scripts\Controllers\GMController.js" />
+    <Content Include="Scripts\Controllers\CRVController.js" />
+    <Content Include="Scripts\Controllers\APPROVAL_ROLEController.js" />
+    <Content Include="Scripts\Controllers\OTHERSController.js" />
+    <Content Include="Scripts\Controllers\DASHBOARDController.js" />
+    <Content Include="Scripts\Controllers\PRICE_COMPARISONController.js" />
+    <Content Include="Scripts\Controllers\PURCHASING_ORDERController.js" />
+    <Content Include="Scripts\Controllers\PURCHASING_ORDER_DETAILController.js" />
+    <Content Include="Scripts\Controllers\REPORTController.js" />
+    <Content Include="Scripts\Controllers\DAILY_OPERATIONController.js" />
+    <Content Include="Scripts\Controllers\PR_DETAIL_HEADERController.js" />
+    <Content Include="Scripts\Controllers\LIST_PRController.js" />
+    <Content Include="Scripts\Controllers\STOCKController.js" />
+    <Content Include="Scripts\Controllers\CHART_OF_ACCOUNTController.js" />
+    <Content Include="Scripts\Controllers\PURCHASING_REQUESTController.js" />
+    <Content Include="Scripts\Controllers\REQUESTController.js" />
+    <Content Include="Scripts\Controllers\PR_EVALUATIONController.js" />
+    <Content Include="Scripts\Custom\CustomAccounting.js" />
+    <Content Include="Scripts\Custom\CustomOtherTable.js" />
+    <Content Include="Scripts\Controllers\BUDGET_CODEController.js" />
+    <Content Include="Scripts\Controllers\WAController.js" />
+    <Content Include="Scripts\Controllers\LEVELController.js" />
+    <Content Include="Scripts\Controllers\DELIVERY_ADDRESSController.js" />
+    <Content Include="Scripts\Controllers\ROLEController.js" />
+    <Content Include="Scripts\Controllers\ACTIVE_DIRECTORYController.js" />
+    <Content Include="Scripts\Controllers\USERController.js" />
+    <Content Include="Scripts\Controllers\SUPPLIERController.js" />
+    <Content Include="Scripts\Controllers\PO_TYPEController.js" />
+    <Content Include="Scripts\Controllers\HOLIDAYController.js" />
+    <Content Include="Scripts\Controllers\FORM_SUB_TYPEController.js" />
+    <Content Include="Scripts\Controllers\FORM_TYPEController.js" />
+    <Content Include="Scripts\Controllers\GOOD_TYPEController.js" />
+    <Content Include="Scripts\Controllers\DIVISIONController.js" />
+    <Content Include="Scripts\Controllers\RELATED_DEPARTMENTController.js" />
+    <Content Include="Scripts\Controllers\PPHController.js" />
+    <Content Include="Scripts\Controllers\VATController.js" />
+    <Content Include="Scripts\Controllers\CURRENCYController.js" />
+    <Content Include="Scripts\Custom\CustomRequired.js" />
+    <Content Include="Scripts\Helpers\Common.js" />
+    <Content Include="Scripts\jquery.tabletojson.js" />
+    <Content Include="Scripts\Standard\StandardProfile.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-1.4.3.min.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\Layout.js" />
+    <Content Include="Scripts\modalform.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\Standard\StandardModal.js" />
+    <Content Include="Scripts\Shoes.js" />
+    <Content Include="Scripts\site.js" />
+    <Content Include="Scripts\Standard\StandardForm.js" />
+    <Content Include="Scripts\Standard\StandardLogin.js" />
+    <Content Include="Scripts\Standard\StandardTable.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <None Include="Scripts\_references.js" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.vbhtml" />
+    <Content Include="Views\Account\ConfirmEmail.vbhtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.vbhtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.vbhtml" />
+    <Content Include="Views\Account\ForgotPassword.vbhtml" />
+    <Content Include="Views\Account\ForgotPasswordConfirmation.vbhtml" />
+    <Content Include="Views\Account\Register.vbhtml" />
+    <Content Include="Views\Account\ResetPassword.vbhtml" />
+    <Content Include="Views\Account\ResetPasswordConfirmation.vbhtml" />
+    <Content Include="Views\Account\SendCode.vbhtml" />
+    <Content Include="Views\Account\VerifyCode.vbhtml" />
+    <Content Include="Views\Manage\AddPhoneNumber.vbhtml" />
+    <Content Include="Views\Manage\ChangePassword.vbhtml" />
+    <Content Include="Views\Manage\Index.vbhtml" />
+    <Content Include="Views\Manage\ManageLogins.vbhtml" />
+    <Content Include="Views\Manage\SetPassword.vbhtml" />
+    <Content Include="Views\Manage\VerifyPhoneNumber.vbhtml" />
+    <Content Include="Views\SHARED\Lockout.vbhtml" />
+    <Content Include="Views\SHARED\_LoginPartial.vbhtml" />
+    <Content Include="Views\SHARED\_Breadcrumbs.vbhtml" />
+    <Content Include="Views\SHARED\_Footer.vbhtml" />
+    <Content Include="Views\SHARED\_Navbar.vbhtml" />
+    <Content Include="Views\SHARED\_PageHeader.vbhtml" />
+    <Content Include="Views\SHARED\_PageSetting.vbhtml" />
+    <Content Include="Views\SHARED\_Layout.vbhtml" />
+    <Content Include="Views\Account\Login.vbhtml" />
+    <Content Include="Views\Login\Login.vbhtml" />
+    <Content Include="Views\Home\Tables.vbhtml" />
+    <Content Include="Views\Home\Index.vbhtml" />
+    <Content Include="Views\Home\NestableList.vbhtml" />
+    <Content Include="Views\Login\Login - Copy.vbhtml" />
+    <Content Include="Views\Home\UserProfile.vbhtml" />
+    <Content Include="Views\SHARED\_Sidebar.vbhtml" />
+    <Content Include="Views\DASHBOARD\Index.vbhtml" />
+    <Content Include="Views\Home\Bootstrap.vbhtml" />
+    <Content Include="Views\SHARED\FailWhale.vbhtml" />
+    <Content Include="Views\CURRENCY\_Create.vbhtml" />
+    <Content Include="Views\CURRENCY\_Delete.vbhtml" />
+    <Content Include="Views\CURRENCY\_Details.vbhtml" />
+    <Content Include="Views\CURRENCY\_Edit.vbhtml" />
+    <Content Include="Views\CURRENCY\_List.vbhtml" />
+    <Content Include="Views\CURRENCY\Index.vbhtml" />
+    <Content Include="Views\VAT\_Create.vbhtml" />
+    <Content Include="Views\VAT\_Delete.vbhtml" />
+    <Content Include="Views\VAT\_Details.vbhtml" />
+    <Content Include="Views\VAT\_Edit.vbhtml" />
+    <Content Include="Views\VAT\_List.vbhtml" />
+    <Content Include="Views\VAT\Index.vbhtml" />
+    <Content Include="Views\PPH\_Create.vbhtml" />
+    <Content Include="Views\PPH\_Delete.vbhtml" />
+    <Content Include="Views\PPH\_Details.vbhtml" />
+    <Content Include="Views\PPH\_Edit.vbhtml" />
+    <Content Include="Views\PPH\_List.vbhtml" />
+    <Content Include="Views\PPH\Index.vbhtml" />
+    <Content Include="Views\RELATED_DEPARTMENT\Create.vbhtml" />
+    <Content Include="Views\RELATED_DEPARTMENT\_Delete.vbhtml" />
+    <Content Include="Views\RELATED_DEPARTMENT\_Details.vbhtml" />
+    <Content Include="Views\RELATED_DEPARTMENT\_Edit.vbhtml" />
+    <Content Include="Views\RELATED_DEPARTMENT\_List.vbhtml" />
+    <Content Include="Views\RELATED_DEPARTMENT\Index.vbhtml" />
+    <Content Include="Views\DIVISION\_Create.vbhtml" />
+    <Content Include="Views\DIVISION\_Delete.vbhtml" />
+    <Content Include="Views\DIVISION\_Details.vbhtml" />
+    <Content Include="Views\DIVISION\_Edit.vbhtml" />
+    <Content Include="Views\DIVISION\_List.vbhtml" />
+    <Content Include="Views\DIVISION\Index.vbhtml" />
+    <Content Include="Views\BUDGET_CODE\_Create.vbhtml" />
+    <Content Include="Views\BUDGET_CODE\_Delete.vbhtml" />
+    <Content Include="Views\BUDGET_CODE\_Details.vbhtml" />
+    <Content Include="Views\BUDGET_CODE\_Edit.vbhtml" />
+    <Content Include="Views\BUDGET_CODE\_List.vbhtml" />
+    <Content Include="Views\BUDGET_CODE\Index.vbhtml" />
+    <Content Include="Views\GOOD_TYPE\_Create.vbhtml" />
+    <Content Include="Views\GOOD_TYPE\_Delete.vbhtml" />
+    <Content Include="Views\GOOD_TYPE\_Details.vbhtml" />
+    <Content Include="Views\GOOD_TYPE\_Edit.vbhtml" />
+    <Content Include="Views\GOOD_TYPE\_List.vbhtml" />
+    <Content Include="Views\GOOD_TYPE\Index.vbhtml" />
+    <Content Include="Views\FORM_TYPE\_Create.vbhtml" />
+    <Content Include="Views\FORM_TYPE\_Delete.vbhtml" />
+    <Content Include="Views\FORM_TYPE\_Details.vbhtml" />
+    <Content Include="Views\FORM_TYPE\_Edit.vbhtml" />
+    <Content Include="Views\FORM_TYPE\_List.vbhtml" />
+    <Content Include="Views\FORM_TYPE\Index.vbhtml" />
+    <Content Include="Views\FORM_SUB_TYPE\Create.vbhtml" />
+    <Content Include="Views\FORM_SUB_TYPE\_Delete.vbhtml" />
+    <Content Include="Views\FORM_SUB_TYPE\_Details.vbhtml" />
+    <Content Include="Views\FORM_SUB_TYPE\_Edit.vbhtml" />
+    <Content Include="Views\FORM_SUB_TYPE\_List.vbhtml" />
+    <Content Include="Views\FORM_SUB_TYPE\Index.vbhtml" />
+    <Content Include="Views\HOLIDAY\_Create.vbhtml" />
+    <Content Include="Views\HOLIDAY\_Delete.vbhtml" />
+    <Content Include="Views\HOLIDAY\_Details.vbhtml" />
+    <Content Include="Views\HOLIDAY\_Edit.vbhtml" />
+    <Content Include="Views\HOLIDAY\_List.vbhtml" />
+    <Content Include="Views\HOLIDAY\Index.vbhtml" />
+    <Content Include="Views\PO_TYPE\_Create.vbhtml" />
+    <Content Include="Views\PO_TYPE\_Delete.vbhtml" />
+    <Content Include="Views\PO_TYPE\_Details.vbhtml" />
+    <Content Include="Views\PO_TYPE\_Edit.vbhtml" />
+    <Content Include="Views\PO_TYPE\_List.vbhtml" />
+    <Content Include="Views\PO_TYPE\Index.vbhtml" />
+    <Content Include="Views\DELIVERY_ADDRESS\_Create.vbhtml" />
+    <Content Include="Views\DELIVERY_ADDRESS\_Delete.vbhtml" />
+    <Content Include="Views\DELIVERY_ADDRESS\_Details.vbhtml" />
+    <Content Include="Views\DELIVERY_ADDRESS\_Edit.vbhtml" />
+    <Content Include="Views\DELIVERY_ADDRESS\_List.vbhtml" />
+    <Content Include="Views\DELIVERY_ADDRESS\Index.vbhtml" />
+    <Content Include="Views\SUPPLIER\_Create.vbhtml" />
+    <Content Include="Views\SUPPLIER\_Delete.vbhtml" />
+    <Content Include="Views\SUPPLIER\_Details.vbhtml" />
+    <Content Include="Views\SUPPLIER\_Edit.vbhtml" />
+    <Content Include="Views\SUPPLIER\_List.vbhtml" />
+    <Content Include="Views\SUPPLIER\Index.vbhtml" />
+    <Content Include="Views\ROLE\_Create.vbhtml" />
+    <Content Include="Views\ROLE\_Delete.vbhtml" />
+    <Content Include="Views\ROLE\_Details.vbhtml" />
+    <Content Include="Views\ROLE\_Edit.vbhtml" />
+    <Content Include="Views\ROLE\_List.vbhtml" />
+    <Content Include="Views\ROLE\Index.vbhtml" />
+    <Content Include="Views\Home\TreeView.vbhtml" />
+    <Content Include="Views\Home\TreeViewFolder.vbhtml" />
+    <Content Include="Views\Home\TreeViewCheckList.vbhtml" />
+    <Content Include="Views\Home\TreeViewCheckList - Copy.vbhtml" />
+    <Content Include="Views\ACTIVE_DIRECTORY\_List.vbhtml" />
+    <Content Include="Views\USER\Index.vbhtml" />
+    <Content Include="Views\USER\_List.vbhtml" />
+    <Content Include="Views\USER\Create.vbhtml" />
+    <Content Include="Views\ACTIVE_DIRECTORY\_Index.vbhtml" />
+    <Content Include="Views\USER\Edit.vbhtml" />
+    <Content Include="Views\Login\CheckAuthorize.vbhtml" />
+    <Content Include="Views\LEVEL\_Create.vbhtml" />
+    <Content Include="Views\LEVEL\_Delete.vbhtml" />
+    <Content Include="Views\LEVEL\_Details.vbhtml" />
+    <Content Include="Views\LEVEL\_Edit.vbhtml" />
+    <Content Include="Views\LEVEL\_List.vbhtml" />
+    <Content Include="Views\LEVEL\Index.vbhtml" />
+    <Content Include="Views\WA\Create.vbhtml" />
+    <Content Include="Views\WA\_Delete.vbhtml" />
+    <Content Include="Views\WA\_Details.vbhtml" />
+    <Content Include="Views\WA\Edit.vbhtml" />
+    <Content Include="Views\WA\_List.vbhtml" />
+    <Content Include="Views\WA\Index.vbhtml" />
+    <Content Include="Views\USER\Delete.vbhtml" />
+    <Content Include="Views\USER\Details.vbhtml" />
+    <Content Include="Views\Error\_Maintaince.vbhtml" />
+    <Content Include="Views\DASHBOARD\IndexJobLists.vbhtml" />
+    <Content Include="Views\PURCHASING_REQUEST\IndexListPR.vbhtml" />
+    <Content Include="Views\PURCHASING_REQUEST\Create.vbhtml" />
+    <Content Include="Views\PURCHASING_REQUEST\_ListRelDept.vbhtml" />
+    <Content Include="Views\USER\_DetailProfile.vbhtml" />
+    <Content Include="Views\CHART_OF_ACCOUNT\_Create.vbhtml" />
+    <Content Include="Views\CHART_OF_ACCOUNT\_Delete.vbhtml" />
+    <Content Include="Views\CHART_OF_ACCOUNT\_Details.vbhtml" />
+    <Content Include="Views\CHART_OF_ACCOUNT\_Edit.vbhtml" />
+    <Content Include="Views\CHART_OF_ACCOUNT\_List.vbhtml" />
+    <Content Include="Views\CHART_OF_ACCOUNT\Index.vbhtml" />
+    <Content Include="Views\STOCK\_Create.vbhtml" />
+    <Content Include="Views\STOCK\_Delete.vbhtml" />
+    <Content Include="Views\STOCK\_Details.vbhtml" />
+    <Content Include="Views\STOCK\_Edit.vbhtml" />
+    <Content Include="Views\STOCK\_List.vbhtml" />
+    <Content Include="Views\STOCK\Index.vbhtml" />
+    <Content Include="Views\WA\_PopupWA.vbhtml" />
+    <Content Include="Views\STOCK\_PopupStock.vbhtml" />
+    <Content Include="Views\STOCK\_PopupStockList.vbhtml" />
+    <Content Include="Views\PURCHASING_REQUEST\_ListPR.vbhtml" />
+    <Content Include="Views\PURCHASING_REQUEST\DetailHeader.vbhtml" />
+    <Content Include="Views\PURCHASING_REQUEST\_DetailItem.vbhtml" />
+    <Content Include="Views\PURCHASING_REQUEST\_DetailItemReview.vbhtml" />
+    <Content Include="Views\PURCHASING_REQUEST\_DetailItemApprove.vbhtml" />
+    <Content Include="Views\PURCHASING_REQUEST\_UserNotRegistered.vbhtml" />
+    <Content Include="Views\REQUEST\_List.vbhtml" />
+    <Content Include="Views\REQUEST\IndexRequestList.vbhtml" />
+    <Content Include="Views\USER\RequestApproveComplete.vbhtml" />
+    <Content Include="Views\REPORT\ReportMyListPR.vbhtml" />
+    <Content Include="Views\DAILY_OPERATION\DailyOperationStockSummary.vbhtml" />
+    <Content Include="Views\DAILY_OPERATION\DailyOperationNonStock.vbhtml" />
+    <Content Include="Views\REPORT\ReportTAT.vbhtml" />
+    <Content Include="Views\DAILY_OPERATION\_ListDOStock.vbhtml" />
+    <Content Include="Views\DAILY_OPERATION\_ListDONonStock.vbhtml" />
+    <Content Include="Views\REPORT\_ListReportTAT.vbhtml" />
+    <Content Include="Views\REPORT\_ListMyReport.vbhtml" />
+    <Content Include="Views\PURCHASING_REQUEST\PrintDetailHeader.vbhtml" />
+    <Content Include="Views\PURCHASING_REQUEST\DetailHeaderRevise.vbhtml" />
+    <Content Include="Views\DASHBOARD\_ListApprPR.vbhtml" />
+    <Content Include="Views\PURCHASING_REQUEST\DetailHeaderEdit.vbhtml" />
+    <Content Include="Views\SUPPLIER\_PopupSupplier.vbhtml" />
+    <Content Include="Views\SUPPLIER\_PopupSupplierList.vbhtml" />
+    <Content Include="Views\OTHERS\_ListDocuments.vbhtml" />
+    <Content Include="Views\OTHERS\IndexDocuments.vbhtml" />
+    <Content Include="Views\OTHERS\_Delete.vbhtml" />
+    <Content Include="Views\PURCHASING_REQUEST\_EvaluationSupplier.vbhtml" />
+    <Content Include="Views\SUPPLIER\_SuppEvaluation.vbhtml" />
+    <Content Include="Views\PURCHASE_ORDER\Create.vbhtml" />
+    <Content Include="Views\PURCHASE_ORDER\DetailHeader.vbhtml" />
+    <Content Include="Views\PURCHASE_ORDER\_DetailItemPO.vbhtml" />
+    <Content Include="Views\PURCHASE_ORDER\_DetailsCRV.vbhtml" />
+    <Content Include="Views\PURCHASE_ORDER\_ListPO.vbhtml" />
+    <Content Include="Views\PURCHASE_ORDER\_PopupDetails.vbhtml" />
+    <Content Include="Views\PURCHASE_ORDER\_PrintDetailPO.vbhtml" />
+    <Content Include="Views\USER\IndexRequestUser.vbhtml" />
+    <Content Include="Views\WA\RequestApproveComplete.vbhtml" />
+    <Content Include="Views\RELATED_DEPARTMENT\RequestApproveComplete.vbhtml" />
+    <Content Include="Views\FORM_SUB_TYPE\RequestApproveComplete.vbhtml" />
+    <Content Include="Views\CHART_OF_ACCOUNT\RequestApproveComplete.vbhtml" />
+    <Content Include="Views\PRICE_COMPARISON\_DetailItemPO.vbhtml" />
+    <Content Include="Views\PRICE_COMPARISON\_ListApprovalWa.vbhtml" />
+    <Content Include="Views\PRICE_COMPARISON\_ListPC.vbhtml" />
+    <Content Include="Views\PRICE_COMPARISON\_PopupAcknowledgeUser.vbhtml" />
+    <Content Include="Views\PRICE_COMPARISON\_RecommSupp.vbhtml" />
+    <Content Include="Views\PRICE_COMPARISON\Create.vbhtml" />
+    <Content Include="Views\PRICE_COMPARISON\DetailPC.vbhtml" />
+    <Content Include="Views\APPROVAL_ROLE\Index.vbhtml" />
+    <Content Include="Views\APPROVAL_ROLE\FormInput.vbhtml" />
+    <Content Include="Views\APPROVAL_ROLE\FormList.vbhtml" />
+    <Content Include="Views\CRV\FormInput.vbhtml" />
+    <Content Include="Views\CRV\FormList.vbhtml" />
+    <Content Include="Views\CRV\Index.vbhtml" />
+    <Content Include="Views\SEARCH\FormSearch.vbhtml" />
+    <Content Include="Views\GM\FormInput.vbhtml" />
+    <Content Include="Views\GM\FormList.vbhtml" />
+    <Content Include="Views\GM\Index.vbhtml" />
+    <Content Include="Views\PURCHASE_ORDER\_DetailsPC.vbhtml" />
+    <Content Include="Views\PURCHASE_ORDER\FormReport.vbhtml" />
+    <Content Include="Views\CRV\FormReport.vbhtml" />
+    <Content Include="Views\DAILY_OPERATION\_ListDOStockSummary.vbhtml" />
+    <Content Include="Views\DAILY_OPERATION\DailyOperationStock.vbhtml" />
+    <Content Include="Views\STOCK\FormReportStockMovement.vbhtml" />
+    <Content Include="Views\STOCK\FormReportStockMovementMonthly.vbhtml" />
+    <Content Include="Views\PURCHASING_REQUEST\_PopupChooseOneApproval.vbhtml" />
+    <Content Include="Views\PURCHASING_REQUEST\_ListApprovalWa.vbhtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Views\_ViewStart.vbhtml" />
+    <Content Include="Views\Home\About.vbhtml" />
+    <Content Include="Views\Home\Contact.vbhtml" />
+    <Content Include="Views\Home\FormElements.vbhtml" />
+    <Content Include="Views\SHARED\Error.vbhtml" />
+    <Content Include="Views\SHARED\_OriginalLayout.vbhtml" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\eProcurementApps.DataAccess\eProcurementApps.DataAccess.vbproj">
+      <Project>{f31484ef-0a5e-431f-90ed-1c805edf899c}</Project>
+      <Name>eProcurementApps.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eProcurementApps.Facade\eProcurementApps.Facade.vbproj">
+      <Project>{979994a5-b1b1-4d13-9e99-ed88773f88bd}</Project>
+      <Name>eProcurementApps.Facade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eProcurementApps.Helpers\eProcurementApps.Helpers.vbproj">
+      <Project>{2222bb04-34e0-496c-8ff9-58a2d36b5f0e}</Project>
+      <Name>eProcurementApps.Helpers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eProcurementApps.Models\eProcurementApps.Models.vbproj">
+      <Project>{f507c7f6-0779-4492-a52b-961e5d41f722}</Project>
+      <Name>eProcurementApps.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>12827</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53235/eprocurement/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

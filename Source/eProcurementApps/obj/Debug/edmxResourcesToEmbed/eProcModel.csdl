@@ -1,0 +1,2487 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="eProcurementModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="MenuSidebar">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MenuCode" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MenuDescription" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IsInduk" Type="Int16" Nullable="false" />
+    <Property Name="Method" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Controller" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="MenuInduk" Type="Int32" Nullable="false" />
+    <Property Name="Icon" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CreatedBy" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LastModifiedTime" Type="DateTime" Precision="3" />
+    <Property Name="LastModifiedBy" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="TimeStatus" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="RowStatus" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TPROC_ACKNOW_APPR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PC_ID" Type="Int32" Nullable="false" />
+    <Property Name="WA_ID" Type="Int32" Nullable="false" />
+    <Property Name="WA_NUMBER" Type="Int32" Nullable="false" />
+    <Property Name="STATUS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TPROC_ACKNOW_APPR_DT" Relationship="Self.FK_TPROC_ACKNOW_APPR" FromRole="TPROC_ACKNOW_APPR" ToRole="TPROC_ACKNOW_APPR_DT" />
+  </EntityType>
+  <EntityType Name="TPROC_APPR_PC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PC_ID" Type="Int32" Nullable="false" />
+    <Property Name="USER_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AS_IS" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="STATUS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TPROC_PC" Relationship="Self.FK_TPROC_PC_APPR" FromRole="TPROC_APPR_PC" ToRole="TPROC_PC" />
+  </EntityType>
+  <EntityType Name="TPROC_APPR_PO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PO_ID" Type="Int32" Nullable="false" />
+    <Property Name="USER_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AS_IS" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="STATUS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TPROC_PO_HEADERS" Relationship="Self.FK_TPROC_PO_APPR" FromRole="TPROC_APPR_PO" ToRole="TPROC_PO_HEADERS" />
+  </EntityType>
+  <EntityType Name="TPROC_APPR_RELDEPT_DT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="APPROVAL_RELDEPT_GR_ID" Type="Int32" Nullable="false" />
+    <Property Name="APPROVAL_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LEVEL_ID" Type="Int32" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="USER_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TPROC_APPR_RELDEPT_GR" Relationship="Self.FK_TPROC_APPR_RELDEPT_GR_2" FromRole="TPROC_APPR_RELDEPT_DT" ToRole="TPROC_APPR_RELDEPT_GR" />
+    <NavigationProperty Name="TPROC_LEVEL" Relationship="Self.FK_TPROC_LEVEL_RELDEPT" FromRole="TPROC_APPR_RELDEPT_DT" ToRole="TPROC_LEVEL" />
+  </EntityType>
+  <EntityType Name="TPROC_APPR_RELDEPT_GR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="REV_RD_ID" Type="Int32" />
+    <NavigationProperty Name="TPROC_APPR_RELDEPT_DT" Relationship="Self.FK_TPROC_APPR_RELDEPT_GR_2" FromRole="TPROC_APPR_RELDEPT_GR" ToRole="TPROC_APPR_RELDEPT_DT" />
+    <NavigationProperty Name="TPROC_REL_DEPT" Relationship="Self.FK_APPROVAL_RELDEPT_GR" FromRole="TPROC_APPR_RELDEPT_GR" ToRole="TPROC_REL_DEPT" />
+  </EntityType>
+  <EntityType Name="TPROC_APPROVAL_DT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="APPROVAL_GROUP_ID" Type="Int32" Nullable="false" />
+    <Property Name="APPROVAL_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="FLOW_NUMBER" Type="Int32" Nullable="false" />
+    <Property Name="LEVEL_ID" Type="Int32" />
+    <Property Name="EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="USER_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TPROC_APPROVAL_GR" Relationship="Self.FK_APPROVAL_GROUP" FromRole="TPROC_APPROVAL_DT" ToRole="TPROC_APPROVAL_GR" />
+    <NavigationProperty Name="TPROC_LEVEL" Relationship="Self.FK_LEVEL_APPROVAL_DT" FromRole="TPROC_APPROVAL_DT" ToRole="TPROC_LEVEL" />
+  </EntityType>
+  <EntityType Name="TPROC_APPROVAL_GR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="DEPARTMENT_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DIVISION_ID" Type="Int32" />
+    <Property Name="REV_WA_ID" Type="Int32" />
+    <NavigationProperty Name="TPROC_APPROVAL_DT" Relationship="Self.FK_APPROVAL_GROUP" FromRole="TPROC_APPROVAL_GR" ToRole="TPROC_APPROVAL_DT" />
+    <NavigationProperty Name="TPROC_WA" Relationship="Self.FK_APPROVAL_GROUP_WA" FromRole="TPROC_APPROVAL_GR" ToRole="TPROC_WA" />
+    <NavigationProperty Name="TPROC_DIVISION" Relationship="Self.FK_DIVISION" FromRole="TPROC_APPROVAL_GR" ToRole="TPROC_DIVISION" />
+  </EntityType>
+  <EntityType Name="TPROC_APPROVAL_ROLE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="LEVEL_ID" Type="Int32" Nullable="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USER_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USER_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SIGNATURE_IMAGE" Type="Binary" MaxLength="1" FixedLength="false" />
+    <NavigationProperty Name="TPROC_LEVEL" Relationship="Self.FK_LEVEL_APPROVAL_ROLE" FromRole="TPROC_APPROVAL_ROLE" ToRole="TPROC_LEVEL" />
+  </EntityType>
+  <EntityType Name="TPROC_BUDGET_CODE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TABLE_BUDGET" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="TABLE_BUDGET_USAGE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CD_PRINTING_USAGE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CD_PRINTING_START" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CD_PRINTING_END" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CD_OFFICE_SUPPLIE_USAGE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CD_OFFICE_SUPPLIE_START" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CD_OFFICE_SUPPLIE_END" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CD_ASSET_NONASSET_USAGE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CD_ASSET_NONASSET_START" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CD_ASSET_NONASSET_END" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CD_PROMOTIONAL_ITEM_USAGE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CD_PROMOTIONAL_ITEM_START" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CD_PROMOTIONAL_ITEM_END" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="IS_ACTIVE" Type="Int32" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="CD_ISSUED_USAGE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="TABLE_T1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="TABLE_T2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="TABLE_T3" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="TABLE_T5" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CD_OFFICE_SUPPLIE_MT" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CD_PRINTING_MT" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TPROC_CHART_OF_ACCOUNT_GR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CRCY_CD" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ACCT_NUM" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ACCT_DESC" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="REV_COA_ID" Type="Int32" />
+    <Property Name="CONVERTED_ACCT_NUM" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TPROC_CHART_OF_ACCOUNTS" Relationship="Self.FK_TPROC_COA_GR_FST" FromRole="TPROC_CHART_OF_ACCOUNT_GR" ToRole="TPROC_CHART_OF_ACCOUNTS" />
+  </EntityType>
+  <EntityType Name="TPROC_CHART_OF_ACCOUNTS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="0" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="SUB_COA_GR_ID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TPROC_CHART_OF_ACCOUNT_GR" Relationship="Self.FK_TPROC_COA_GR_FST" FromRole="TPROC_CHART_OF_ACCOUNTS" ToRole="TPROC_CHART_OF_ACCOUNT_GR" />
+  </EntityType>
+  <EntityType Name="TPROC_CONTROL_PARAMETERS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="TERR_CD" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PARM_TYP" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="STATE_CD" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PARM_VALU" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="PARM_DESC" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DATA_TYP" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="TPROC_CURRENCY">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CURRENCY_NAME" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RATE" Type="Int32" Nullable="false" />
+    <Property Name="START_DATE" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="CONVERSION_RP" Type="Int32" />
+    <NavigationProperty Name="TPROC_PO_HEADERS" Relationship="Self.FK_TPROC_CURRENCY" FromRole="TPROC_CURRENCY" ToRole="TPROC_PO_HEADERS" />
+  </EntityType>
+  <EntityType Name="TPROC_DELIVERY_ADDRESS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DELIVERY_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DELIVERY_ADDRESS" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DEFAULT_IND" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="DELIVERY_PHONE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DELIVERY_FAX" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TPROC_PO_HEADERS" Relationship="Self.FK_TPROC_DELIVERY_ADDRESS" FromRole="TPROC_DELIVERY_ADDRESS" ToRole="TPROC_PO_HEADERS" />
+  </EntityType>
+  <EntityType Name="TPROC_DIVISION">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DIVISION_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DIVISION_DESCRIPTION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TPROC_APPROVAL_GR" Relationship="Self.FK_DIVISION" FromRole="TPROC_DIVISION" ToRole="TPROC_APPROVAL_GR" />
+    <NavigationProperty Name="TPROC_USER_DT" Relationship="Self.FK_DIVISION_USER_DT" FromRole="TPROC_DIVISION" ToRole="TPROC_USER_DT" />
+  </EntityType>
+  <EntityType Name="TPROC_DOCUMENTS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FILE_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TPROC_FIELD_DESCRIPTIONS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="APP_CD" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FLD_NM" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FLD_NM_DESC" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DATA_TYP" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DFLT_VALU" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="USER_MODIFY_IND" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="TPROC_FIELD_VALUES">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="APP_CD" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FLD_NM" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FLD_VALU" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FLD_VALU_DESC" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="FLD_VALU_DESC_ENG" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="SEQ_NUM" Type="Int32" />
+    <Property Name="FLD_VALU_MNE_CD" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="STAT_CD" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TPROC_FORM_SUB_TYPE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="SUB_FORMTYPE_GR_ID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TPROC_PR_HEADER" Relationship="Self.FK_TPROC_FORM_SUB_TYPE" FromRole="TPROC_FORM_SUB_TYPE" ToRole="TPROC_PR_HEADER" />
+    <NavigationProperty Name="TPROC_FORM_SUBTYPE_GR" Relationship="Self.FK_TPROC_SUBTYPE_GR_FST" FromRole="TPROC_FORM_SUB_TYPE" ToRole="TPROC_FORM_SUBTYPE_GR" />
+  </EntityType>
+  <EntityType Name="TPROC_FORM_SUBTYPE_DT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="REL_DEPT_ID" Type="Int32" Nullable="false" />
+    <Property Name="FORM_SUBTYPE_GR_ID" Type="Int32" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="FLOW_NUMBER" Type="Int32" />
+    <NavigationProperty Name="TPROC_FORM_SUBTYPE_GR" Relationship="Self.FK_TPROC_SUBTYPE_DT_FT" FromRole="TPROC_FORM_SUBTYPE_DT" ToRole="TPROC_FORM_SUBTYPE_GR" />
+    <NavigationProperty Name="TPROC_REL_DEPT" Relationship="Self.FK_TPROC_SUBTYPE_DT_RD" FromRole="TPROC_FORM_SUBTYPE_DT" ToRole="TPROC_REL_DEPT" />
+  </EntityType>
+  <EntityType Name="TPROC_FORM_SUBTYPE_GR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="FORM_TYPE_ID" Type="Int32" />
+    <Property Name="SUB_FORM_TYPE_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SUB_FORM_TYPE_DESCRIPTION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SLA" Type="Int32" />
+    <Property Name="POPUP_ACCOUNT" Type="Int32" />
+    <Property Name="BUDGET_CODE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ACCOUNT_CODE_START" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ACCOUNT_CODE_END" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="REV_FST_ID" Type="Int32" />
+    <NavigationProperty Name="TPROC_FORM_SUB_TYPE" Relationship="Self.FK_TPROC_SUBTYPE_GR_FST" FromRole="TPROC_FORM_SUBTYPE_GR" ToRole="TPROC_FORM_SUB_TYPE" />
+    <NavigationProperty Name="TPROC_FORM_SUBTYPE_DT" Relationship="Self.FK_TPROC_SUBTYPE_DT_FT" FromRole="TPROC_FORM_SUBTYPE_GR" ToRole="TPROC_FORM_SUBTYPE_DT" />
+    <NavigationProperty Name="TPROC_FST_BUDGET_CD_ADD" Relationship="Self.FK_TPROC_FST_BUDGET_CD_ADD" FromRole="TPROC_FORM_SUBTYPE_GR" ToRole="TPROC_FST_BUDGET_CD_ADD" />
+    <NavigationProperty Name="TPROC_FORM_TYPE" Relationship="Self.FK_TPROC_SUBTYPE_GR_FT" FromRole="TPROC_FORM_SUBTYPE_GR" ToRole="TPROC_FORM_TYPE" />
+  </EntityType>
+  <EntityType Name="TPROC_FORM_TYPE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FORM_TYPE_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FORM_TYPE_DESCRIPTION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="IS_GOOD_TYPE" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TPROC_FORM_SUBTYPE_GR" Relationship="Self.FK_TPROC_SUBTYPE_GR_FT" FromRole="TPROC_FORM_TYPE" ToRole="TPROC_FORM_SUBTYPE_GR" />
+    <NavigationProperty Name="TPROC_PR_HEADER" Relationship="Self.FK_TPROC_FORM_TYPE" FromRole="TPROC_FORM_TYPE" ToRole="TPROC_PR_HEADER" />
+    <NavigationProperty Name="TPROC_PO_TYPE" Relationship="Self.FK_TPROC_FORM_TYPE_PO" FromRole="TPROC_FORM_TYPE" ToRole="TPROC_PO_TYPE" />
+    <NavigationProperty Name="TPROC_STOCK" Relationship="Self.FK_TPROC_FORM_TYPE_STOCK" FromRole="TPROC_FORM_TYPE" ToRole="TPROC_STOCK" />
+  </EntityType>
+  <EntityType Name="TPROC_FST_BUDGET_CD_ADD">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FORM_SUBTYPE_GR_ID" Type="Int32" Nullable="false" />
+    <Property Name="BUDGET_CODE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ACCOUNT_CODE_START" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ACCOUNT_CODE_END" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TPROC_FORM_SUBTYPE_GR" Relationship="Self.FK_TPROC_FST_BUDGET_CD_ADD" FromRole="TPROC_FST_BUDGET_CD_ADD" ToRole="TPROC_FORM_SUBTYPE_GR" />
+  </EntityType>
+  <EntityType Name="TPROC_GENERATOR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TABLE_CODE" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TABLE_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_SEQ_NO" Type="Int32" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TPROC_GM_HEADERS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="GM_INTEGER" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CREATE_DATETIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="PO_ID" Type="Int32" />
+    <Property Name="PREPARED_BY" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="APPOROVED_BY" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="NOTES" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="COMPLETED_BY" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="COMPLETED_DATETIME" Type="DateTime" Precision="3" />
+    <Property Name="REJECTED_BY" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="REJECTED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="REJECTNOTE" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="HANDLED_BY" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="HANDLED_DATETIME" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="TPROC_PO_HEADERS" Relationship="Self.FK_GM_TPROC_PO_HEADERS" FromRole="TPROC_GM_HEADERS" ToRole="TPROC_PO_HEADERS" />
+  </EntityType>
+  <EntityType Name="TPROC_GOOD_TYPE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GOOD_TYPE_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="GOOD_TYPE_DESCRIPTION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TPROC_STOCK" Relationship="Self.FK_TPROC_GOOD_TYPE" FromRole="TPROC_GOOD_TYPE" ToRole="TPROC_STOCK" />
+    <NavigationProperty Name="TPROC_PR_HEADER" Relationship="Self.FK_TPROC_GOOD_TYPE_PR_HEADER" FromRole="TPROC_GOOD_TYPE" ToRole="TPROC_PR_HEADER" />
+  </EntityType>
+  <EntityType Name="TPROC_HOLIDAY">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HOLIDAY_DATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="HOLIDAY_DESCRIPTION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CURR_YEAR" Type="Int32" Nullable="false" />
+    <Property Name="CURR_MONTH" Type="Int32" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TPROC_LEVEL">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="INDONESIAN_LEVEL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RUPIAH_LIMIT" Type="Int32" Nullable="false" />
+    <Property Name="CANADIAN_DOLLARS" Type="Int32" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TPROC_APPR_RELDEPT_DT" Relationship="Self.FK_TPROC_LEVEL_RELDEPT" FromRole="TPROC_LEVEL" ToRole="TPROC_APPR_RELDEPT_DT" />
+    <NavigationProperty Name="TPROC_APPROVAL_DT" Relationship="Self.FK_LEVEL_APPROVAL_DT" FromRole="TPROC_LEVEL" ToRole="TPROC_APPROVAL_DT" />
+    <NavigationProperty Name="TPROC_APPROVAL_ROLE" Relationship="Self.FK_LEVEL_APPROVAL_ROLE" FromRole="TPROC_LEVEL" ToRole="TPROC_APPROVAL_ROLE" />
+  </EntityType>
+  <EntityType Name="TPROC_LOG_TRANSACTIONS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FORM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TRANSACTION_DESCRIPTION" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TPROC_MENU">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MENU_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MENU_PARENT_ID" Type="Int32" />
+    <Property Name="MENU_DESCRIPTION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TPROC_ROLE_MENU" Relationship="Self.FK_MENU_ROLE_EPROC" FromRole="TPROC_MENU" ToRole="TPROC_ROLE_MENU" />
+  </EntityType>
+  <EntityType Name="TPROC_PARAMETERS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="PARAMETER_CODE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PARAMETER_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PARAMETER_DESCRIPTION" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PARAMETER_VALUE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="TPROC_PC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PC_NUM" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PO_TYPE_NM" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RECOM_SUPPLIER_NM" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="RECOM_SUPPLIER_ID" Type="Int32" Nullable="false" />
+    <Property Name="RECOM_SUPPLIER_CP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RECOM_SUPPLIER_PHONE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RECOM_SUPPLIER_FAX" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RECOM_SUPPLIER_ADDRESS" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DELIVERY_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DELIVERY_ID" Type="Int32" Nullable="false" />
+    <Property Name="DELIVERY_DATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DELIVERY_PHONE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DELIVERY_FAX" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DELIVERY_ADDRESS" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="GRAND_TOTAL" Type="Int32" Nullable="false" />
+    <Property Name="NOTE_BY_USER" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="NOTE_BY_EPROC" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="IS_DISC_PERC" Type="Int32" />
+    <Property Name="IS_VAT_PERC" Type="Int32" />
+    <Property Name="IS_PPH_PERC" Type="Int32" />
+    <Property Name="STATUS" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="NOTES" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CURRENCY" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="IS_ACKNOWLEDGE_USER" Type="Int32" />
+    <Property Name="FOR_STORAGE" Type="Int32" />
+    <Property Name="FILE_NAME" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ADD_COST" Type="Int32" />
+    <Property Name="FINAL_TOTAL" Type="Int32" />
+    <Property Name="ADD_COST_DESC" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="REJECT_REASON" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="REJECT_BY" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="REJECT_DATE" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="TPROC_APPR_PC" Relationship="Self.FK_TPROC_PC_APPR" FromRole="TPROC_PC" ToRole="TPROC_APPR_PC" />
+    <NavigationProperty Name="TPROC_PC_SP_GR" Relationship="Self.FK_PC_SP_GR" FromRole="TPROC_PC" ToRole="TPROC_PC_SP_GR" />
+    <NavigationProperty Name="TPROC_PC_HISTORICAL" Relationship="Self.FK_TPROC_PC_HISTORY" FromRole="TPROC_PC" ToRole="TPROC_PC_HISTORICAL" />
+    <NavigationProperty Name="TPROC_VRF_PC" Relationship="Self.FK_TPROC_PC_VRF" FromRole="TPROC_PC" ToRole="TPROC_VRF_PC" />
+  </EntityType>
+  <EntityType Name="TPROC_PC_DT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ITEM_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UNIT_MEASUREMENT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="QUANTITY" Type="Int32" Nullable="false" />
+    <Property Name="PRICE" Type="Int32" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="0" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="TOTAL" Type="Int32" />
+    <Property Name="ROW_NUM" Type="Int32" />
+    <Property Name="PC_ID" Type="Int32" />
+    <NavigationProperty Name="TPROC_PC_SP_DT" Relationship="Self.FK_PC_DT" FromRole="TPROC_PC_DT" ToRole="TPROC_PC_SP_DT" />
+  </EntityType>
+  <EntityType Name="TPROC_PC_HISTORICAL">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PC_ID" Type="Int32" Nullable="false" />
+    <Property Name="HISTORICAL_DT" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="HISTORICAL_STATUS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="HISTORICAL_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="QUEUE" Type="Int32" />
+    <NavigationProperty Name="TPROC_PC" Relationship="Self.FK_TPROC_PC_HISTORY" FromRole="TPROC_PC_HISTORICAL" ToRole="TPROC_PC" />
+  </EntityType>
+  <EntityType Name="TPROC_PC_SP_DT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PC_SP_GR_ID" Type="Int32" Nullable="false" />
+    <Property Name="PRICE_PER_PIECE" Type="Int32" Nullable="false" />
+    <Property Name="PRICE_TOTAL" Type="Int32" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="PC_DT_ID" Type="Int32" />
+    <NavigationProperty Name="TPROC_PC_DT" Relationship="Self.FK_PC_DT" FromRole="TPROC_PC_SP_DT" ToRole="TPROC_PC_DT" />
+    <NavigationProperty Name="TPROC_PC_SP_GR" Relationship="Self.FK_TPROC_PC_SP_GR" FromRole="TPROC_PC_SP_DT" ToRole="TPROC_PC_SP_GR" />
+  </EntityType>
+  <EntityType Name="TPROC_PC_SP_GR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PC_ID" Type="Int32" Nullable="false" />
+    <Property Name="SUPP_ID" Type="Int32" Nullable="false" />
+    <Property Name="SUPP_NM" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="URL_ATTACHMENT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IS_USED" Type="Int32" />
+    <Property Name="COL_NUM" Type="Int32" Nullable="false" />
+    <Property Name="GRAND_TOTAL" Type="Int32" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="DISCOUNT" Type="Int32" />
+    <Property Name="VAT" Type="Int32" />
+    <Property Name="PPH" Type="Int32" />
+    <Property Name="DISCOUNT_TEMP" Type="Int32" />
+    <Property Name="VAT_TEMP" Type="Int32" />
+    <Property Name="PPH_TEMP" Type="Int32" />
+    <Property Name="SUB_TOTAL" Type="Int32" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TPROC_PC" Relationship="Self.FK_PC_SP_GR" FromRole="TPROC_PC_SP_GR" ToRole="TPROC_PC" />
+    <NavigationProperty Name="TPROC_PC_SP_DT" Relationship="Self.FK_TPROC_PC_SP_GR" FromRole="TPROC_PC_SP_GR" ToRole="TPROC_PC_SP_DT" />
+  </EntityType>
+  <EntityType Name="TPROC_PO_DETAILS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PO_DTLS_ITEM_ID" Type="Int32" Nullable="false" />
+    <Property Name="ITEM_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="USERMEASUREMENT" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="QUANTITY" Type="Int32" />
+    <Property Name="PRICE" Type="Int32" />
+    <Property Name="TOTAL" Type="Int32" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="FUND_T1" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="LOB1_T2" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="PLAN_T3" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="WA_T4" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="LOB2_T5" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="PR_HEADER_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ITEM_ID" Type="Int32" />
+    <NavigationProperty Name="TPROC_PO_DETAILS_ITEM" Relationship="Self.FK_PO_HEADER_ID" FromRole="TPROC_PO_DETAILS" ToRole="TPROC_PO_DETAILS_ITEM" />
+  </EntityType>
+  <EntityType Name="TPROC_PO_DETAILS_ITEM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PO_HEADER_ID" Type="Int32" Nullable="false" />
+    <Property Name="ITEM_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="PR_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UNITMEASUREMENT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="QUANTITY" Type="Int32" />
+    <Property Name="PRICE" Type="Int32" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="ITEM_ID" Type="Int32" />
+    <NavigationProperty Name="TPROC_PO_DETAILS" Relationship="Self.FK_PO_HEADER_ID" FromRole="TPROC_PO_DETAILS_ITEM" ToRole="TPROC_PO_DETAILS" />
+    <NavigationProperty Name="TPROC_PO_HEADERS" Relationship="Self.FK_PO_DETAILS" FromRole="TPROC_PO_DETAILS_ITEM" ToRole="TPROC_PO_HEADERS" />
+  </EntityType>
+  <EntityType Name="TPROC_PO_HEADERS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PO_NUMBER" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="PO_TYPE_ID" Type="Int32" />
+    <Property Name="CURRENCY" Type="Int32" />
+    <Property Name="PO_STATUS" Type="Int32" />
+    <Property Name="PREPARED_BY" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="APPOROVED_BY" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="APPOROVED_DATE" Type="DateTime" Precision="3" />
+    <Property Name="NOTES" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="SUPPLIER_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SUPPLIER_ID" Type="Int32" />
+    <Property Name="CONTACT_PERSON" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SUPPLIER_PHONE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SUPPLIER_FAX" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SUPPLIER_ADDTRSS" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="DELIVERY_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DELIVERY_ID" Type="Int32" />
+    <Property Name="DELIVERY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="DELIVERY_PHONE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DELIVERY_FAX" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DELIVERY_ADDRESS" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SUB_TOTAL" Type="Int32" />
+    <Property Name="DSCNT_AMT" Type="Int32" />
+    <Property Name="VAT" Type="Int32" />
+    <Property Name="WTH_TAX" Type="Int32" />
+    <Property Name="GRAND_TOTAL" Type="Int32" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="REVIEWED_BY" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="REVIEWED_DATE" Type="DateTime" Precision="3" />
+    <Property Name="COMPLETED_BY" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="COMPLETED_DATE" Type="DateTime" Precision="3" />
+    <Property Name="PC_ID" Type="Int32" />
+    <Property Name="FOR_STORAGE" Type="Int32" />
+    <Property Name="IS_DISC_PERC" Type="Int32" />
+    <Property Name="IS_VAT_PERC" Type="Int32" />
+    <Property Name="IS_PPH_PERC" Type="Int32" />
+    <Property Name="DISCOUNT_TEMP" Type="Int32" />
+    <Property Name="VAT_TEMP" Type="Int32" />
+    <Property Name="PPH_TEMP" Type="Int32" />
+    <Property Name="FILE_NAME" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="VERIFIED_BY" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="VERIFIED_DATE" Type="DateTime" Precision="3" />
+    <Property Name="ADD_COST" Type="Int32" />
+    <Property Name="FINAL_TOTAL" Type="Int32" />
+    <Property Name="ADD_COST_DESC" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="REJECT_REASON" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="REJECT_BY" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="REJECT_DATE" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="TPROC_APPR_PO" Relationship="Self.FK_TPROC_PO_APPR" FromRole="TPROC_PO_HEADERS" ToRole="TPROC_APPR_PO" />
+    <NavigationProperty Name="TPROC_CURRENCY" Relationship="Self.FK_TPROC_CURRENCY" FromRole="TPROC_PO_HEADERS" ToRole="TPROC_CURRENCY" />
+    <NavigationProperty Name="TPROC_DELIVERY_ADDRESS" Relationship="Self.FK_TPROC_DELIVERY_ADDRESS" FromRole="TPROC_PO_HEADERS" ToRole="TPROC_DELIVERY_ADDRESS" />
+    <NavigationProperty Name="TPROC_GM_HEADERS" Relationship="Self.FK_GM_TPROC_PO_HEADERS" FromRole="TPROC_PO_HEADERS" ToRole="TPROC_GM_HEADERS" />
+    <NavigationProperty Name="TPROC_PO_DETAILS_ITEM" Relationship="Self.FK_PO_DETAILS" FromRole="TPROC_PO_HEADERS" ToRole="TPROC_PO_DETAILS_ITEM" />
+    <NavigationProperty Name="TPROC_PO_TYPE" Relationship="Self.FK_TPROC_PO_TYPE" FromRole="TPROC_PO_HEADERS" ToRole="TPROC_PO_TYPE" />
+    <NavigationProperty Name="TPROC_VRF_PO" Relationship="Self.FK_TPROC_PO_VRF" FromRole="TPROC_PO_HEADERS" ToRole="TPROC_VRF_PO" />
+    <NavigationProperty Name="TPROC_SUPPLIER" Relationship="Self.FK_TPROC_SUPPLIER" FromRole="TPROC_PO_HEADERS" ToRole="TPROC_SUPPLIER" />
+  </EntityType>
+  <EntityType Name="TPROC_PO_TYPE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PO_TYPE_NAME" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PO_TYPE_DESCRIPTION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="FORM_TYPE_ID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TPROC_FORM_TYPE" Relationship="Self.FK_TPROC_FORM_TYPE_PO" FromRole="TPROC_PO_TYPE" ToRole="TPROC_FORM_TYPE" />
+    <NavigationProperty Name="TPROC_PO_HEADERS" Relationship="Self.FK_TPROC_PO_TYPE" FromRole="TPROC_PO_TYPE" ToRole="TPROC_PO_HEADERS" />
+  </EntityType>
+  <EntityType Name="TPROC_PPH">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PPH_NAME" Type="Int32" Nullable="false" />
+    <Property Name="START_DATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TPROC_PR_APPR_RELDEPT_DT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PR_APPR_RELDEPT_GR_ID" Type="Int32" Nullable="false" />
+    <Property Name="USER_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="APPR_RELDEPT_STATUS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TPROC_PR_APPR_RELDEPT_GR" Relationship="Self.FK_TPROC_PR_APPR_RD_GR" FromRole="TPROC_PR_APPR_RELDEPT_DT" ToRole="TPROC_PR_APPR_RELDEPT_GR" />
+  </EntityType>
+  <EntityType Name="TPROC_PR_APPR_RELDEPT_GR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PR_HEADER_ID" Type="Int32" Nullable="false" />
+    <Property Name="RELDEPT_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="RELDEPT_GR_STATUS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="REJECT_REASON" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TPROC_PR_APPR_RELDEPT_DT" Relationship="Self.FK_TPROC_PR_APPR_RD_GR" FromRole="TPROC_PR_APPR_RELDEPT_GR" ToRole="TPROC_PR_APPR_RELDEPT_DT" />
+    <NavigationProperty Name="TPROC_PR_HEADER" Relationship="Self.FK_TPROC_PR_HEADER_RD_GR" FromRole="TPROC_PR_APPR_RELDEPT_GR" ToRole="TPROC_PR_HEADER" />
+  </EntityType>
+  <EntityType Name="TPROC_PR_APPR_WA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PR_DETAIL_ID" Type="Int32" Nullable="false" />
+    <Property Name="USER_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="APPR_WA_STATUS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TPROC_PR_DETAIL" Relationship="Self.FK_TPROC_PR_DETAIL" FromRole="TPROC_PR_APPR_WA" ToRole="TPROC_PR_DETAIL" />
+  </EntityType>
+  <EntityType Name="TPROC_PR_ATTACHMENT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PR_HEADER_ID" Type="Int32" Nullable="false" />
+    <Property Name="FILE_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TPROC_PR_HEADER" Relationship="Self.FK_TPROC_PR_HEADER_ATTACHMENT" FromRole="TPROC_PR_ATTACHMENT" ToRole="TPROC_PR_HEADER" />
+  </EntityType>
+  <EntityType Name="TPROC_PR_DETAIL">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PR_HEADER_ID" Type="Int32" Nullable="false" />
+    <Property Name="ITEM_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SPECIFICATION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CURRENCY" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="QTY" Type="Int32" Nullable="false" />
+    <Property Name="USER_MEASUREMENT" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="WA_ID" Type="Int32" Nullable="false" />
+    <Property Name="REVISED_QTY" Type="Int32" />
+    <Property Name="PRICE" Type="Int32" Nullable="false" />
+    <Property Name="TOTAL_PRICE" Type="Int32" Nullable="false" />
+    <Property Name="REMARK" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="SUPPLIER_NAME" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="PR_DETAIL_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="REJECT_REASON" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="ITEM_CD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CONVERSION_RP" Type="Int32" />
+    <Property Name="PO_NUMBER" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SUPPLIER_ID" Type="Int32" />
+    <Property Name="EVALUATED_SUPPLIER" Type="Int32" />
+    <Property Name="ITEM_ID" Type="Int32" />
+    <Property Name="WA_NUMBER" Type="Int32" />
+    <Property Name="WA_NUMBER_ACC" Type="Int32" />
+    <NavigationProperty Name="TPROC_PR_APPR_WA" Relationship="Self.FK_TPROC_PR_DETAIL" FromRole="TPROC_PR_DETAIL" ToRole="TPROC_PR_APPR_WA" />
+    <NavigationProperty Name="TPROC_PR_HEADER" Relationship="Self.FK_TPROC_PR_HEADER" FromRole="TPROC_PR_DETAIL" ToRole="TPROC_PR_HEADER" />
+    <NavigationProperty Name="TPROC_WA" Relationship="Self.FK_TPROC_WA" FromRole="TPROC_PR_DETAIL" ToRole="TPROC_WA" />
+  </EntityType>
+  <EntityType Name="TPROC_PR_HEADER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PR_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USER_ID_ID" Type="Int32" Nullable="false" />
+    <Property Name="PR_DATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FORM_TYPE_ID" Type="Int32" Nullable="false" />
+    <Property Name="SUB_TYPE_ID" Type="Int32" Nullable="false" />
+    <Property Name="GOOD_TYPE_ID" Type="Int32" Nullable="false" />
+    <Property Name="DELIVERY_DAYS" Type="Int32" Nullable="false" />
+    <Property Name="EXP_DEV_DT" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="PR_INDICATOR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ACCOUNT_CODE" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="PR_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="SUB_TOTAL" Type="Int32" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="COMP_CD" Type="Int32" Nullable="false" />
+    <Property Name="FOR_STORAGE" Type="Int32" />
+    <Property Name="REJECT_REASON" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TPROC_FORM_SUB_TYPE" Relationship="Self.FK_TPROC_FORM_SUB_TYPE" FromRole="TPROC_PR_HEADER" ToRole="TPROC_FORM_SUB_TYPE" />
+    <NavigationProperty Name="TPROC_FORM_TYPE" Relationship="Self.FK_TPROC_FORM_TYPE" FromRole="TPROC_PR_HEADER" ToRole="TPROC_FORM_TYPE" />
+    <NavigationProperty Name="TPROC_GOOD_TYPE" Relationship="Self.FK_TPROC_GOOD_TYPE_PR_HEADER" FromRole="TPROC_PR_HEADER" ToRole="TPROC_GOOD_TYPE" />
+    <NavigationProperty Name="TPROC_PR_APPR_RELDEPT_GR" Relationship="Self.FK_TPROC_PR_HEADER_RD_GR" FromRole="TPROC_PR_HEADER" ToRole="TPROC_PR_APPR_RELDEPT_GR" />
+    <NavigationProperty Name="TPROC_PR_ATTACHMENT" Relationship="Self.FK_TPROC_PR_HEADER_ATTACHMENT" FromRole="TPROC_PR_HEADER" ToRole="TPROC_PR_ATTACHMENT" />
+    <NavigationProperty Name="TPROC_PR_DETAIL" Relationship="Self.FK_TPROC_PR_HEADER" FromRole="TPROC_PR_HEADER" ToRole="TPROC_PR_DETAIL" />
+    <NavigationProperty Name="TPROC_PR_HISTORICAL" Relationship="Self.FK_TPROC_PR_HEADER_HISTORY" FromRole="TPROC_PR_HEADER" ToRole="TPROC_PR_HISTORICAL" />
+    <NavigationProperty Name="TPROC_USER" Relationship="Self.FK_TPROC_USER" FromRole="TPROC_PR_HEADER" ToRole="TPROC_USER" />
+  </EntityType>
+  <EntityType Name="TPROC_REL_DEPT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RELATED_DEPARTMENT_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="APPROVAL_RELDEPT_GR_ID" Type="Int32" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TPROC_APPR_RELDEPT_GR" Relationship="Self.FK_APPROVAL_RELDEPT_GR" FromRole="TPROC_REL_DEPT" ToRole="TPROC_APPR_RELDEPT_GR" />
+    <NavigationProperty Name="TPROC_FORM_SUBTYPE_DT" Relationship="Self.FK_TPROC_SUBTYPE_DT_RD" FromRole="TPROC_REL_DEPT" ToRole="TPROC_FORM_SUBTYPE_DT" />
+  </EntityType>
+  <EntityType Name="TPROC_REQUEST">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="REQUEST_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RELATION_FLAG" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="REQUEST_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="REQUEST_DT" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="STATUS" Type="Int32" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CONTROL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ACTION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="REQUESTOR_EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="APPROVAL_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="APPROVAL_EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="APPROVED_TIME" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="TPROC_ROLE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ROLE_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ROLE_DESCRIPTION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IS_ACTIVE" Type="Int32" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="DEFAULT_SELECTED" Type="Int32" />
+    <NavigationProperty Name="TPROC_ROLE_MENU" Relationship="Self.FK_ROLE" FromRole="TPROC_ROLE" ToRole="TPROC_ROLE_MENU" />
+    <NavigationProperty Name="TPROC_USER_DT" Relationship="Self.FK_ROLE_USER_DETAIL" FromRole="TPROC_ROLE" ToRole="TPROC_USER_DT" />
+  </EntityType>
+  <EntityType Name="TPROC_ROLE_MENU">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ROLE_ID" Type="Int32" Nullable="false" />
+    <Property Name="MENU_ID" Type="Int32" Nullable="false" />
+    <Property Name="IS_ACCESS" Type="Int32" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TPROC_MENU" Relationship="Self.FK_MENU_ROLE_EPROC" FromRole="TPROC_ROLE_MENU" ToRole="TPROC_MENU" />
+    <NavigationProperty Name="TPROC_ROLE" Relationship="Self.FK_ROLE" FromRole="TPROC_ROLE_MENU" ToRole="TPROC_ROLE" />
+  </EntityType>
+  <EntityType Name="TPROC_STOCK">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ITEM_CODE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ITEM_DESCRIPTION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LOOKUP_CODE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UNIT_OF_STOCK" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="LATEST_COST" Type="Int32" Nullable="false" />
+    <Property Name="AVERAGE_COST" Type="Int32" Nullable="false" />
+    <Property Name="PURCHASE_ACCOUNT" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="STOCK_EXPENSES" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="GOOD_TYPE_ID" Type="Int32" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="SUPPLIER_ID" Type="Int32" />
+    <Property Name="QUANTITY" Type="Int32" />
+    <Property Name="FORM_TYPE_ID" Type="Int32" />
+    <Property Name="QUANTITY_MIN" Type="Int32" />
+    <NavigationProperty Name="TPROC_FORM_TYPE" Relationship="Self.FK_TPROC_FORM_TYPE_STOCK" FromRole="TPROC_STOCK" ToRole="TPROC_FORM_TYPE" />
+    <NavigationProperty Name="TPROC_GOOD_TYPE" Relationship="Self.FK_TPROC_GOOD_TYPE" FromRole="TPROC_STOCK" ToRole="TPROC_GOOD_TYPE" />
+  </EntityType>
+  <EntityType Name="TPROC_SUPP_DOC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SUPPLIER_ID" Type="Int32" Nullable="false" />
+    <Property Name="WEIGHT_FACTOR" Type="Int32" />
+    <Property Name="BRIDGER_SCAN" Type="Int32" />
+    <Property Name="NDA" Type="Int32" />
+    <Property Name="CIDCI" Type="Int32" />
+    <Property Name="LEGAL_DOC" Type="Int32" />
+    <Property Name="AGGREEMENT" Type="Int32" />
+    <Property Name="VALIDITY_CHECKING" Type="Int32" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TPROC_SUPPLIER" Relationship="Self.FK_TPROC_SUPP_DOC" FromRole="TPROC_SUPP_DOC" ToRole="TPROC_SUPPLIER" />
+  </EntityType>
+  <EntityType Name="TPROC_SUPP_EVAL">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SUPPLIER_ID" Type="Int32" Nullable="false" />
+    <Property Name="F_STM" Type="Int32" />
+    <Property Name="F_KM" Type="Int32" />
+    <Property Name="F_M" Type="Int32" />
+    <Property Name="F_SM" Type="Int32" />
+    <Property Name="F_KET" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="A_TA" Type="Int32" />
+    <Property Name="A_TRK" Type="Int32" />
+    <Property Name="A_RK" Type="Int32" />
+    <Property Name="A_KET" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="H_TK" Type="Int32" />
+    <Property Name="H_K" Type="Int32" />
+    <Property Name="H_SK" Type="Int32" />
+    <Property Name="H_KET" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="PO_LP" Type="Int32" />
+    <Property Name="PO_LTA" Type="Int32" />
+    <Property Name="PO_CA" Type="Int32" />
+    <Property Name="PO_KET" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="P_STTW" Type="Int32" />
+    <Property Name="P_KTTW" Type="Int32" />
+    <Property Name="P_TW" Type="Int32" />
+    <Property Name="P_KET" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="HP_STSP" Type="Int32" />
+    <Property Name="HP_KTSP" Type="Int32" />
+    <Property Name="HP_SP" Type="Int32" />
+    <Property Name="HP_KET" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="IS_RECOMMENDED" Type="Int32" />
+    <Property Name="TOTAL_SCORE" Type="Int32" />
+    <Property Name="DISIAPKAN_OLEH" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="DISETUJUI_OLEH" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="KOMENTAR_SARAN" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="PR_HEADER_ID" Type="Int32" />
+    <NavigationProperty Name="TPROC_SUPPLIER" Relationship="Self.FK_TPROC_SUPPLIER_EVAL" FromRole="TPROC_SUPP_EVAL" ToRole="TPROC_SUPPLIER" />
+  </EntityType>
+  <EntityType Name="TPROC_SUPP_QUAL">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SUPPLIER_ID" Type="Int32" Nullable="false" />
+    <Property Name="H_STK" Type="Int32" />
+    <Property Name="H_TK" Type="Int32" />
+    <Property Name="H_K" Type="Int32" />
+    <Property Name="H_SK" Type="Int32" />
+    <Property Name="H_KET" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="A_TA" Type="Int32" />
+    <Property Name="A_TRK" Type="Int32" />
+    <Property Name="A_RK" Type="Int32" />
+    <Property Name="A_KET" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="F_STM" Type="Int32" />
+    <Property Name="F_KM" Type="Int32" />
+    <Property Name="F_M" Type="Int32" />
+    <Property Name="F_SM" Type="Int32" />
+    <Property Name="F_KET" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="P_LP" Type="Int32" />
+    <Property Name="P_LTA" Type="Int32" />
+    <Property Name="P_CA" Type="Int32" />
+    <Property Name="P_KET" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Q_TA" Type="Int32" />
+    <Property Name="Q_CS" Type="Int32" />
+    <Property Name="Q_HHA" Type="Int32" />
+    <Property Name="Q_SLP" Type="Int32" />
+    <Property Name="Q_KET" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="TOTAL_SCORE" Type="Int32" />
+    <Property Name="DIBUAT_OLEH" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="DIPERIKSA_OLEH" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="DISETUJUI_OLEH" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="KOMENTAR_SARAN" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TPROC_SUPPLIER" Relationship="Self.FK_TPROC_SUPPLIER_QUAL" FromRole="TPROC_SUPP_QUAL" ToRole="TPROC_SUPPLIER" />
+  </EntityType>
+  <EntityType Name="TPROC_SUPPLIER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SUPPLIER_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SUPPLIER_ALIAS_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SUPPLIER_ADDRESS" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="VENDOR_CODE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BANK_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="BANK_BRANCH" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="BANK_ACCOUNT_NUMBER" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CONTACT_PERSON" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EMAIL_ADDRESS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MOBILE_NUMBER" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="OFFICE_NUMBER" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FAX_NUMBER" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TAX_NUMBER" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="WEBSITE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="NPWP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CORE_BUSINESS" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="NAMA_BARANG" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="B_UNIT_OWNER" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CITY" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="EFFECTIVE_DATE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SCHEDULE_EVALUATION" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TPROC_PO_HEADERS" Relationship="Self.FK_TPROC_SUPPLIER" FromRole="TPROC_SUPPLIER" ToRole="TPROC_PO_HEADERS" />
+    <NavigationProperty Name="TPROC_SUPP_DOC" Relationship="Self.FK_TPROC_SUPP_DOC" FromRole="TPROC_SUPPLIER" ToRole="TPROC_SUPP_DOC" />
+    <NavigationProperty Name="TPROC_SUPP_EVAL" Relationship="Self.FK_TPROC_SUPPLIER_EVAL" FromRole="TPROC_SUPPLIER" ToRole="TPROC_SUPP_EVAL" />
+    <NavigationProperty Name="TPROC_SUPP_QUAL" Relationship="Self.FK_TPROC_SUPPLIER_QUAL" FromRole="TPROC_SUPPLIER" ToRole="TPROC_SUPP_QUAL" />
+  </EntityType>
+  <EntityType Name="TPROC_USER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="USER_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USER_MAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USER_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="USER_DT_ID" Type="Int32" Nullable="false" />
+    <Property Name="LAST_LOGIN" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="TPROC_PR_HEADER" Relationship="Self.FK_TPROC_USER" FromRole="TPROC_USER" ToRole="TPROC_PR_HEADER" />
+    <NavigationProperty Name="TPROC_USER_DT" Relationship="Self.FK_USER_DT" FromRole="TPROC_USER" ToRole="TPROC_USER_DT" />
+    <NavigationProperty Name="TPROC_USER_PROFILE" Relationship="Self.FK_USER_EPROC_PROFILE" FromRole="TPROC_USER" ToRole="TPROC_USER_PROFILE" />
+  </EntityType>
+  <EntityType Name="TPROC_USER_DT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="WA_ALLOWED_GR_ID" Type="Int32" Nullable="false" />
+    <Property Name="ROLE_ID" Type="Int32" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="DIVISION_ID" Type="Int32" />
+    <Property Name="COMP_CD" Type="Int32" />
+    <Property Name="REV_USER_ID" Type="Int32" />
+    <Property Name="IS_EPROC_ADMIN" Type="Int32" />
+    <Property Name="IS_SUPER_ADMIN" Type="Int32" />
+    <NavigationProperty Name="TPROC_DIVISION" Relationship="Self.FK_DIVISION_USER_DT" FromRole="TPROC_USER_DT" ToRole="TPROC_DIVISION" />
+    <NavigationProperty Name="TPROC_ROLE" Relationship="Self.FK_ROLE_USER_DETAIL" FromRole="TPROC_USER_DT" ToRole="TPROC_ROLE" />
+    <NavigationProperty Name="TPROC_USER" Relationship="Self.FK_USER_DT" FromRole="TPROC_USER_DT" ToRole="TPROC_USER" />
+    <NavigationProperty Name="TPROC_WA_ALLOWED_GR" Relationship="Self.FK_WA_GROUP_USER_DETAIL" FromRole="TPROC_USER_DT" ToRole="TPROC_WA_ALLOWED_GR" />
+  </EntityType>
+  <EntityType Name="TPROC_USER_PROFILE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="USER_ID_ID" Type="Int32" Nullable="false" />
+    <Property Name="PHOTO" Type="Binary" MaxLength="1" FixedLength="false" />
+    <Property Name="GENDER" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="BORN" Type="DateTime" Precision="3" />
+    <Property Name="ADDRESS" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="JOB" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="COMPANY" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="HOBBY" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="FACEBOOK" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="TWITTER" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IG" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="PATH" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TPROC_USER" Relationship="Self.FK_USER_EPROC_PROFILE" FromRole="TPROC_USER_PROFILE" ToRole="TPROC_USER" />
+  </EntityType>
+  <EntityType Name="TPROC_VAT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VAT_NAME" Type="Int32" Nullable="false" />
+    <Property Name="START_DATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TPROC_VRF_PC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PC_ID" Type="Int32" Nullable="false" />
+    <Property Name="USER_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AS_IS" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="STATUS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="REMARK" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TPROC_PC" Relationship="Self.FK_TPROC_PC_VRF" FromRole="TPROC_VRF_PC" ToRole="TPROC_PC" />
+  </EntityType>
+  <EntityType Name="TPROC_VRF_PO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PO_ID" Type="Int32" Nullable="false" />
+    <Property Name="USER_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AS_IS" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="STATUS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="REMARK" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TPROC_PO_HEADERS" Relationship="Self.FK_TPROC_PO_VRF" FromRole="TPROC_VRF_PO" ToRole="TPROC_PO_HEADERS" />
+  </EntityType>
+  <EntityType Name="TPROC_WA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="WA_NUMBER" Type="Int32" Nullable="false" />
+    <Property Name="APPROVAL_GROUP_ID" Type="Int32" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TPROC_APPROVAL_GR" Relationship="Self.FK_APPROVAL_GROUP_WA" FromRole="TPROC_WA" ToRole="TPROC_APPROVAL_GR" />
+    <NavigationProperty Name="TPROC_PR_DETAIL" Relationship="Self.FK_TPROC_WA" FromRole="TPROC_WA" ToRole="TPROC_PR_DETAIL" />
+    <NavigationProperty Name="TPROC_WA_ALLOWED_DT" Relationship="Self.FK_WORK_AREA" FromRole="TPROC_WA" ToRole="TPROC_WA_ALLOWED_DT" />
+  </EntityType>
+  <EntityType Name="TPROC_WA_ALLOWED_DT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="WA_ALLOWED_GROUP_ID" Type="Int32" Nullable="false" />
+    <Property Name="WORK_AREA_ID" Type="Int32" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TPROC_WA" Relationship="Self.FK_WORK_AREA" FromRole="TPROC_WA_ALLOWED_DT" ToRole="TPROC_WA" />
+    <NavigationProperty Name="TPROC_WA_ALLOWED_GR" Relationship="Self.FK_WA_ALLOWED_GROUP" FromRole="TPROC_WA_ALLOWED_DT" ToRole="TPROC_WA_ALLOWED_GR" />
+  </EntityType>
+  <EntityType Name="TPROC_WA_ALLOWED_GR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TPROC_USER_DT" Relationship="Self.FK_WA_GROUP_USER_DETAIL" FromRole="TPROC_WA_ALLOWED_GR" ToRole="TPROC_USER_DT" />
+    <NavigationProperty Name="TPROC_WA_ALLOWED_DT" Relationship="Self.FK_WA_ALLOWED_GROUP" FromRole="TPROC_WA_ALLOWED_GR" ToRole="TPROC_WA_ALLOWED_DT" />
+  </EntityType>
+  <EntityType Name="TPROC_ACKNOW_APPR_DT">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="ACKNOW_APPR_ID" />
+      <PropertyRef Name="USER_ID" />
+      <PropertyRef Name="USER_NAME" />
+      <PropertyRef Name="USER_EMAIL" />
+      <PropertyRef Name="CREATED_TIME" />
+      <PropertyRef Name="CREATED_BY" />
+      <PropertyRef Name="ROW_STATUS" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ACKNOW_APPR_ID" Type="Int32" Nullable="false" />
+    <Property Name="USER_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USER_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USER_EMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="STATUS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TPROC_ACKNOW_APPR" Relationship="Self.FK_TPROC_ACKNOW_APPR" FromRole="TPROC_ACKNOW_APPR_DT" ToRole="TPROC_ACKNOW_APPR" />
+  </EntityType>
+  <EntityType Name="TPROC_APPROVAL_ROLE_DETAIL">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="ID_APPROVAL_ROLE" />
+      <PropertyRef Name="ROLE_NAME" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ID_APPROVAL_ROLE" Type="Int32" Nullable="false" />
+    <Property Name="ROLE_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AS_IS" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TPROC_CRV">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="CRV_NUM" />
+      <PropertyRef Name="BANK_ACCOUNT_INTEGER" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="PO_ID" Type="Int32" />
+    <Property Name="CRV_NUM" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BANK_ACCOUNT_INTEGER" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BANK_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" />
+    <Property Name="SUB_TOTAL" Type="Int32" />
+    <Property Name="DSCNT_AMT" Type="Int32" />
+    <Property Name="VAT" Type="Int32" />
+    <Property Name="WTH_TAX" Type="Int32" />
+    <Property Name="GRAND_TOTAL" Type="Int32" />
+    <Property Name="RECEIVED_BY" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="RECEIVED_DATETIME" Type="DateTime" Precision="3" />
+    <Property Name="COMPLETED_BY" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="COMPLETED_DATETIME" Type="DateTime" Precision="3" />
+    <Property Name="SUPPLIER_ID" Type="Int32" />
+    <Property Name="BANK_BRANCH" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="REFTAXNO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PAYMENTMETHOD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="KLIRINGNO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="VERIFY_BY" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="VERIFY_TIME" Type="DateTime" Precision="3" />
+    <Property Name="REJECTNOTE" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="REJECTED_BY" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="REJECTED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="APPROVE_BY" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="APPROVE_DATETIME" Type="DateTime" Precision="3" />
+    <Property Name="FILEPATH" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TPROC_CRV_DETAILS">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="CRV_HEADER_ID" />
+      <PropertyRef Name="CREATED_TIME" />
+      <PropertyRef Name="CREATED_BY" />
+      <PropertyRef Name="ROW_STATUS" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="CRV_HEADER_ID" Type="Int32" Nullable="false" />
+    <Property Name="ITEM_ID" Type="Int32" />
+    <Property Name="ITEM_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="UNITMEASUREMENT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="QUANTITY" Type="Int32" />
+    <Property Name="PRICE" Type="Int32" />
+    <Property Name="SUBTOTAL" Type="Int32" />
+    <Property Name="FUND_T1" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="LOB1_T2" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="PLAN_T3" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="WA_T4" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="LOB2_T5" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="CURRENCY" Type="Int32" />
+    <Property Name="ACCOUNT_CODE" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TPROC_GM_DETAILS">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="CREATED_TIME" />
+      <PropertyRef Name="CREATED_BY" />
+      <PropertyRef Name="ROW_STATUS" />
+      <PropertyRef Name="GM_ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ITEM_ID" Type="Int32" />
+    <Property Name="ITEM_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="UNITMEASUREMENT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="QUANTITY" Type="Int32" />
+    <Property Name="PRICE" Type="Int32" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="GM_ID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TPROC_PR_HISTORICAL">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="PR_HEADER_ID" />
+      <PropertyRef Name="HISTORICAL_DT" />
+      <PropertyRef Name="HISTORICAL_STATUS" />
+      <PropertyRef Name="HISTORICAL_BY" />
+      <PropertyRef Name="CREATED_TIME" />
+      <PropertyRef Name="CREATED_BY" />
+      <PropertyRef Name="ROW_STATUS" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="PR_HEADER_ID" Type="Int32" Nullable="false" />
+    <Property Name="HISTORICAL_DT" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="HISTORICAL_STATUS" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="HISTORICAL_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LAST_MODIFIED_TIME" Type="DateTime" Precision="3" />
+    <Property Name="LAST_MODIFIED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROW_STATUS" Type="Int32" Nullable="false" />
+    <Property Name="QUEUE" Type="Int32" />
+    <NavigationProperty Name="TPROC_PR_HEADER" Relationship="Self.FK_TPROC_PR_HEADER_HISTORY" FromRole="TPROC_PR_HISTORICAL" ToRole="TPROC_PR_HEADER" />
+  </EntityType>
+  <EntityType Name="TPROC_STOCKMOVEMENT">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="REFNO" />
+      <PropertyRef Name="CREATED_TIME" />
+      <PropertyRef Name="CREATED_BY" />
+      <PropertyRef Name="LATEST_COST" />
+      <PropertyRef Name="AVERAGE_COST" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ITEM_ID" Type="Int32" />
+    <Property Name="REFNO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="STOCK_CURRENT" Type="Int32" />
+    <Property Name="STOCK_IN" Type="Int32" />
+    <Property Name="STOCK_OUT" Type="Int32" />
+    <Property Name="STOCK_LAST" Type="Int32" />
+    <Property Name="LATEST_COST" Type="Int32" Nullable="false" />
+    <Property Name="AVERAGE_COST" Type="Int32" Nullable="false" />
+    <Property Name="ID_TEMP" Type="Int32" />
+  </EntityType>
+  <Association Name="FK_TPROC_ACKNOW_APPR">
+    <End Role="TPROC_ACKNOW_APPR" Type="Self.TPROC_ACKNOW_APPR" Multiplicity="1" />
+    <End Role="TPROC_ACKNOW_APPR_DT" Type="Self.TPROC_ACKNOW_APPR_DT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_ACKNOW_APPR">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_ACKNOW_APPR_DT">
+        <PropertyRef Name="ACKNOW_APPR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_PC_APPR">
+    <End Role="TPROC_PC" Type="Self.TPROC_PC" Multiplicity="1" />
+    <End Role="TPROC_APPR_PC" Type="Self.TPROC_APPR_PC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_PC">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_APPR_PC">
+        <PropertyRef Name="PC_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_PO_APPR">
+    <End Role="TPROC_PO_HEADERS" Type="Self.TPROC_PO_HEADERS" Multiplicity="1" />
+    <End Role="TPROC_APPR_PO" Type="Self.TPROC_APPR_PO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_PO_HEADERS">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_APPR_PO">
+        <PropertyRef Name="PO_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_APPR_RELDEPT_GR_2">
+    <End Role="TPROC_APPR_RELDEPT_GR" Type="Self.TPROC_APPR_RELDEPT_GR" Multiplicity="1" />
+    <End Role="TPROC_APPR_RELDEPT_DT" Type="Self.TPROC_APPR_RELDEPT_DT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_APPR_RELDEPT_GR">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_APPR_RELDEPT_DT">
+        <PropertyRef Name="APPROVAL_RELDEPT_GR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_LEVEL_RELDEPT">
+    <End Role="TPROC_LEVEL" Type="Self.TPROC_LEVEL" Multiplicity="1" />
+    <End Role="TPROC_APPR_RELDEPT_DT" Type="Self.TPROC_APPR_RELDEPT_DT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_LEVEL">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_APPR_RELDEPT_DT">
+        <PropertyRef Name="LEVEL_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_APPROVAL_RELDEPT_GR">
+    <End Role="TPROC_APPR_RELDEPT_GR" Type="Self.TPROC_APPR_RELDEPT_GR" Multiplicity="1" />
+    <End Role="TPROC_REL_DEPT" Type="Self.TPROC_REL_DEPT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_APPR_RELDEPT_GR">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_REL_DEPT">
+        <PropertyRef Name="APPROVAL_RELDEPT_GR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_APPROVAL_GROUP">
+    <End Role="TPROC_APPROVAL_GR" Type="Self.TPROC_APPROVAL_GR" Multiplicity="1" />
+    <End Role="TPROC_APPROVAL_DT" Type="Self.TPROC_APPROVAL_DT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_APPROVAL_GR">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_APPROVAL_DT">
+        <PropertyRef Name="APPROVAL_GROUP_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LEVEL_APPROVAL_DT">
+    <End Role="TPROC_LEVEL" Type="Self.TPROC_LEVEL" Multiplicity="0..1" />
+    <End Role="TPROC_APPROVAL_DT" Type="Self.TPROC_APPROVAL_DT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_LEVEL">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_APPROVAL_DT">
+        <PropertyRef Name="LEVEL_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_APPROVAL_GROUP_WA">
+    <End Role="TPROC_APPROVAL_GR" Type="Self.TPROC_APPROVAL_GR" Multiplicity="1" />
+    <End Role="TPROC_WA" Type="Self.TPROC_WA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_APPROVAL_GR">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_WA">
+        <PropertyRef Name="APPROVAL_GROUP_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DIVISION">
+    <End Role="TPROC_DIVISION" Type="Self.TPROC_DIVISION" Multiplicity="0..1" />
+    <End Role="TPROC_APPROVAL_GR" Type="Self.TPROC_APPROVAL_GR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_DIVISION">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_APPROVAL_GR">
+        <PropertyRef Name="DIVISION_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LEVEL_APPROVAL_ROLE">
+    <End Role="TPROC_LEVEL" Type="Self.TPROC_LEVEL" Multiplicity="1" />
+    <End Role="TPROC_APPROVAL_ROLE" Type="Self.TPROC_APPROVAL_ROLE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_LEVEL">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_APPROVAL_ROLE">
+        <PropertyRef Name="LEVEL_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_COA_GR_FST">
+    <End Role="TPROC_CHART_OF_ACCOUNT_GR" Type="Self.TPROC_CHART_OF_ACCOUNT_GR" Multiplicity="1" />
+    <End Role="TPROC_CHART_OF_ACCOUNTS" Type="Self.TPROC_CHART_OF_ACCOUNTS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_CHART_OF_ACCOUNT_GR">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_CHART_OF_ACCOUNTS">
+        <PropertyRef Name="SUB_COA_GR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_CURRENCY">
+    <End Role="TPROC_CURRENCY" Type="Self.TPROC_CURRENCY" Multiplicity="0..1" />
+    <End Role="TPROC_PO_HEADERS" Type="Self.TPROC_PO_HEADERS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_CURRENCY">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_PO_HEADERS">
+        <PropertyRef Name="CURRENCY" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_DELIVERY_ADDRESS">
+    <End Role="TPROC_DELIVERY_ADDRESS" Type="Self.TPROC_DELIVERY_ADDRESS" Multiplicity="0..1" />
+    <End Role="TPROC_PO_HEADERS" Type="Self.TPROC_PO_HEADERS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_DELIVERY_ADDRESS">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_PO_HEADERS">
+        <PropertyRef Name="DELIVERY_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DIVISION_USER_DT">
+    <End Role="TPROC_DIVISION" Type="Self.TPROC_DIVISION" Multiplicity="0..1" />
+    <End Role="TPROC_USER_DT" Type="Self.TPROC_USER_DT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_DIVISION">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_USER_DT">
+        <PropertyRef Name="DIVISION_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_FORM_SUB_TYPE">
+    <End Role="TPROC_FORM_SUB_TYPE" Type="Self.TPROC_FORM_SUB_TYPE" Multiplicity="1" />
+    <End Role="TPROC_PR_HEADER" Type="Self.TPROC_PR_HEADER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_FORM_SUB_TYPE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_PR_HEADER">
+        <PropertyRef Name="SUB_TYPE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_SUBTYPE_GR_FST">
+    <End Role="TPROC_FORM_SUBTYPE_GR" Type="Self.TPROC_FORM_SUBTYPE_GR" Multiplicity="1" />
+    <End Role="TPROC_FORM_SUB_TYPE" Type="Self.TPROC_FORM_SUB_TYPE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_FORM_SUBTYPE_GR">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_FORM_SUB_TYPE">
+        <PropertyRef Name="SUB_FORMTYPE_GR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_SUBTYPE_DT_FT">
+    <End Role="TPROC_FORM_SUBTYPE_GR" Type="Self.TPROC_FORM_SUBTYPE_GR" Multiplicity="1" />
+    <End Role="TPROC_FORM_SUBTYPE_DT" Type="Self.TPROC_FORM_SUBTYPE_DT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_FORM_SUBTYPE_GR">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_FORM_SUBTYPE_DT">
+        <PropertyRef Name="FORM_SUBTYPE_GR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_SUBTYPE_DT_RD">
+    <End Role="TPROC_REL_DEPT" Type="Self.TPROC_REL_DEPT" Multiplicity="1" />
+    <End Role="TPROC_FORM_SUBTYPE_DT" Type="Self.TPROC_FORM_SUBTYPE_DT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_REL_DEPT">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_FORM_SUBTYPE_DT">
+        <PropertyRef Name="REL_DEPT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_FST_BUDGET_CD_ADD">
+    <End Role="TPROC_FORM_SUBTYPE_GR" Type="Self.TPROC_FORM_SUBTYPE_GR" Multiplicity="1" />
+    <End Role="TPROC_FST_BUDGET_CD_ADD" Type="Self.TPROC_FST_BUDGET_CD_ADD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_FORM_SUBTYPE_GR">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_FST_BUDGET_CD_ADD">
+        <PropertyRef Name="FORM_SUBTYPE_GR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_SUBTYPE_GR_FT">
+    <End Role="TPROC_FORM_TYPE" Type="Self.TPROC_FORM_TYPE" Multiplicity="0..1" />
+    <End Role="TPROC_FORM_SUBTYPE_GR" Type="Self.TPROC_FORM_SUBTYPE_GR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_FORM_TYPE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_FORM_SUBTYPE_GR">
+        <PropertyRef Name="FORM_TYPE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_FORM_TYPE">
+    <End Role="TPROC_FORM_TYPE" Type="Self.TPROC_FORM_TYPE" Multiplicity="1" />
+    <End Role="TPROC_PR_HEADER" Type="Self.TPROC_PR_HEADER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_FORM_TYPE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_PR_HEADER">
+        <PropertyRef Name="FORM_TYPE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_FORM_TYPE_PO">
+    <End Role="TPROC_FORM_TYPE" Type="Self.TPROC_FORM_TYPE" Multiplicity="1" />
+    <End Role="TPROC_PO_TYPE" Type="Self.TPROC_PO_TYPE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_FORM_TYPE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_PO_TYPE">
+        <PropertyRef Name="FORM_TYPE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_FORM_TYPE_STOCK">
+    <End Role="TPROC_FORM_TYPE" Type="Self.TPROC_FORM_TYPE" Multiplicity="0..1" />
+    <End Role="TPROC_STOCK" Type="Self.TPROC_STOCK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_FORM_TYPE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_STOCK">
+        <PropertyRef Name="FORM_TYPE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GM_TPROC_PO_HEADERS">
+    <End Role="TPROC_PO_HEADERS" Type="Self.TPROC_PO_HEADERS" Multiplicity="0..1" />
+    <End Role="TPROC_GM_HEADERS" Type="Self.TPROC_GM_HEADERS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_PO_HEADERS">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_GM_HEADERS">
+        <PropertyRef Name="PO_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_GOOD_TYPE">
+    <End Role="TPROC_GOOD_TYPE" Type="Self.TPROC_GOOD_TYPE" Multiplicity="1" />
+    <End Role="TPROC_STOCK" Type="Self.TPROC_STOCK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_GOOD_TYPE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_STOCK">
+        <PropertyRef Name="GOOD_TYPE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_GOOD_TYPE_PR_HEADER">
+    <End Role="TPROC_GOOD_TYPE" Type="Self.TPROC_GOOD_TYPE" Multiplicity="1" />
+    <End Role="TPROC_PR_HEADER" Type="Self.TPROC_PR_HEADER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_GOOD_TYPE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_PR_HEADER">
+        <PropertyRef Name="GOOD_TYPE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MENU_ROLE_EPROC">
+    <End Role="TPROC_MENU" Type="Self.TPROC_MENU" Multiplicity="1" />
+    <End Role="TPROC_ROLE_MENU" Type="Self.TPROC_ROLE_MENU" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_MENU">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_ROLE_MENU">
+        <PropertyRef Name="MENU_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PC_SP_GR">
+    <End Role="TPROC_PC" Type="Self.TPROC_PC" Multiplicity="1" />
+    <End Role="TPROC_PC_SP_GR" Type="Self.TPROC_PC_SP_GR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_PC">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_PC_SP_GR">
+        <PropertyRef Name="PC_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_PC_HISTORY">
+    <End Role="TPROC_PC" Type="Self.TPROC_PC" Multiplicity="1" />
+    <End Role="TPROC_PC_HISTORICAL" Type="Self.TPROC_PC_HISTORICAL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_PC">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_PC_HISTORICAL">
+        <PropertyRef Name="PC_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_PC_VRF">
+    <End Role="TPROC_PC" Type="Self.TPROC_PC" Multiplicity="1" />
+    <End Role="TPROC_VRF_PC" Type="Self.TPROC_VRF_PC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_PC">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_VRF_PC">
+        <PropertyRef Name="PC_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PC_DT">
+    <End Role="TPROC_PC_DT" Type="Self.TPROC_PC_DT" Multiplicity="0..1" />
+    <End Role="TPROC_PC_SP_DT" Type="Self.TPROC_PC_SP_DT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_PC_DT">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_PC_SP_DT">
+        <PropertyRef Name="PC_DT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_PC_SP_GR">
+    <End Role="TPROC_PC_SP_GR" Type="Self.TPROC_PC_SP_GR" Multiplicity="1" />
+    <End Role="TPROC_PC_SP_DT" Type="Self.TPROC_PC_SP_DT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_PC_SP_GR">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_PC_SP_DT">
+        <PropertyRef Name="PC_SP_GR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PO_HEADER_ID">
+    <End Role="TPROC_PO_DETAILS_ITEM" Type="Self.TPROC_PO_DETAILS_ITEM" Multiplicity="1" />
+    <End Role="TPROC_PO_DETAILS" Type="Self.TPROC_PO_DETAILS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_PO_DETAILS_ITEM">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_PO_DETAILS">
+        <PropertyRef Name="PO_DTLS_ITEM_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PO_DETAILS">
+    <End Role="TPROC_PO_HEADERS" Type="Self.TPROC_PO_HEADERS" Multiplicity="1" />
+    <End Role="TPROC_PO_DETAILS_ITEM" Type="Self.TPROC_PO_DETAILS_ITEM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_PO_HEADERS">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_PO_DETAILS_ITEM">
+        <PropertyRef Name="PO_HEADER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_PO_TYPE">
+    <End Role="TPROC_PO_TYPE" Type="Self.TPROC_PO_TYPE" Multiplicity="0..1" />
+    <End Role="TPROC_PO_HEADERS" Type="Self.TPROC_PO_HEADERS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_PO_TYPE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_PO_HEADERS">
+        <PropertyRef Name="PO_TYPE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_PO_VRF">
+    <End Role="TPROC_PO_HEADERS" Type="Self.TPROC_PO_HEADERS" Multiplicity="1" />
+    <End Role="TPROC_VRF_PO" Type="Self.TPROC_VRF_PO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_PO_HEADERS">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_VRF_PO">
+        <PropertyRef Name="PO_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_SUPPLIER">
+    <End Role="TPROC_SUPPLIER" Type="Self.TPROC_SUPPLIER" Multiplicity="0..1" />
+    <End Role="TPROC_PO_HEADERS" Type="Self.TPROC_PO_HEADERS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_SUPPLIER">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_PO_HEADERS">
+        <PropertyRef Name="SUPPLIER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_PR_APPR_RD_GR">
+    <End Role="TPROC_PR_APPR_RELDEPT_GR" Type="Self.TPROC_PR_APPR_RELDEPT_GR" Multiplicity="1" />
+    <End Role="TPROC_PR_APPR_RELDEPT_DT" Type="Self.TPROC_PR_APPR_RELDEPT_DT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_PR_APPR_RELDEPT_GR">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_PR_APPR_RELDEPT_DT">
+        <PropertyRef Name="PR_APPR_RELDEPT_GR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_PR_HEADER_RD_GR">
+    <End Role="TPROC_PR_HEADER" Type="Self.TPROC_PR_HEADER" Multiplicity="1" />
+    <End Role="TPROC_PR_APPR_RELDEPT_GR" Type="Self.TPROC_PR_APPR_RELDEPT_GR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_PR_HEADER">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_PR_APPR_RELDEPT_GR">
+        <PropertyRef Name="PR_HEADER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_PR_DETAIL">
+    <End Role="TPROC_PR_DETAIL" Type="Self.TPROC_PR_DETAIL" Multiplicity="1" />
+    <End Role="TPROC_PR_APPR_WA" Type="Self.TPROC_PR_APPR_WA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_PR_DETAIL">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_PR_APPR_WA">
+        <PropertyRef Name="PR_DETAIL_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_PR_HEADER_ATTACHMENT">
+    <End Role="TPROC_PR_HEADER" Type="Self.TPROC_PR_HEADER" Multiplicity="1" />
+    <End Role="TPROC_PR_ATTACHMENT" Type="Self.TPROC_PR_ATTACHMENT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_PR_HEADER">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_PR_ATTACHMENT">
+        <PropertyRef Name="PR_HEADER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_PR_HEADER">
+    <End Role="TPROC_PR_HEADER" Type="Self.TPROC_PR_HEADER" Multiplicity="1" />
+    <End Role="TPROC_PR_DETAIL" Type="Self.TPROC_PR_DETAIL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_PR_HEADER">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_PR_DETAIL">
+        <PropertyRef Name="PR_HEADER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_WA">
+    <End Role="TPROC_WA" Type="Self.TPROC_WA" Multiplicity="1" />
+    <End Role="TPROC_PR_DETAIL" Type="Self.TPROC_PR_DETAIL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_WA">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_PR_DETAIL">
+        <PropertyRef Name="WA_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_PR_HEADER_HISTORY">
+    <End Role="TPROC_PR_HEADER" Type="Self.TPROC_PR_HEADER" Multiplicity="1" />
+    <End Role="TPROC_PR_HISTORICAL" Type="Self.TPROC_PR_HISTORICAL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_PR_HEADER">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_PR_HISTORICAL">
+        <PropertyRef Name="PR_HEADER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_USER">
+    <End Role="TPROC_USER" Type="Self.TPROC_USER" Multiplicity="1" />
+    <End Role="TPROC_PR_HEADER" Type="Self.TPROC_PR_HEADER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_USER">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_PR_HEADER">
+        <PropertyRef Name="USER_ID_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ROLE">
+    <End Role="TPROC_ROLE" Type="Self.TPROC_ROLE" Multiplicity="1" />
+    <End Role="TPROC_ROLE_MENU" Type="Self.TPROC_ROLE_MENU" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_ROLE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_ROLE_MENU">
+        <PropertyRef Name="ROLE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ROLE_USER_DETAIL">
+    <End Role="TPROC_ROLE" Type="Self.TPROC_ROLE" Multiplicity="1" />
+    <End Role="TPROC_USER_DT" Type="Self.TPROC_USER_DT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_ROLE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_USER_DT">
+        <PropertyRef Name="ROLE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_SUPP_DOC">
+    <End Role="TPROC_SUPPLIER" Type="Self.TPROC_SUPPLIER" Multiplicity="1" />
+    <End Role="TPROC_SUPP_DOC" Type="Self.TPROC_SUPP_DOC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_SUPPLIER">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_SUPP_DOC">
+        <PropertyRef Name="SUPPLIER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_SUPPLIER_EVAL">
+    <End Role="TPROC_SUPPLIER" Type="Self.TPROC_SUPPLIER" Multiplicity="1" />
+    <End Role="TPROC_SUPP_EVAL" Type="Self.TPROC_SUPP_EVAL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_SUPPLIER">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_SUPP_EVAL">
+        <PropertyRef Name="SUPPLIER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPROC_SUPPLIER_QUAL">
+    <End Role="TPROC_SUPPLIER" Type="Self.TPROC_SUPPLIER" Multiplicity="1" />
+    <End Role="TPROC_SUPP_QUAL" Type="Self.TPROC_SUPP_QUAL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_SUPPLIER">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_SUPP_QUAL">
+        <PropertyRef Name="SUPPLIER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_USER_DT">
+    <End Role="TPROC_USER_DT" Type="Self.TPROC_USER_DT" Multiplicity="1" />
+    <End Role="TPROC_USER" Type="Self.TPROC_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_USER_DT">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_USER">
+        <PropertyRef Name="USER_DT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_USER_EPROC_PROFILE">
+    <End Role="TPROC_USER" Type="Self.TPROC_USER" Multiplicity="1" />
+    <End Role="TPROC_USER_PROFILE" Type="Self.TPROC_USER_PROFILE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_USER">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_USER_PROFILE">
+        <PropertyRef Name="USER_ID_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WA_GROUP_USER_DETAIL">
+    <End Role="TPROC_WA_ALLOWED_GR" Type="Self.TPROC_WA_ALLOWED_GR" Multiplicity="1" />
+    <End Role="TPROC_USER_DT" Type="Self.TPROC_USER_DT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_WA_ALLOWED_GR">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_USER_DT">
+        <PropertyRef Name="WA_ALLOWED_GR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WORK_AREA">
+    <End Role="TPROC_WA" Type="Self.TPROC_WA" Multiplicity="1" />
+    <End Role="TPROC_WA_ALLOWED_DT" Type="Self.TPROC_WA_ALLOWED_DT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_WA">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_WA_ALLOWED_DT">
+        <PropertyRef Name="WORK_AREA_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WA_ALLOWED_GROUP">
+    <End Role="TPROC_WA_ALLOWED_GR" Type="Self.TPROC_WA_ALLOWED_GR" Multiplicity="1" />
+    <End Role="TPROC_WA_ALLOWED_DT" Type="Self.TPROC_WA_ALLOWED_DT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROC_WA_ALLOWED_GR">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPROC_WA_ALLOWED_DT">
+        <PropertyRef Name="WA_ALLOWED_GROUP_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="eProcurementEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="MenuSidebars" EntityType="Self.MenuSidebar" />
+    <EntitySet Name="TPROC_ACKNOW_APPR" EntityType="Self.TPROC_ACKNOW_APPR" />
+    <EntitySet Name="TPROC_APPR_PC" EntityType="Self.TPROC_APPR_PC" />
+    <EntitySet Name="TPROC_APPR_PO" EntityType="Self.TPROC_APPR_PO" />
+    <EntitySet Name="TPROC_APPR_RELDEPT_DT" EntityType="Self.TPROC_APPR_RELDEPT_DT" />
+    <EntitySet Name="TPROC_APPR_RELDEPT_GR" EntityType="Self.TPROC_APPR_RELDEPT_GR" />
+    <EntitySet Name="TPROC_APPROVAL_DT" EntityType="Self.TPROC_APPROVAL_DT" />
+    <EntitySet Name="TPROC_APPROVAL_GR" EntityType="Self.TPROC_APPROVAL_GR" />
+    <EntitySet Name="TPROC_APPROVAL_ROLE" EntityType="Self.TPROC_APPROVAL_ROLE" />
+    <EntitySet Name="TPROC_BUDGET_CODE" EntityType="Self.TPROC_BUDGET_CODE" />
+    <EntitySet Name="TPROC_CHART_OF_ACCOUNT_GR" EntityType="Self.TPROC_CHART_OF_ACCOUNT_GR" />
+    <EntitySet Name="TPROC_CHART_OF_ACCOUNTS" EntityType="Self.TPROC_CHART_OF_ACCOUNTS" />
+    <EntitySet Name="TPROC_CONTROL_PARAMETERS" EntityType="Self.TPROC_CONTROL_PARAMETERS" />
+    <EntitySet Name="TPROC_CURRENCY" EntityType="Self.TPROC_CURRENCY" />
+    <EntitySet Name="TPROC_DELIVERY_ADDRESS" EntityType="Self.TPROC_DELIVERY_ADDRESS" />
+    <EntitySet Name="TPROC_DIVISION" EntityType="Self.TPROC_DIVISION" />
+    <EntitySet Name="TPROC_DOCUMENTS" EntityType="Self.TPROC_DOCUMENTS" />
+    <EntitySet Name="TPROC_FIELD_DESCRIPTIONS" EntityType="Self.TPROC_FIELD_DESCRIPTIONS" />
+    <EntitySet Name="TPROC_FIELD_VALUES" EntityType="Self.TPROC_FIELD_VALUES" />
+    <EntitySet Name="TPROC_FORM_SUB_TYPE" EntityType="Self.TPROC_FORM_SUB_TYPE" />
+    <EntitySet Name="TPROC_FORM_SUBTYPE_DT" EntityType="Self.TPROC_FORM_SUBTYPE_DT" />
+    <EntitySet Name="TPROC_FORM_SUBTYPE_GR" EntityType="Self.TPROC_FORM_SUBTYPE_GR" />
+    <EntitySet Name="TPROC_FORM_TYPE" EntityType="Self.TPROC_FORM_TYPE" />
+    <EntitySet Name="TPROC_FST_BUDGET_CD_ADD" EntityType="Self.TPROC_FST_BUDGET_CD_ADD" />
+    <EntitySet Name="TPROC_GENERATOR" EntityType="Self.TPROC_GENERATOR" />
+    <EntitySet Name="TPROC_GM_HEADERS" EntityType="Self.TPROC_GM_HEADERS" />
+    <EntitySet Name="TPROC_GOOD_TYPE" EntityType="Self.TPROC_GOOD_TYPE" />
+    <EntitySet Name="TPROC_HOLIDAY" EntityType="Self.TPROC_HOLIDAY" />
+    <EntitySet Name="TPROC_LEVEL" EntityType="Self.TPROC_LEVEL" />
+    <EntitySet Name="TPROC_LOG_TRANSACTIONS" EntityType="Self.TPROC_LOG_TRANSACTIONS" />
+    <EntitySet Name="TPROC_MENU" EntityType="Self.TPROC_MENU" />
+    <EntitySet Name="TPROC_PARAMETERS" EntityType="Self.TPROC_PARAMETERS" />
+    <EntitySet Name="TPROC_PC" EntityType="Self.TPROC_PC" />
+    <EntitySet Name="TPROC_PC_DT" EntityType="Self.TPROC_PC_DT" />
+    <EntitySet Name="TPROC_PC_HISTORICAL" EntityType="Self.TPROC_PC_HISTORICAL" />
+    <EntitySet Name="TPROC_PC_SP_DT" EntityType="Self.TPROC_PC_SP_DT" />
+    <EntitySet Name="TPROC_PC_SP_GR" EntityType="Self.TPROC_PC_SP_GR" />
+    <EntitySet Name="TPROC_PO_DETAILS" EntityType="Self.TPROC_PO_DETAILS" />
+    <EntitySet Name="TPROC_PO_DETAILS_ITEM" EntityType="Self.TPROC_PO_DETAILS_ITEM" />
+    <EntitySet Name="TPROC_PO_HEADERS" EntityType="Self.TPROC_PO_HEADERS" />
+    <EntitySet Name="TPROC_PO_TYPE" EntityType="Self.TPROC_PO_TYPE" />
+    <EntitySet Name="TPROC_PPH" EntityType="Self.TPROC_PPH" />
+    <EntitySet Name="TPROC_PR_APPR_RELDEPT_DT" EntityType="Self.TPROC_PR_APPR_RELDEPT_DT" />
+    <EntitySet Name="TPROC_PR_APPR_RELDEPT_GR" EntityType="Self.TPROC_PR_APPR_RELDEPT_GR" />
+    <EntitySet Name="TPROC_PR_APPR_WA" EntityType="Self.TPROC_PR_APPR_WA" />
+    <EntitySet Name="TPROC_PR_ATTACHMENT" EntityType="Self.TPROC_PR_ATTACHMENT" />
+    <EntitySet Name="TPROC_PR_DETAIL" EntityType="Self.TPROC_PR_DETAIL" />
+    <EntitySet Name="TPROC_PR_HEADER" EntityType="Self.TPROC_PR_HEADER" />
+    <EntitySet Name="TPROC_REL_DEPT" EntityType="Self.TPROC_REL_DEPT" />
+    <EntitySet Name="TPROC_REQUEST" EntityType="Self.TPROC_REQUEST" />
+    <EntitySet Name="TPROC_ROLE" EntityType="Self.TPROC_ROLE" />
+    <EntitySet Name="TPROC_ROLE_MENU" EntityType="Self.TPROC_ROLE_MENU" />
+    <EntitySet Name="TPROC_STOCK" EntityType="Self.TPROC_STOCK" />
+    <EntitySet Name="TPROC_SUPP_DOC" EntityType="Self.TPROC_SUPP_DOC" />
+    <EntitySet Name="TPROC_SUPP_EVAL" EntityType="Self.TPROC_SUPP_EVAL" />
+    <EntitySet Name="TPROC_SUPP_QUAL" EntityType="Self.TPROC_SUPP_QUAL" />
+    <EntitySet Name="TPROC_SUPPLIER" EntityType="Self.TPROC_SUPPLIER" />
+    <EntitySet Name="TPROC_USER" EntityType="Self.TPROC_USER" />
+    <EntitySet Name="TPROC_USER_DT" EntityType="Self.TPROC_USER_DT" />
+    <EntitySet Name="TPROC_USER_PROFILE" EntityType="Self.TPROC_USER_PROFILE" />
+    <EntitySet Name="TPROC_VAT" EntityType="Self.TPROC_VAT" />
+    <EntitySet Name="TPROC_VRF_PC" EntityType="Self.TPROC_VRF_PC" />
+    <EntitySet Name="TPROC_VRF_PO" EntityType="Self.TPROC_VRF_PO" />
+    <EntitySet Name="TPROC_WA" EntityType="Self.TPROC_WA" />
+    <EntitySet Name="TPROC_WA_ALLOWED_DT" EntityType="Self.TPROC_WA_ALLOWED_DT" />
+    <EntitySet Name="TPROC_WA_ALLOWED_GR" EntityType="Self.TPROC_WA_ALLOWED_GR" />
+    <EntitySet Name="TPROC_ACKNOW_APPR_DT" EntityType="Self.TPROC_ACKNOW_APPR_DT" />
+    <EntitySet Name="TPROC_APPROVAL_ROLE_DETAIL" EntityType="Self.TPROC_APPROVAL_ROLE_DETAIL" />
+    <EntitySet Name="TPROC_CRV" EntityType="Self.TPROC_CRV" />
+    <EntitySet Name="TPROC_CRV_DETAILS" EntityType="Self.TPROC_CRV_DETAILS" />
+    <EntitySet Name="TPROC_GM_DETAILS" EntityType="Self.TPROC_GM_DETAILS" />
+    <EntitySet Name="TPROC_PR_HISTORICAL" EntityType="Self.TPROC_PR_HISTORICAL" />
+    <EntitySet Name="TPROC_STOCKMOVEMENT" EntityType="Self.TPROC_STOCKMOVEMENT" />
+    <AssociationSet Name="FK_TPROC_ACKNOW_APPR" Association="Self.FK_TPROC_ACKNOW_APPR">
+      <End Role="TPROC_ACKNOW_APPR" EntitySet="TPROC_ACKNOW_APPR" />
+      <End Role="TPROC_ACKNOW_APPR_DT" EntitySet="TPROC_ACKNOW_APPR_DT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_PC_APPR" Association="Self.FK_TPROC_PC_APPR">
+      <End Role="TPROC_PC" EntitySet="TPROC_PC" />
+      <End Role="TPROC_APPR_PC" EntitySet="TPROC_APPR_PC" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_PO_APPR" Association="Self.FK_TPROC_PO_APPR">
+      <End Role="TPROC_PO_HEADERS" EntitySet="TPROC_PO_HEADERS" />
+      <End Role="TPROC_APPR_PO" EntitySet="TPROC_APPR_PO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_APPR_RELDEPT_GR_2" Association="Self.FK_TPROC_APPR_RELDEPT_GR_2">
+      <End Role="TPROC_APPR_RELDEPT_GR" EntitySet="TPROC_APPR_RELDEPT_GR" />
+      <End Role="TPROC_APPR_RELDEPT_DT" EntitySet="TPROC_APPR_RELDEPT_DT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_LEVEL_RELDEPT" Association="Self.FK_TPROC_LEVEL_RELDEPT">
+      <End Role="TPROC_LEVEL" EntitySet="TPROC_LEVEL" />
+      <End Role="TPROC_APPR_RELDEPT_DT" EntitySet="TPROC_APPR_RELDEPT_DT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_APPROVAL_RELDEPT_GR" Association="Self.FK_APPROVAL_RELDEPT_GR">
+      <End Role="TPROC_APPR_RELDEPT_GR" EntitySet="TPROC_APPR_RELDEPT_GR" />
+      <End Role="TPROC_REL_DEPT" EntitySet="TPROC_REL_DEPT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_APPROVAL_GROUP" Association="Self.FK_APPROVAL_GROUP">
+      <End Role="TPROC_APPROVAL_GR" EntitySet="TPROC_APPROVAL_GR" />
+      <End Role="TPROC_APPROVAL_DT" EntitySet="TPROC_APPROVAL_DT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LEVEL_APPROVAL_DT" Association="Self.FK_LEVEL_APPROVAL_DT">
+      <End Role="TPROC_LEVEL" EntitySet="TPROC_LEVEL" />
+      <End Role="TPROC_APPROVAL_DT" EntitySet="TPROC_APPROVAL_DT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_APPROVAL_GROUP_WA" Association="Self.FK_APPROVAL_GROUP_WA">
+      <End Role="TPROC_APPROVAL_GR" EntitySet="TPROC_APPROVAL_GR" />
+      <End Role="TPROC_WA" EntitySet="TPROC_WA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DIVISION" Association="Self.FK_DIVISION">
+      <End Role="TPROC_DIVISION" EntitySet="TPROC_DIVISION" />
+      <End Role="TPROC_APPROVAL_GR" EntitySet="TPROC_APPROVAL_GR" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LEVEL_APPROVAL_ROLE" Association="Self.FK_LEVEL_APPROVAL_ROLE">
+      <End Role="TPROC_LEVEL" EntitySet="TPROC_LEVEL" />
+      <End Role="TPROC_APPROVAL_ROLE" EntitySet="TPROC_APPROVAL_ROLE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_COA_GR_FST" Association="Self.FK_TPROC_COA_GR_FST">
+      <End Role="TPROC_CHART_OF_ACCOUNT_GR" EntitySet="TPROC_CHART_OF_ACCOUNT_GR" />
+      <End Role="TPROC_CHART_OF_ACCOUNTS" EntitySet="TPROC_CHART_OF_ACCOUNTS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_CURRENCY" Association="Self.FK_TPROC_CURRENCY">
+      <End Role="TPROC_CURRENCY" EntitySet="TPROC_CURRENCY" />
+      <End Role="TPROC_PO_HEADERS" EntitySet="TPROC_PO_HEADERS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_DELIVERY_ADDRESS" Association="Self.FK_TPROC_DELIVERY_ADDRESS">
+      <End Role="TPROC_DELIVERY_ADDRESS" EntitySet="TPROC_DELIVERY_ADDRESS" />
+      <End Role="TPROC_PO_HEADERS" EntitySet="TPROC_PO_HEADERS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DIVISION_USER_DT" Association="Self.FK_DIVISION_USER_DT">
+      <End Role="TPROC_DIVISION" EntitySet="TPROC_DIVISION" />
+      <End Role="TPROC_USER_DT" EntitySet="TPROC_USER_DT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_FORM_SUB_TYPE" Association="Self.FK_TPROC_FORM_SUB_TYPE">
+      <End Role="TPROC_FORM_SUB_TYPE" EntitySet="TPROC_FORM_SUB_TYPE" />
+      <End Role="TPROC_PR_HEADER" EntitySet="TPROC_PR_HEADER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_SUBTYPE_GR_FST" Association="Self.FK_TPROC_SUBTYPE_GR_FST">
+      <End Role="TPROC_FORM_SUBTYPE_GR" EntitySet="TPROC_FORM_SUBTYPE_GR" />
+      <End Role="TPROC_FORM_SUB_TYPE" EntitySet="TPROC_FORM_SUB_TYPE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_SUBTYPE_DT_FT" Association="Self.FK_TPROC_SUBTYPE_DT_FT">
+      <End Role="TPROC_FORM_SUBTYPE_GR" EntitySet="TPROC_FORM_SUBTYPE_GR" />
+      <End Role="TPROC_FORM_SUBTYPE_DT" EntitySet="TPROC_FORM_SUBTYPE_DT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_SUBTYPE_DT_RD" Association="Self.FK_TPROC_SUBTYPE_DT_RD">
+      <End Role="TPROC_REL_DEPT" EntitySet="TPROC_REL_DEPT" />
+      <End Role="TPROC_FORM_SUBTYPE_DT" EntitySet="TPROC_FORM_SUBTYPE_DT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_FST_BUDGET_CD_ADD" Association="Self.FK_TPROC_FST_BUDGET_CD_ADD">
+      <End Role="TPROC_FORM_SUBTYPE_GR" EntitySet="TPROC_FORM_SUBTYPE_GR" />
+      <End Role="TPROC_FST_BUDGET_CD_ADD" EntitySet="TPROC_FST_BUDGET_CD_ADD" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_SUBTYPE_GR_FT" Association="Self.FK_TPROC_SUBTYPE_GR_FT">
+      <End Role="TPROC_FORM_TYPE" EntitySet="TPROC_FORM_TYPE" />
+      <End Role="TPROC_FORM_SUBTYPE_GR" EntitySet="TPROC_FORM_SUBTYPE_GR" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_FORM_TYPE" Association="Self.FK_TPROC_FORM_TYPE">
+      <End Role="TPROC_FORM_TYPE" EntitySet="TPROC_FORM_TYPE" />
+      <End Role="TPROC_PR_HEADER" EntitySet="TPROC_PR_HEADER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_FORM_TYPE_PO" Association="Self.FK_TPROC_FORM_TYPE_PO">
+      <End Role="TPROC_FORM_TYPE" EntitySet="TPROC_FORM_TYPE" />
+      <End Role="TPROC_PO_TYPE" EntitySet="TPROC_PO_TYPE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_FORM_TYPE_STOCK" Association="Self.FK_TPROC_FORM_TYPE_STOCK">
+      <End Role="TPROC_FORM_TYPE" EntitySet="TPROC_FORM_TYPE" />
+      <End Role="TPROC_STOCK" EntitySet="TPROC_STOCK" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GM_TPROC_PO_HEADERS" Association="Self.FK_GM_TPROC_PO_HEADERS">
+      <End Role="TPROC_PO_HEADERS" EntitySet="TPROC_PO_HEADERS" />
+      <End Role="TPROC_GM_HEADERS" EntitySet="TPROC_GM_HEADERS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_GOOD_TYPE" Association="Self.FK_TPROC_GOOD_TYPE">
+      <End Role="TPROC_GOOD_TYPE" EntitySet="TPROC_GOOD_TYPE" />
+      <End Role="TPROC_STOCK" EntitySet="TPROC_STOCK" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_GOOD_TYPE_PR_HEADER" Association="Self.FK_TPROC_GOOD_TYPE_PR_HEADER">
+      <End Role="TPROC_GOOD_TYPE" EntitySet="TPROC_GOOD_TYPE" />
+      <End Role="TPROC_PR_HEADER" EntitySet="TPROC_PR_HEADER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MENU_ROLE_EPROC" Association="Self.FK_MENU_ROLE_EPROC">
+      <End Role="TPROC_MENU" EntitySet="TPROC_MENU" />
+      <End Role="TPROC_ROLE_MENU" EntitySet="TPROC_ROLE_MENU" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PC_SP_GR" Association="Self.FK_PC_SP_GR">
+      <End Role="TPROC_PC" EntitySet="TPROC_PC" />
+      <End Role="TPROC_PC_SP_GR" EntitySet="TPROC_PC_SP_GR" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_PC_HISTORY" Association="Self.FK_TPROC_PC_HISTORY">
+      <End Role="TPROC_PC" EntitySet="TPROC_PC" />
+      <End Role="TPROC_PC_HISTORICAL" EntitySet="TPROC_PC_HISTORICAL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_PC_VRF" Association="Self.FK_TPROC_PC_VRF">
+      <End Role="TPROC_PC" EntitySet="TPROC_PC" />
+      <End Role="TPROC_VRF_PC" EntitySet="TPROC_VRF_PC" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PC_DT" Association="Self.FK_PC_DT">
+      <End Role="TPROC_PC_DT" EntitySet="TPROC_PC_DT" />
+      <End Role="TPROC_PC_SP_DT" EntitySet="TPROC_PC_SP_DT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_PC_SP_GR" Association="Self.FK_TPROC_PC_SP_GR">
+      <End Role="TPROC_PC_SP_GR" EntitySet="TPROC_PC_SP_GR" />
+      <End Role="TPROC_PC_SP_DT" EntitySet="TPROC_PC_SP_DT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PO_HEADER_ID" Association="Self.FK_PO_HEADER_ID">
+      <End Role="TPROC_PO_DETAILS_ITEM" EntitySet="TPROC_PO_DETAILS_ITEM" />
+      <End Role="TPROC_PO_DETAILS" EntitySet="TPROC_PO_DETAILS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PO_DETAILS" Association="Self.FK_PO_DETAILS">
+      <End Role="TPROC_PO_HEADERS" EntitySet="TPROC_PO_HEADERS" />
+      <End Role="TPROC_PO_DETAILS_ITEM" EntitySet="TPROC_PO_DETAILS_ITEM" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_PO_TYPE" Association="Self.FK_TPROC_PO_TYPE">
+      <End Role="TPROC_PO_TYPE" EntitySet="TPROC_PO_TYPE" />
+      <End Role="TPROC_PO_HEADERS" EntitySet="TPROC_PO_HEADERS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_PO_VRF" Association="Self.FK_TPROC_PO_VRF">
+      <End Role="TPROC_PO_HEADERS" EntitySet="TPROC_PO_HEADERS" />
+      <End Role="TPROC_VRF_PO" EntitySet="TPROC_VRF_PO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_SUPPLIER" Association="Self.FK_TPROC_SUPPLIER">
+      <End Role="TPROC_SUPPLIER" EntitySet="TPROC_SUPPLIER" />
+      <End Role="TPROC_PO_HEADERS" EntitySet="TPROC_PO_HEADERS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_PR_APPR_RD_GR" Association="Self.FK_TPROC_PR_APPR_RD_GR">
+      <End Role="TPROC_PR_APPR_RELDEPT_GR" EntitySet="TPROC_PR_APPR_RELDEPT_GR" />
+      <End Role="TPROC_PR_APPR_RELDEPT_DT" EntitySet="TPROC_PR_APPR_RELDEPT_DT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_PR_HEADER_RD_GR" Association="Self.FK_TPROC_PR_HEADER_RD_GR">
+      <End Role="TPROC_PR_HEADER" EntitySet="TPROC_PR_HEADER" />
+      <End Role="TPROC_PR_APPR_RELDEPT_GR" EntitySet="TPROC_PR_APPR_RELDEPT_GR" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_PR_DETAIL" Association="Self.FK_TPROC_PR_DETAIL">
+      <End Role="TPROC_PR_DETAIL" EntitySet="TPROC_PR_DETAIL" />
+      <End Role="TPROC_PR_APPR_WA" EntitySet="TPROC_PR_APPR_WA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_PR_HEADER_ATTACHMENT" Association="Self.FK_TPROC_PR_HEADER_ATTACHMENT">
+      <End Role="TPROC_PR_HEADER" EntitySet="TPROC_PR_HEADER" />
+      <End Role="TPROC_PR_ATTACHMENT" EntitySet="TPROC_PR_ATTACHMENT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_PR_HEADER" Association="Self.FK_TPROC_PR_HEADER">
+      <End Role="TPROC_PR_HEADER" EntitySet="TPROC_PR_HEADER" />
+      <End Role="TPROC_PR_DETAIL" EntitySet="TPROC_PR_DETAIL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_WA" Association="Self.FK_TPROC_WA">
+      <End Role="TPROC_WA" EntitySet="TPROC_WA" />
+      <End Role="TPROC_PR_DETAIL" EntitySet="TPROC_PR_DETAIL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_PR_HEADER_HISTORY" Association="Self.FK_TPROC_PR_HEADER_HISTORY">
+      <End Role="TPROC_PR_HEADER" EntitySet="TPROC_PR_HEADER" />
+      <End Role="TPROC_PR_HISTORICAL" EntitySet="TPROC_PR_HISTORICAL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_USER" Association="Self.FK_TPROC_USER">
+      <End Role="TPROC_USER" EntitySet="TPROC_USER" />
+      <End Role="TPROC_PR_HEADER" EntitySet="TPROC_PR_HEADER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ROLE" Association="Self.FK_ROLE">
+      <End Role="TPROC_ROLE" EntitySet="TPROC_ROLE" />
+      <End Role="TPROC_ROLE_MENU" EntitySet="TPROC_ROLE_MENU" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ROLE_USER_DETAIL" Association="Self.FK_ROLE_USER_DETAIL">
+      <End Role="TPROC_ROLE" EntitySet="TPROC_ROLE" />
+      <End Role="TPROC_USER_DT" EntitySet="TPROC_USER_DT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_SUPP_DOC" Association="Self.FK_TPROC_SUPP_DOC">
+      <End Role="TPROC_SUPPLIER" EntitySet="TPROC_SUPPLIER" />
+      <End Role="TPROC_SUPP_DOC" EntitySet="TPROC_SUPP_DOC" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_SUPPLIER_EVAL" Association="Self.FK_TPROC_SUPPLIER_EVAL">
+      <End Role="TPROC_SUPPLIER" EntitySet="TPROC_SUPPLIER" />
+      <End Role="TPROC_SUPP_EVAL" EntitySet="TPROC_SUPP_EVAL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPROC_SUPPLIER_QUAL" Association="Self.FK_TPROC_SUPPLIER_QUAL">
+      <End Role="TPROC_SUPPLIER" EntitySet="TPROC_SUPPLIER" />
+      <End Role="TPROC_SUPP_QUAL" EntitySet="TPROC_SUPP_QUAL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_USER_DT" Association="Self.FK_USER_DT">
+      <End Role="TPROC_USER_DT" EntitySet="TPROC_USER_DT" />
+      <End Role="TPROC_USER" EntitySet="TPROC_USER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_USER_EPROC_PROFILE" Association="Self.FK_USER_EPROC_PROFILE">
+      <End Role="TPROC_USER" EntitySet="TPROC_USER" />
+      <End Role="TPROC_USER_PROFILE" EntitySet="TPROC_USER_PROFILE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WA_GROUP_USER_DETAIL" Association="Self.FK_WA_GROUP_USER_DETAIL">
+      <End Role="TPROC_WA_ALLOWED_GR" EntitySet="TPROC_WA_ALLOWED_GR" />
+      <End Role="TPROC_USER_DT" EntitySet="TPROC_USER_DT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WORK_AREA" Association="Self.FK_WORK_AREA">
+      <End Role="TPROC_WA" EntitySet="TPROC_WA" />
+      <End Role="TPROC_WA_ALLOWED_DT" EntitySet="TPROC_WA_ALLOWED_DT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WA_ALLOWED_GROUP" Association="Self.FK_WA_ALLOWED_GROUP">
+      <End Role="TPROC_WA_ALLOWED_GR" EntitySet="TPROC_WA_ALLOWED_GR" />
+      <End Role="TPROC_WA_ALLOWED_DT" EntitySet="TPROC_WA_ALLOWED_DT" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
